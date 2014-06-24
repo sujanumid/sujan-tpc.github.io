@@ -7,7 +7,6 @@ $(document).ready(function() {
 	initSlider();
 	initScroller();
 	initVenoBox();
-	initDot();
 });
 
 function initDot(){
@@ -69,9 +68,6 @@ function initSlider(){
     		pauseOnHover: true,
 			delay: 5000
     	}
-	});
-	var slider = $('.royalSlider').data('royalSlider');
-	slider.ev.on('rsAfterSlideChange', function(event) {
 	});
 }
 
