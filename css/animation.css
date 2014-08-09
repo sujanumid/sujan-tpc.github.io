@@ -1,0 +1,31 @@
+/* CSS Document */
+
+
+#ground {
+	position: absolute;
+	left: -10px;
+	bottom:0px;
+	animation: ground 3s linear 0 infinite;
+	-webkit-animation: ground 3s linear 0 infinite;
+	-moz-animation: ground 3s linear 0 infinite;
+	z-index:1;
+}
+
+
+/******** ANIMATIONS ********/
+
+
+@keyframes ground {
+	from { left: -10px; }
+	to { left: -260px; }
+}
+
+@-webkit-keyframes ground {
+	from { left: -10px; }
+	to { left: -260px; }
+}
+
+@-moz-keyframes ground {
+	from { left: -10px; }
+	to { left: -260px; }
+}

@@ -797,6 +797,7 @@ jQuery.extend({
 			}
 		}
 
+
 		// Flatten any nested arrays
 		return core_concat.apply( [], ret );
 	},
@@ -6152,7 +6153,7 @@ jQuery.fn.extend({
 				( jQuery.support.leadingWhitespace || !rleadingWhitespace.test( value ) ) &&
 				!wrapMap[ ( rtagName.exec( value ) || ["", ""] )[1].toLowerCase() ] ) {
 
-				value = value.replace( rxhtmlTag, "<$1><$2>" );
+				value = value.replace( rxhtmlTag, "<$1></$2>" );
 
 				try {
 					for (; i < l; i++ ) {
@@ -6566,7 +6567,7 @@ jQuery.extend({
 					tag = ( rtagName.exec( elem ) || ["", ""] )[1].toLowerCase();
 					wrap = wrapMap[ tag ] || wrapMap._default;
 
-					tmp.innerHTML = wrap[1] + elem.replace( rxhtmlTag, "<$1><$2>" ) + wrap[2];
+					tmp.innerHTML = wrap[1] + elem.replace( rxhtmlTag, "<$1></$2>" ) + wrap[2];
 
 					// Descend through wrappers to the right content
 					j = wrap[0];
@@ -8198,6 +8199,7 @@ jQuery.extend({
 						jQuery.etag[ cacheURL ] = modified;
 					}
 				}
+
 
 				// if no content
 				if ( status === 204 || s.type === "HEAD" ) {
