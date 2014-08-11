@@ -3,14 +3,17 @@
 
 #ground {
 	position: absolute;
-	left: -10px;
 	bottom:0px;
-	animation: ground 3s linear 0 infinite;
+	z-index:1;
+	background:url(../images/animated-bg.png);
+	background-repeat:repeat-x;
+	height:50px;
+	width:100%;
+	left:0;
+}
+animation: ground 3s linear 0 infinite;
 	-webkit-animation: ground 3s linear 0 infinite;
 	-moz-animation: ground 3s linear 0 infinite;
-	z-index:1;
-}
-
 
 /******** ANIMATIONS ********/
 

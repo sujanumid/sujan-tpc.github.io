@@ -12,6 +12,7 @@
 <link rel="stylesheet" type="text/css" href="bootstrap-3.2.0/css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="venobox/venobox.css">
+<link rel="stylesheet" type="text/css" href="assets/sprites/character-sprite/character-sprite.css">
 <link rel="stylesheet" type="text/css" href="font-awesome-4.1.0/css/font-awesome.min.css">
 <script src="js/jquery-1.10.2.js"></script>
 <script src="js/jquery-ui.custom.min.js"></script> 
@@ -20,25 +21,35 @@
 </head>
 
 <body>
-<div class="home">
+<!--<div class="home">
 	<div class="container home-container">
 		<img src="images/sujan.png" alt="sujan khadgi" class="img-responsive sujan-title"/>
 		<img src="images/sujan.gif" alt="sujan-face" class="img-responsive sujan-gif"/>
-		<div class="border-box">
-			<!--<span id="typed"></span>-->
+		<div class="content custom-border">
+		<span id="typed"></span>
 			<span class="start">Press SPACE to continue</span>
 		</div>
 		<p class="credits">&copy; All rights reserved. Sujan Khadgi. 2014</p>
 	</div>
+	<div class="character"></div>
 	<img id="ground" src="images/animated-bg.png">
-</div>
+</div>-->
 <!--end of home-->
+<div class="about">
+	<span class="help" data-toggle="tooltip" data-placement="left" title="Hold UP or DOWN key to move">?</span>
+	<div class="content custom-border col-md-8 col-md-offset-2">
+		<span id="typed"></span>
+	</div>
+	<div class="character"></div>
+	<div id="ground"></div>
+</div>
+<!--end of about-->
 <script src="bootstrap-3.2.0/js/bootstrap.js"></script> 
 <script src="js/jquery-easing.js"></script> 
 <script src="venobox/venobox.js"></script>
 <script src="js/jquery-scrollto.js"></script>
 <script src="js/waypoints.min.js"></script>
 <script src="js/custom.js"></script>
-<script src="typed.js-master/js/typed.js"></script>
+<script src="assets/typed.js-master/js/typed.js"></script>
 </body>
 </html>

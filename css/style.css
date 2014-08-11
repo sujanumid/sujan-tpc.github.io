@@ -46,6 +46,40 @@ button {
 }
 
 
+/*****pokemon style border*****/
+.custom-border{
+	-moz-border-image:url(../images/border.png) 100 100 100 100;
+	-o-border-image:url(../images/border.png) 100 100 100 100;
+	-webkit-border-image:url(../images/border.png) 100 100 100 100;
+	border-image:url(../images/border.png) 100 100 100 100;
+	border-width: 50px;
+}
+
+
+.content{
+	margin-top: 50px;
+	text-align: center;
+	font-size:25px;
+}
+
+.help{
+	font-size:30px;
+	display:inline-block;
+	position:absolute;
+	right:20px;
+	top:10px;
+}
+
+.help:hover{
+	cursor:help;
+}
+
+.tooltip-inner{
+	background-color:white;
+	border:2px solid #191919;
+	color:#191919
+}
+
 /*****************home styling*****************/
 
 .home{
@@ -98,14 +132,6 @@ button {
 }
 
 /******typed.js cursor styling************************/
-
-.border-box{
-	margin: 40px auto 0px auto;
-	text-align: center;
-	border-image:url(../images/border.png) 100 100 100 100;
-	border-width: 50px;
-	width:50%;
-}
 
 .typed-cursor {
 	color:#000;
