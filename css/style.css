@@ -1,196 +1,71 @@
-/* CSS Document */
-@import url(../fonts/Munro-webfont/stylesheet.css);
-@import url(animation.css);
-@import url(animate.css);
-
-body {
-	font-family:'munroregular';
-	overflow-x:hidden;
-}
-
-/* Font Smoothing      */
-
-
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, .btn-simple {
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
-}
-
-.alert.no-js{
-	z-index: 9999;
-	position: fixed;
-	width: 100%;
-	left: 0;
-	right: 0;
-	text-align: center;
-	border-radius: 0px;
-}
-
-.clear-padding {
-	padding: 0px !important;
-}
-
-.clear-margin {
-	margin: 0px !important;
-}
-
-button {
-	outline: 0 !important;
-}
-
-.form-control{
-	border-radius:0px;
-	-moz-box-shadow:none !important;
-	-webkit-box-shadow:none !important;
-	box-shadow:none !important;
-}
-
-
-/*****pokemon style border*****/
-.custom-border{
-	-moz-border-image:url(../images/border.png) 100 100 100 100;
-	-o-border-image:url(../images/border.png) 100 100 100 100;
-	-webkit-border-image:url(../images/border.png) 100 100 100 100;
-	border-image:url(../images/border.png) 100 100 100 100;
-	border-width: 50px;
-}
-
-
-.content{
-	margin-top: 50px;
-	text-align: center;
-	font-size:25px;
-}
-
-.help{
-	font-size:30px;
-	display:inline-block;
-	position:absolute;
-	right:20px;
-	top:10px;
-}
-
-.help:hover{
-	cursor:help;
-}
-
-.tooltip-inner{
-	background-color:white;
-	border:2px solid #191919;
-	color:#191919
-}
-
-/*****************home styling*****************/
-
-.home{
+body{
 	background:#fff;
+}
+
+#scene{
+	position:fixed;
 	width:100%;
-}
-
-.home img{
-	margin:auto;
-}
-
-.sujan-title{
-	margin-bottom:80px !important;
-	max-height:80px;
-	margin-left:-50%;
-}
-
-.sujan-gif{
-	max-height:200px;
-}
-
-.home-container{
-	position:absolute;
-	top:0;
-	bottom:0;
+	height:700px;
+	margin-top:-350px;
+	top:50%;
 	left:0;
-	right:0;
+	background: rgba(41,184,229,1);
+background: -moz-linear-gradient(top, rgba(41,184,229,1) 0%, rgba(122,211,240,1) 50%, rgba(203,237,250,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(41,184,229,1)), color-stop(50%, rgba(122,211,240,1)), color-stop(100%, rgba(203,237,250,1)));
+background: -webkit-linear-gradient(top, rgba(41,184,229,1) 0%, rgba(122,211,240,1) 50%, rgba(203,237,250,1) 100%);
+background: -o-linear-gradient(top, rgba(41,184,229,1) 0%, rgba(122,211,240,1) 50%, rgba(203,237,250,1) 100%);
+background: -ms-linear-gradient(top, rgba(41,184,229,1) 0%, rgba(122,211,240,1) 50%, rgba(203,237,250,1) 100%);
+background: linear-gradient(to bottom, rgba(41,184,229,1) 0%, rgba(122,211,240,1) 50%, rgba(203,237,250,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29b8e5', endColorstr='#cbedfa', GradientType=0 );
+}
+
+.parallax-layer{
+	position:absolute;
+	height:700px;
+	background-repeat:no-repeat;
+}
+
+#bg2{
+	background:url(../images/grass-ground.png) left bottom repeat-x;
+	width:4368px;
+	bottom:0px;
+}
+
+#character{
+	position:absolute;
+	background-image:url(../images/sujan-pixel-sprite2.png);
+	width:72px;
+	height:152px;
+	bottom: 76px;
+	left:400px;
 	margin:auto;
-	z-index:2;
 }
 
-.start{
-	text-align:center;
-	display:block;
-	font-size:1.5em;
-	text-align:center;
-	-webkit-animation: blink 1s infinite;
-	-moz-animation: blink 1s infinite;
-	-ms-animation: blink 1s infinite;
-	-o-animation: blink 1s infinite;
-	animation: blink 1s infinite; 
-
+.school{
+	position:absolute;
+	width:600px;
+	height:523px;
+	top:100px;
 }
 
-.credits{
-	text-align:center;
-	width:100%;
-	font-size:1em;
-	margin-top:10px;
+#schoolunder{background:url('../images/school_under.png');}
+#schoolover{background:url('../images/school_over.png');}
+
+#sujan-title{
+	background:url(../images/sujan.png) no-repeat;
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	-o-animation-duration: 1s;
+	animation-duration: 1s;
 }
 
-/******typed.js cursor styling************************/
-
-.typed-cursor {
-	color:#000;
-	opacity: 1;
-	-webkit-animation: blink 0.7s infinite;
-	-moz-animation: blink 0.7s infinite;
-	-ms-animation: blink 0.7s infinite;
-	-o-animation: blink 0.7s infinite;
-	animation: blink 0.7s infinite; 
+.title{
+	position:absolute;
+	height:88px;
+	width:784px;
+	top:100px;
 }
 
-@-keyframes blink {
-  0% {
-    opacity: 1; }
 
-  50% {
-    opacity: 0; }
 
-  100% {
-    opacity: 1; } }
 
-@-webkit-keyframes blink {
-  0% {
-    opacity: 1; }
-
-  50% {
-    opacity: 0; }
-
-  100% {
-    opacity: 1; } }
-
-@-moz-keyframes blink {
-  0% {
-    opacity: 1; }
-
-  50% {
-    opacity: 0; }
-
-  100% {
-    opacity: 1; } }
-
-@-ms-keyframes blink {
-  0% {
-    opacity: 1; }
-
-  50% {
-    opacity: 0; }
-
-  100% {
-    opacity: 1; } }
-
-@-o-keyframes blink {
-  0% {
-    opacity: 1; }
-
-  50% {
-    opacity: 0; }
-
-  100% {
-    opacity: 1; } }
-
-/*******end of typed.js cursor styling**********/

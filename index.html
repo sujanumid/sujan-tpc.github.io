@@ -1,6 +1,6 @@
-<!doctype html>
-<html class="no-js">
-<head>
+<!DOCTYPE html>
+<html>
+<head class="no-skrollr">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
@@ -8,48 +8,33 @@
 <meta name="author" content="Sujan Khadgi">
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <link rel="icon" href="favicon.ico" type="image/x-icon">
-<link rel="stylesheet" type="text/css" href="css/normalize.css">
-<link rel="stylesheet" type="text/css" href="bootstrap-3.2.0/css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" type="text/css" href="venobox/venobox.css">
-<link rel="stylesheet" type="text/css" href="assets/sprites/character-sprite/character-sprite.css">
-<link rel="stylesheet" type="text/css" href="font-awesome-4.1.0/css/font-awesome.min.css">
-<script src="js/jquery-1.10.2.js"></script>
-<script src="js/jquery-ui.custom.min.js"></script> 
-<script src="js/modernizr.custom.41672.js"></script>
-<title>Sujan Khadgi- Interactive Designer</title>
+<title>Sujan Khadgi - Interactive Designer</title>
+<link rel="stylesheet" type="text/css" href="assets/bootstrap-3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/animate.css" />
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 </head>
 
 <body>
-<!--<div class="home">
-	<div class="container home-container">
-		<img src="images/sujan.png" alt="sujan khadgi" class="img-responsive sujan-title"/>
-		<img src="images/sujan.gif" alt="sujan-face" class="img-responsive sujan-gif"/>
-		<div class="content custom-border">
-		<span id="typed"></span>
-			<span class="start">Press SPACE to continue</span>
+<!--[if gte IE 9]
+<style type="text/css">
+.gradient {
+filter: none;
+}
+</style>
+<![endif]-->
+<div id="skrollr-body">
+	<div id="scene" class="gradient">
+		<div id="bg2" class="parallax-layer" data-0="left:0px;" data-5000="left:-2500px;"></div>
+		
+		<div class="parallax-layer">
+			 <div id="sujan-title" class="title" data-0="left:300px;" data-5000="left:-1500px;"></div>
+			<div id="character"></div>
 		</div>
-		<p class="credits">&copy; All rights reserved. Sujan Khadgi. 2014</p>
 	</div>
-	<div class="character"></div>
-	<img id="ground" src="images/animated-bg.png">
-</div>-->
-<!--end of home-->
-<div class="about">
-	<span class="help" data-toggle="tooltip" data-placement="left" title="Hold UP or DOWN key to move">?</span>
-	<div class="content custom-border col-md-8 col-md-offset-2">
-		<span id="typed"></span>
-	</div>
-	<div class="character"></div>
-	<div id="ground"></div>
 </div>
-<!--end of about-->
-<script src="bootstrap-3.2.0/js/bootstrap.js"></script> 
-<script src="js/jquery-easing.js"></script> 
-<script src="venobox/venobox.js"></script>
-<script src="js/jquery-scrollto.js"></script>
-<script src="js/waypoints.min.js"></script>
-<script src="js/custom.js"></script>
-<script src="assets/typed.js-master/js/typed.js"></script>
+<script type="text/javascript" src="js/skrollr.min.js"></script> 
+<script type="text/javascript" src="js/animation.js"></script>
+<script type="text/javascript" src="assets/typed.js-master/js/typed.js"></script>
 </body>
 </html>
