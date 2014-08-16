@@ -1,5 +1,10 @@
+@import url(normalize.css);
+@import url(animate.css);
+@import url(../fonts/Munro-webfont/stylesheet.css);
+
 body{
-	background:#fff;
+	background:#333;
+	font-family: 'munroregular';
 }
 
 #scene{
@@ -10,13 +15,19 @@ body{
 	top:50%;
 	left:0;
 	background: rgba(41,184,229,1);
-background: -moz-linear-gradient(top, rgba(41,184,229,1) 0%, rgba(122,211,240,1) 50%, rgba(203,237,250,1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(41,184,229,1)), color-stop(50%, rgba(122,211,240,1)), color-stop(100%, rgba(203,237,250,1)));
-background: -webkit-linear-gradient(top, rgba(41,184,229,1) 0%, rgba(122,211,240,1) 50%, rgba(203,237,250,1) 100%);
-background: -o-linear-gradient(top, rgba(41,184,229,1) 0%, rgba(122,211,240,1) 50%, rgba(203,237,250,1) 100%);
-background: -ms-linear-gradient(top, rgba(41,184,229,1) 0%, rgba(122,211,240,1) 50%, rgba(203,237,250,1) 100%);
-background: linear-gradient(to bottom, rgba(41,184,229,1) 0%, rgba(122,211,240,1) 50%, rgba(203,237,250,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29b8e5', endColorstr='#cbedfa', GradientType=0 );
+	background: -moz-linear-gradient(top, rgba(41,184,229,1) 0%, rgba(122,211,240,1) 50%, rgba(203,237,250,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(41,184,229,1)), color-stop(50%, rgba(122,211,240,1)), color-stop(100%, rgba(203,237,250,1)));
+	background: -webkit-linear-gradient(top, rgba(41,184,229,1) 0%, rgba(122,211,240,1) 50%, rgba(203,237,250,1) 100%);
+	background: -o-linear-gradient(top, rgba(41,184,229,1) 0%, rgba(122,211,240,1) 50%, rgba(203,237,250,1) 100%);
+	background: -ms-linear-gradient(top, rgba(41,184,229,1) 0%, rgba(122,211,240,1) 50%, rgba(203,237,250,1) 100%);
+	background: linear-gradient(to bottom, rgba(41,184,229,1) 0%, rgba(122,211,240,1) 50%, rgba(203,237,250,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29b8e5', endColorstr='#cbedfa', GradientType=0 );
+}
+
+#ground{
+	background:url(../images/grass-ground.png) left bottom repeat-x;
+	width:20000px;
+	bottom:0px;
 }
 
 .parallax-layer{
@@ -25,10 +36,42 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29b8e5', end
 	background-repeat:no-repeat;
 }
 
-#bg2{
-	background:url(../images/grass-ground.png) left bottom repeat-x;
-	width:4368px;
-	bottom:0px;
+#sujan-title{
+	background:url(../images/sujan.png) no-repeat;
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	-o-animation-duration: 1s;
+	animation-duration: 1s;
+	position:absolute;
+	height:88px;
+	width:784px;
+	top:100px;
+	right:0;
+	margin:auto;
+}
+
+#start{
+	position:absolute;
+	top:250px;
+	width:100vw;
+	font-size:16px;
+	text-align:center;
+	color:#fff;
+	right:0;
+	-webkit-animation: blink 1s infinite;
+	-o-animation: blink 1s infinite;
+	-moz-animation: blink 1s infinite;
+}
+
+@keyframes blink {  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+@-webkit-keyframes blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
 }
 
 #character{
@@ -41,31 +84,28 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29b8e5', end
 	margin:auto;
 }
 
-.school{
+
+.birthplace{
 	position:absolute;
-	width:600px;
-	height:523px;
-	top:100px;
+	bottom:76px;
 }
 
-#schoolunder{background:url('../images/school_under.png');}
-#schoolover{background:url('../images/school_over.png');}
-
-#sujan-title{
-	background:url(../images/sujan.png) no-repeat;
-	-webkit-animation-duration: 1s;
-	-moz-animation-duration: 1s;
-	-o-animation-duration: 1s;
-	animation-duration: 1s;
+#dharahara{
+	width:80px;
+	height:389px;
+	background:url(../images/dharahara.png);
 }
 
-.title{
-	position:absolute;
-	height:88px;
-	width:784px;
-	top:100px;
+#swayambhu{
+	width:272px;
+	height:264px;
+	background:url(../images/swayambhu.png);
 }
 
-
+#nepal-flag{
+	width:120px;
+	height:168px;
+	background:url(../images/nepal-flag.gif);
+}
 
 
