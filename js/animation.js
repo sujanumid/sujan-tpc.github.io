@@ -3,13 +3,12 @@ var character = $('#character'),
 	curFrm = 0,
 	lastStep = 0,
 	animationCycle, backPosY;
-	
 $(document).ready(function() {
 	setTimeout(function(){
 		$('body').addClass('loaded').delay(100).queue(function(){
 			$("#sujan-title").addClass('animated bounceInDown').dequeue(); // Title in home section flys in from left
 		});
-	}, 3000);
+	}, 100);
 	skrollr.init({
 		render: function(data) {
 		  //Log the current scroll position.

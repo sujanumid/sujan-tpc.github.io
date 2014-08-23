@@ -135,6 +135,13 @@ body {
  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29b8e5', endColorstr='#cbedfa', GradientType=0 );
 }
 
+#mountain {
+	background: url(../images/bg.png) left bottom repeat-x;
+	width: 20000px;
+	bottom: 76px;
+	z-index: -1;
+}
+
 #ground {
 	background: url(../images/grass-ground.png) left bottom repeat-x;
 	width: 20000px;
