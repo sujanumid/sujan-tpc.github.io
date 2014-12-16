@@ -1,0 +1,68 @@
+<svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="313.334px" height="355.332px" viewBox="0 0 313.334 355.332" style="enable-background:new 0 0 313.334 355.332;"
+	 xml:space="preserve">
+
+<defs>
+	<style type="text/css">
+		.st0{fill:none;stroke:#FFFFFF;stroke-width:4;stroke-miterlimit:10;}
+		.st0 {
+			stroke-dasharray: 2000;
+			stroke-dashoffset:0;
+			-webkit-animation: dash 3s linear forwards, fillit 1s 2s linear forwards;
+			-moz-animation: dash 3s linear forwards, fillit 1s 2s linear forwards;
+			-o-animation: dash 3s linear forwards, fillit 1s 2s linear forwards;
+			animation: dash 3s linear forwards, fillit 1s 2s linear forwards;
+		}
+
+		#logo {
+		cursor:pointer;
+		}
+
+		#logo.clickit .st0 {
+			fill:#fff;
+			stroke: #fff;
+		}
+
+		@-webkit-keyframes dash {
+			from {
+				stroke-dashoffset: 2000;
+			}
+			to {
+				stroke-dashoffset: 0;
+			}
+		}
+		
+		@-webkit-keyframes fillit {
+			from {
+				
+				fill:transparent;
+			}
+			to {
+				fill:#fff;
+			}
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		var clicker = document.querySelector('#logo');
+
+		clicker.addEventListener('click', function() {
+
+			this.classList.toggle('clickit');
+
+		});
+
+	</script>
+
+</defs>
+
+<g>
+	<polygon class="st0" points="178.266,200.896 178.266,223.136 178.266,307.992 134.818,329.648 92.98,350.498 7.695,307.947 
+		7.695,265.257 92.98,307.9 134.818,287.003 134.818,222.615 94.024,201.056 10.349,158.128 7.695,156.753 7.695,51.949 
+		50.337,30.722 92.98,9.4 178.266,51.949 178.266,94.686 92.98,52.043 50.337,73.364 50.337,137.329 91.511,158.128 	"/>
+	<polygon class="st0" points="306.195,137.329 263.553,179.972 306.195,222.615 306.195,307.9 263.646,350.542 263.74,222.615 
+		240.906,202.623 220.908,222.615 220.908,180.063 263.553,137.329 263.553,9.4 306.195,52.043 	"/>
+</g>
+</svg>

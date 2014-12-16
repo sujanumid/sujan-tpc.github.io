@@ -1,52 +1,154 @@
-<!DOCTYPE html>
-<html>
-<head class="no-skrollr">
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
 <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
-<meta name="keywords" content="Sujan Khadgi, Nepal, Nepali, UX, UI, Interactive, Designer, Portfolio, HTML, CSS, JQuery, Photoshop, Graphic, Logos, Art">
+<meta name="keywords" content="Sujan, Khadgi, UI, UX, Graphic, Design, Designer, Illustration, Nepal, Portfolio, Artist, Developer, Powered by Behance, Behance, API">
 <meta name="author" content="Sujan Khadgi">
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <link rel="icon" href="favicon.ico" type="image/x-icon">
-<title>Sujan Khadgi - Interactive Designer</title>
-<link rel="stylesheet" type="text/css" href="assets/bootstrap-3.2.0/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/style.css" />
-<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-</head>
-
-<body>
-<!--[if gte IE 9]
-<style type="text/css">
-.gradient {
-filter: none;
-}
-</style>
+<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/modernizr.custom.41672.js"></script>
+<script src="js/handlebars.min.js"></script>
+<title>Sujan Khadgi - UI/UX Designer & Front End Developer</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<div id="loader-wrapper">
-	<div id="loader"></div>
-	<div class="loader-section section-left"></div>
-	<div class="loader-section section-right"></div>
-</div>
-<div id="skrollr-body">
-	<div id="scene" class="gradient">
-		<div id="mountain" class="parallax-layer" data-0="left:0px;" data-3300="left:-500px;" data-4500="left:-500px;"  data-10000="left:-1500px;" data-15000="left:-2200px" data-20000="left:-3000px"></div>
-		<div id="ground" class="parallax-layer" data-0="left:0px;" data-3300="left:-500px;" data-4500="left:-500px;"  data-10000="left:-1500px;" data-15000="left:-2200px" data-20000="left:-3000px"></div>
-		<div class="parallax-layer">
-			<div id="swayambhu" class="birthplace" data-0="left:2100px; bottom: -200px;" data-3300="left:800px;bottom: -200px;" data-3500="left:800px;bottom:-200px" data-4000="bottom: 76px;" data-4800="left:800px;" data-9500="left:-400px;"></div>
-			<div id="dharahara" class="birthplace" data-0="left:2000px; bottom: -350px;" data-3300="left:700px;bottom: -350px;" data-3500="left:700px;bottom: 76px;" data-4800="left:700px;" data-9300="left:-300px;"></div>
-			<div id="nepal-flag" class="birthplace" data-0="left:1800px;" data-3300="left:500px;" data-3500="left:500px;" data-4800="left:500px;" data-9000="left:-300px;"></div>
-			<div id="nyan" data-0="left:3000px" data-2000="left:2600px" data-4000="left:2200px" data-6000="1800px" data-10000="left:1400px" data-12000="left:1000px" data-14000="left:600px" data-16000="left:200px" data-18000="left:-200px"></div>
-			<div id="character"></div>
-		</div>
-		<!--/.parallax layer-->
-		<div id="sujan-title" data-0="left:0px;" data-3500="left:-3000px;"></div>
-		<div id="start" data-0="left:0px;" data-3500="left:-2000px;">Scroll down or press "DOWN" key to move</div>
-		<div id="birthplace" data-0="opacity:0;" data-3000="opacity:0;" data-3300="opacity:1;" data-3500="opacity:1;" data-5500="opacity:1;" data-6000="opacity:0">Born on October 19, 1991 in Kathmandu, Nepal.</div>
+</head>
+<body>
+<noscript>
+<div class="alert alert-danger no-js"><strong>Oh Snap! It seems that Javascript is disabled on your browser. Please enable it for a better browsing experience.</strong></div>
+</noscript>
+<!--end of no script-->
+<div class="header" id="header">
+	<div class="header-logo">
+		<object>
+			<embed src="img/logo.svg" class="embed">
+		</object>
 	</div>
-	<!--/.scene-->
 </div>
-<script type="text/javascript" src="js/skrollr.min.js"></script> 
-<script type="text/javascript" src="js/animation.js"></script> 
-<script type="text/javascript" src="assets/typed.js-master/js/typed.js"></script>
+<!--/.header-->
+<div class="nav-container">
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+		</div>
+		<a class="navbar-brand" href="#header"></a>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav navbar-left">
+				<li><a href="#about">about</a></li>
+				<li><a href="#work">work</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#contact">contact</a></li>
+				<li><a href="#">resume</a></li>
+			</ul>
+		</div>
+	</nav>
+</div>
+<!--/.nav-->
+<div class="about section" id="about">
+	<h3 class="section-title">about me</h3>
+	<hr class="styled">
+	<img src="img/mascot.png" class="mascot" alt="sujan">
+	<div class="section-desc text-center text-light container-fluid">
+		<p>Hi! I'm Sujan Khadgi from Kathmandu, Nepal.<br>
+			My skills include graphic design, UI/UX design and front end development.<br>
+			I also have passion for traditional/digital art and illustrations.</p>
+	</div>
+</div>
+<!--/.about-->
+<div class="work section" id="work">
+	<h3 class="section-title">my work</h3>
+	<hr class="styled white">
+	<div class="wrap">
+		<ul class="pager">
+			<li class="prev page" title="View previous set of projects">&larr;</li>
+			<li class="next page" page="1"  title="View next set of projects">&rarr;</li>
+		</ul>
+		<div class="container-fluid padding-reset" id="portfolio"> 
+		<script id="portfolio-template" type="text/x-handlebars-template">
+			{{#each projects}}
+				<div class="item col-md-3 col-sm-4 col-xs-6">
+					<a href="#" class="project-thumb" data-project-id="{{this.id}}">
+						{{#if this.covers.[404]}}
+						<img src="{{this.covers.[404]}}" alt="">
+						{{else}}
+							{{#if this.covers.[230]}}
+							<img src="{{this.covers.[230]}}" alt="">
+							{{else}}
+							<img src="{{this.covers.[202]}}" alt="">
+							{{/if}}
+						{{/if}}
+					<div class="details">
+						<span class="view project-title">{{this.name}}<br>
+							<span class="project-field">
+								{{#each this.fields}}
+									<span class="fields">{{this}}</span>
+								{{/each}}
+							</span>
+						</span>
+					</div>
+					<div class="bg"></div>
+					</a> 
+				</div>
+			{{/each}}
+		</script> 
+		</div>
+	</div>
+</div>
+<!--/.work-->
+<div class="contact section" id="contact">
+	<h3 class="section-title">keep in touch</h3>
+	<hr class="styled">
+	<ul class="social-links">
+		<li><a href="http://www.facebook.com/sujanumid" target="_blank" title="Follow me on Facebook"><span class="ico ico-fb"></span></a></li>
+		<li><a href="http://www.dribbble.com/sujankhadgi" target="_blank" title="Follow me on Dribble"><span class="ico ico-dr"></span></a></li>
+		<li><a href="http://www.behance.net/sujanumid" target="_blank" title="Follow me on Behance"><span class="ico ico-be"></span></a></li>
+		<li><a href="http://np.linkedin.com/in/sujankhadgi" target="_blank" title="Connect with me on LinkedIn"><span class="ico ico-in"></span></a></li>
+	</ul>
+	<!--/.social-links--> 
+	<span class="mail">
+	<p>send me an email @ <a href="mailto:sujan_khadgi2000@yahoo.com" target="_top">sujan_khadgi2000@yahoo.com</a></p>
+	</span> </div>
+<!--/.contact--> 
+
+<!-- project modal -->
+<div class="modal fade" id="project-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<h4 class="modal-title" id="myModalLabel"></h4>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-8 project-images"> </div>
+					<div class="col-md-4 project-desc">
+						<h5 class="sidebar-title">About the project</h5>
+						<div class="desc">
+							
+						</div>
+						<hr>
+						<h5 class="sidebar-title">Creative Fields</h5>
+						<ul class="creative-fields">
+						</ul>
+						<hr>
+						<span class="behance-view">View this project on <a href="" class="behance-link" target="_blank">Behance</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="js/jquery-easing.js"></script> 
+<script src="assets/bootstrap/js/bootstrap.min.js"></script> 
+<script src="js/waypoints.min.js"></script> 
+<script src="js/jquery-scrollto.js"></script>
+<script src="js/custom.js"></script>
 </body>
 </html>
