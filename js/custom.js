@@ -36,7 +36,7 @@ $(function() {
 });
 
 //scrollto
-$('.navbar a').on('click',function(e){
+$('.navbar a:not(#resume)').on('click',function(e){
 	e.preventDefault();
 	var destination = $(this).attr('href');
 	$.scrollTo(destination, 1000, {
