@@ -72,6 +72,31 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, .btn {
 	color: #fff;
 }
 
+.loader-backdrop{
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.7);
+	z-index:1000;
+	display:none;
+}
+
+.loader{
+	background:url(../img/loader.gif) no-repeat center center;
+	height: 60px;
+	width: 60px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	z-index: 400;
+	background-color: #111;
+	border-radius: 5px;
+}
+
 /**********************************header*******************************/
 
 .header{
@@ -594,6 +619,9 @@ hr.styled.white{
 		padding:20px;
 		position:static;
 		height:auto;
+	}
+	.pager .page{
+		bottom: inherit
 	}
 }
 

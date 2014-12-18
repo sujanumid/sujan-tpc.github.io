@@ -2,7 +2,7 @@
 
 $(document).ready(function(e) {
 	$('.header').height($(window).outerHeight()-70);
-	
+	$('.loader-backdrop').height($(window).outerHeight());
 	if(sessionStorage.getItem('pageNo')){
 		pageDisable(sessionStorage.getItem('pageNo'));
 	}else{
@@ -83,16 +83,24 @@ $(document).ready(function() {
 
 //pagination
 $(document).on('click','.next',function(e){
+	$('.loader-backdrop').fadeIn();
+	$('body').addClass('modal-open');
 	pageNo = parseInt(sessionStorage.getItem('pageNo'))+1;
 	sessionStorage.setItem('pageNo',pageNo);
 	templating(pageNo);
+	$('.loader-backdrop').fadeOut();
+	$('body').removeClass('modal-open');
 });
 
 $(document).on('click','.prev',function(e){
+	$('.loader-backdrop').fadeIn();
+	$('body').addClass('modal-open');
 	if(!$(this).hasClass('disabled')){
 		pageNo = parseInt(sessionStorage.getItem('pageNo'))-1;
 		sessionStorage.setItem('pageNo',pageNo);
 		templating(pageNo);
+		$('.loader-backdrop').fadeOut();
+	$('body').removeClass('modal-open');
 	}
 });
 
@@ -115,16 +123,27 @@ function templating(pageNo){
 };
 
 function pageDisable(pageNo){
+	var nextPage = parseInt(pageNo) + 1;
+	var behanceProjectAPI = 'http://www.behance.net/v2/users/' + userID + '/projects?callback=?&api_key=' + apiKey + '&per_page=' + perPage + '&page=' + nextPage;
 	if(pageNo == 1){
 		$('.prev').addClass('disabled');
 	}else{
 		$('.prev').removeClass('disabled');
 	}
+	$.getJSON(behanceProjectAPI, function(project) {
+		if(project.projects.length == 0){
+			$('.next').addClass('disabled');
+		}else{
+			$('.next').removeClass('disabled');
+		}
+	});
 }
 
 //show project details
 $(document).on('click','.project-thumb',function(e){
 	e.preventDefault();
+	$('.loader-backdrop').fadeIn();
+	$('body').addClass('modal-open');
 	var $this =	$(this),
 		projectID = $this.data('project-id'),
 		beProjectContentAPI = 'http://www.behance.net/v2/projects/'+ projectID +'?callback=?&api_key=' + apiKey,
@@ -155,6 +174,7 @@ $(document).on('click','.project-thumb',function(e){
 			$('.behance-link').attr('href',projectURL);
 			//open modal
 			$('#project-modal').modal();
+			$('.loader-backdrop').fadeOut();
 		});
 	};
 
