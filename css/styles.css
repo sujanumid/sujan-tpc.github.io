@@ -477,6 +477,7 @@ hr.styled.white{
 	color: #fff;
 	background: #333;
 	border-radius:0px;
+	border-bottom:0px;
 }
 
 .modal-title{
@@ -510,7 +511,7 @@ hr.styled.white{
 }
 
 .project-images{
-	padding:30px;
+	padding:0px;
 }
 
 .project-images img{
