@@ -48,7 +48,7 @@ $('.navbar a:not(#resume)').on('click',function(e){
 
 //behance API
 var apiKey  = 'f8ovCnQNCJlsHXtPEKrWfvB43FnJ9Tjt';
-var userID  = 'sujanumid';
+var userID  = '___sujan';
 var perPage = 8;
 var behanceProjectAPI = 'http://www.behance.net/v2/users/' + userID + '/projects?callback=?&api_key=' + apiKey + '&per_page=' + perPage;
 var mainTemplate;
