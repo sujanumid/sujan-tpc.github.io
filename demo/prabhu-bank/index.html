@@ -43,7 +43,7 @@
 	<div class="sidebar">
 	</div>
 	<!--/.sidebar-->
-	<nav class="navbar navbar-default">
+	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
@@ -62,6 +62,7 @@
 					<li><a href="#">Locations</a></li>
 					<li><a href="#">Contact</a></li>
 					<li><a href="#">FAQ</a></li>
+					<li><a href="#" class="btn btn-danger btn-xs">Login</a></li>
 				</ul>
 			</div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->
@@ -96,21 +97,34 @@
 						<li class="w3_megamenu-content withdesc">
 							<div class="container">
 								<div class="row">
-									<div class="col-sm-4">
-										<h3 class="title">Simple Banking</h3>
+									<div class="col-sm-3">
+										<h3 class="title">Consumer Banking</h3>
 										<ul>
-											<li><a href="#">Consumer Banking</a></li>
-											<li><a href="#">SME Banking</a></li>
+											<li><a href="#">Individual Revolving Loan</a></li>
+											<li><a href="#">Loan Against Shares</a></li>
+											<li><a href="#">Home Loan</a></li>
+											<li><a href="#">Hire Purchase Loan</a></li>
+											<li><a href="#">Education Loan</a></li>
 										</ul>
 									</div>
-									<div class="col-sm-4">
+									<div class="col-sm-3">
+										<h3 class="title">SME Banking</h3>
+										<ul>
+											<li><a href="#">Short Term Loan</a></li>
+											<li><a href="#">Bank Guarantees</a></li>
+											<li><a href="#">Working Capital Financing</a></li>
+											<li><a href="#">Import Loan</a></li>
+											<li><a href="#">Export Loan</a></li>
+										</ul>
+									</div>
+									<div class="col-sm-3">
 										<h3 class="title">Corporate Banking</h3>
 										<ul>
 											<li><a href="#">Business Banking</a></li>
 											<li><a href="#">Consortium & Project Financing</a></li>
 										</ul>
 									</div>
-									<div class="col-sm-4">
+									<div class="col-sm-3">
 										<h3 class="title">Transaction Banking</h3>
 										<ul>
 											<li><a href="#">International VISA Card</a></li>
@@ -129,13 +143,13 @@
 					</ul>
 				</li>
 				<!--/.megamenu-->
-				<li class="dropdown w3_megamenu-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Investor Relations<b class="caret"></b></a>
+				<li class="dropdown w3_megamenu-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Investors<b class="caret"></b></a>
 					<ul class="dropdown-menu fullwidth">
 						<li class="w3_megamenu-content withdesc">
 							<div class="container">
 								<div class="row">
 									<div class="col-sm-12">
-										<h3 class="title">Account Types</h3>
+										<h3 class="title">Investor Relations</h3>
 										<ul>
 											<li><a href="#">Base Rate Calculation</a></li>
 											<li><a href="#">Annual Reports</a></li>
@@ -175,10 +189,12 @@
 		</div>
 	</div>
 	<!--/.jumbotron-->
+	
 	<div class="store-finder">
 		<div class="container">
 			<div class="section">
 				<h2 class="text-center title">Find a store near you</h2>
+				<div class="body-copy">Having trouble finding a bank outlet or an ATM? Enter your location and we'll find one for you!</div>
 				<form class="find-store">
 					<div class="input-group store-input">
 						<input type="text" class="form-control store-search" placeholder="Street, City, Zip code...">
@@ -191,13 +207,74 @@
 		</div>
 	</div>
 	<!--/.store-finder-->
+	<div class="widget section">
+		<div class="container">
+			<h2 class="text-center title">Quick Services</h2>
+			<div class="body-copy">Prabhu Bank provides and array of services to its celebrated customers. Try some of the services listed below by clicking on the title.</div>
+			<div class="row">
+				<div class="col-md-6">
+					<a href="#" class="service-link">
+						<div class="widget-component">
+							<i class="fa fa-money"></i> <span class="widget-title">Standard Tariff of Charges</span>
+							<div class="desc">Morbi ultricies mollis lacus elementum egestas. Curabitur pulvinar lectus ut dui luctus, at dictum quam ultrices. Donec rhoncus, libero in condimentum pulvinar, urna tortor lacinia risus, nec scelerisque lorem enim quis ipsum.</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-6">
+					<a href="#" class="service-link">
+						<div class="widget-component">
+							<i class="fa fa-line-chart"></i> <span class="widget-title">Financial Results</span>
+							<div class="desc">Integer imperdiet velit a suscipit ultricies. Curabitur porttitor, mi ut ultrices efficitur, nisi risus egestas purus, vel tincidunt urna nisl id nulla. Phasellus convallis ultrices diam efficitur varius.</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<a href="#" class="service-link">
+						<div class="widget-component">
+							<i class="fa fa-bar-chart"></i> <span class="widget-title">Interest Rate</span>
+							<div class="desc">Donec commodo enim est, nec rutrum felis pharetra eget. Donec ex libero, euismod eu arcu nec, viverra hendrerit est. Suspendisse faucibus aliquam.</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-6">
+					<a href="#" class="service-link">
+						<div class="widget-component">
+							<i class="fa fa-photo"></i> <span class="widget-title">Gallery</span>
+							<div class="desc">Vivamus in purus accumsan, fermentum elit eu, feugiat sapien. Ut aliquam, libero a gravida euismod, tellus sapien dapibus massa.</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<a href="#" class="service-link">
+						<div class="widget-component">
+							<i class="fa fa-cloud-download"></i> <span class="widget-title">Downloads</span>
+							<div class="desc">Pellentesque fermentum semper dictum. Phasellus massa sapien, finibus non luctus non, sollicitudin at ex. Aenean a nisi in nisi facilisis ornare quis in nibh. Aenean sapien elit, lacinia consequat iaculis et, varius ullamcorper nisi. Curabitur accumsan libero a pellentesque ullamcorper.</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-6">
+					<a href="#" class="service-link">
+						<div class="widget-component">
+							<i class="fa fa-bank"></i> <span class="widget-title">E-Banking</span>
+							<div class="desc">Phasellus massa sapien Vivamus ut ligula eu ipsum interdum consequat. Aenean et erat maximus, aliquet elit at, elementum magna. Cras quis eleifend urna.</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--/.widget-->
 	<div class="fx-stock">
 		<div class="section">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-5">
-						<h4 class="title">FX Rate</h4>
-						<table class="table">
+					<div class="col-md-6">
+						<h4 class="title">FX Rate <small>(as per 2015-09-06)</small></h4>
+						<table class="table table-striped">
 							<thead>
 								<th>Currency</th>
 								<th>Unit</th>
@@ -237,40 +314,27 @@
 								</tr>
 							</tbody>
 						</table>
+						<p class="text-right"><a href="#" class="more text-danger">More Exchange Rates</a></p>
 					</div>
-					<div class="col-md-6 col-md-offset-1">
-						<h4 class="title">Stock Exchange</h4>
-						<table class="table table-hover">
+					<div class="col-md-5 col-md-offset-1">
+						<h4 class="title">Stock Exchange <small>(as per 2015-09-06)</small></h4>
+						<table class="table">
 							<thead>
 								<th>Index</th>
 								<th>Value</th>
-								<th>% Change</th>
 							</thead>
 							<tbody>
 								<tr>
-									<td><a href="#" class="stock-link">S&P BSE SENSEX</a></td>
-									<td>1</td>
-									<td><span class="text-danger">-2.18</span</td>
+									<td>Face Value</td>
+									<td><span class="text-success">NRs. 100</span</td>
 								</tr>
 								<tr>
-									<td><a href="#" class="stock-link">S&P BSE 100</a></td>
-									<td>1</td>
-									<td><span class="text-danger">-2.17</span></td>
+									<td>Closing Market Price</td>
+									<td><span class="text-success">NRs. 426</span></td>
 								</tr>
 								<tr>
-									<td><a href="#" class="stock-link">S&P BSE 200</a></td>
-									<td>1</td>
-									<td><span class="text-success">0.23</span></td>
-								</tr>
-								<tr>
-									<td><a href="#" class="stock-link">S&P BSE MidCap</a></td>
-									<td>1</td>
-									<td><span class="text-danger">-1.90</span></td>
-								</tr>
-								<tr>
-									<td><a href="#" class="stock-link">S&P BSE SmallCap</a></td>
-									<td>1</td>
-									<td><span class="text-success">1.39</span></td>
+									<td>Market Capitalization</td>
+									<td><span class="text-success">NRs. 13,669,850,100</span></td>
 								</tr>
 							</tbody>
 						</table>
@@ -282,7 +346,7 @@
 	<div class="toll-free">
 		<div class="container">
 			<div class="section text-center">
-				<h5 class="desc">Need more info? <b>Call us now</b> at our toll free no.</h5>
+				<p class="body-copy">Have a question? <b>Call us now</b> at our toll free no.</p>
 				<h1 class="number">1 660 010 7777</h1>
 			</div>
 		</div>
@@ -353,6 +417,7 @@
 	</script> 
 	<script src="js/jquery-easing.js"></script> 
 	<script src="assets/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+	<script src="js/jquery.matchHeight.js"></script>
 	<script src="js/custom.js"></script>
 </body>
 </html>

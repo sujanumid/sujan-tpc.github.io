@@ -72,6 +72,8 @@
 	line-height:15px !important;
 	font-size:11px;
 	color:#888;
+	font-weight: 300;
+	text-transform: uppercase;
 }
 
 .w3_megamenu .dropdown-menu ul li a:hover{
@@ -179,7 +181,7 @@
 }
 .w3_megamenu .title {
 	font-size:13px;
-	font-weight:bold;
+	font-weight:900;
 	margin-top:15px;
 	text-transform:uppercase;
 	color:#333;

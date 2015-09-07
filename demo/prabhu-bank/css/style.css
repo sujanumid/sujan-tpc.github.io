@@ -33,7 +33,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, .btn, 
 }
 
 .title {
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 	font-weight: 900;
 }
 
@@ -75,8 +75,8 @@ h1, h2, h3, h4, h5, h6 {
 
  @media (min-width: 1200px) {
 
-.container.inner {
-	width: 970px;
+.container {
+	width: 960px;
 }
 }
 
@@ -93,22 +93,51 @@ h1, h2, h3, h4, h5, h6 {
 	color: #27AC66;
 }
 
+.text-primary{
+	color: #0099d4 !important;
+}
+
+.body-copy{
+	text-align: center;
+    font-size: 15px;
+    line-height: 28px;
+    color: #888;
+    font-weight: 300;
+    max-width: 580px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
 /****************navbar******************/
 
 .navbar{
 	background-color:#fff;
 	border:none;
 	box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
-	transition:0.1s ease;
 	margin-bottom: 0px;
 }
 
 .navbar-brand,
-.navbar-nav > li > a {
+.navbar-nav > li{
     line-height: 70px;
     height: 70px;
-    padding-top: 0;
+    padding: 0px 15px;
     font-size: 11px;
+}
+
+.navbar-nav > li > a{
+	display: inline-block;
+	padding: 0px;
+}
+
+.navbar-nav .btn{
+	padding: 5px 15px;
+	color: #fff !important;
+	background: #CE181E;
+}
+
+.navbar-nav .btn:hover{
+	background: #af0f12 !important;
 }
 
 .navbar-brand img{
@@ -117,11 +146,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-right li:hover{
-	background: #fafafa;
+	color: #000;
 }
 
 .full-nav{
 	background: #CE181E;
+	position: fixed;
+	top: 70px;
+	width: 100%;
+	z-index: 999;
 }
 
 .nav-list{
@@ -140,7 +173,8 @@ h1, h2, h3, h4, h5, h6 {
 	color: #fff;
 	text-decoration: none;
 	font-weight: 900;
-	font-size: 13px;
+	text-transform: uppercase;
+	font-size: 10px;
 	line-height: 50px;
 	height: 50px;
 	display: block;
@@ -174,6 +208,7 @@ h1, h2, h3, h4, h5, h6 {
 /*******************jumbotron**********/
 
 .jumbotron{
+	margin-top: 120px;
 	margin-bottom: 0px;
 	padding-top:0px;
 	padding-bottom: 0px; 
@@ -199,7 +234,68 @@ h1, h2, h3, h4, h5, h6 {
 /**************************************/
 
 
+/*************widget********************/
+
+.widget{
+	background: #f5f5f5;
+}
+
+.widget-component{
+	margin-bottom: 30px;
+    padding: 25px 35px 35px 35px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition:0.3s ease;
+    -webkit-transition:0.3s ease;
+    -moz-transition:0.3s ease;
+    -o-transition:0.3s ease;
+    
+}
+
+.widget-title{
+	font-size: 20px;
+	color: #3a3a3a !important;
+	font-weight: 300;
+	line-height: 60px;
+}
+
+.widget-title:hover{
+	text-decoration: none;
+}
+
+.widget .fa{
+	font-size: 20px;
+	margin-right: 10px;
+	color: #e2e2e2;
+}
+
+.widget .desc{
+	font-size: 13px;
+	line-height: 25px;
+	color: #969696;
+}
+
+.service-link:hover,.service-link:focus{
+	text-decoration: none !important;
+}
+
+.service-link:hover .widget-component{
+	-webkit-box-shadow: 0px 0px 14px -1px rgba(206,24,30,0.21);
+	-moz-box-shadow: 0px 0px 14px -1px rgba(206,24,30,0.21);
+	box-shadow: 0px 0px 14px -1px rgba(206,24,30,0.21);
+}
+
+
+/***************************************/
+
+
 /**************fx-stock****************/
+
+.more{
+	font-size: 12px;
+	font-weight: 900;
+	text-decoration: underline;
+}
 
 .fx-stock{
 	background: #2a2c39;
@@ -213,6 +309,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .fx-stock .table{
 	font-size: 12px;
+	margin-bottom:0px; 
 }
 
 .fx-stock .table th{
@@ -232,13 +329,22 @@ h1, h2, h3, h4, h5, h6 {
 	margin-right: 10px;
 }
 
-.stock-link{
-	color: #0099d4 !important;
-	text-decoration: none !important;
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: transparent !important;
+}
+
+.table-striped>tbody>tr:nth-of-type(even) {
+    background-color: #313342;
 }
 
 .table-hover tr:hover td{
 	background: #313342;
+}
+
+.title small{
+	font-style: italic;
+	font-size: 10px;
+	margin-left: 5px;
 }
 
 /**************************************/
@@ -290,6 +396,10 @@ h1, h2, h3, h4, h5, h6 {
 	color:#CE181E;
 	margin-bottom:0px; 
 	font-size: 60px
+}
+
+.toll-free .body-copy{
+	margin-bottom: 20px;
 }
 
 /***************************************/
