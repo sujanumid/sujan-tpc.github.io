@@ -5,7 +5,7 @@ window.onload= startGame;//starts chooseCat function when browser window is full
 
 function startGame(isNextRound){
     wordCategory = ['countries','animals'];
-    countries = ['usa','engaland','nepal','india','china','russia'];
+    countries = ['usa','england','nepal','india','china','russia'];
     animals = ['cat','mouse','cow','racoon','wolf','tiger','bear'];
 
     randomWord; // this is the variable that will be used to store the selected word
@@ -13,6 +13,7 @@ function startGame(isNextRound){
     result = ""; // this is the variable we want to use to store blanks and progress
 
     lives = ""; //variable to set remaining lives
+    
     if(isNextRound != true || isNextRound == "undefined"){
         score = 0; 
     }
