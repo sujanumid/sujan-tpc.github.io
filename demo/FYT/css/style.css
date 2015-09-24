@@ -1,0 +1,324 @@
+/* CSS Document */
+
+@import url(normalize.css);
+@import url(animate.css);
+@import url(http://fonts.googleapis.com/css?family=Fredoka+One);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,900);
+
+body {
+	position: relative;
+	overflow-x: hidden;
+	font-family: 'Ubuntu',sans-serif;
+}
+
+.row {
+	position: relative;
+}
+
+.margin-reset {
+	margin: 0px !important;
+}
+
+.padding-reset {
+	padding: 0px !important;
+}
+
+.btn, a {
+	outline: 0 !important;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .title, .subtitle {
+	font-family: 'Fredoka One',sans-serif;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+p{
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+.title {
+	margin-bottom: 20px;
+}
+
+.alert {
+	font-style: italic;
+}
+
+.alert-danger {
+	background: #f25648;
+	border: 0;
+	color: #fff;
+	padding: 25px;
+}
+
+.alert-dismissable .close, .alert-dismissible .close {
+	position: static;
+}
+
+.alert.no-js {
+	z-index: 9999;
+	position: fixed;
+	width: 100%;
+	left: 0;
+	right: 0;
+	text-align: center;
+	border-radius: 0px;
+	background: #f25648;
+	border: 0;
+	color: #fff;
+}
+
+.section {
+	padding: 80px 0px;
+}
+
+
+ @media (min-width: 1200px) {
+
+.container {
+	width: 1024px;
+}
+}
+
+.btn-cta{
+	border:0px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+	padding: 0px 50px;
+	font-family: 'Ubuntu',sans-serif;
+	font-weight: 900;
+}
+
+.text-danger{
+	color: #DA563E;
+}
+
+.text-success{
+	color: #27AC66;
+}
+
+.text-primary{
+	color: #0099d4 !important;
+}
+
+.body-copy{
+	text-align: center;
+    font-size: 15px;
+    line-height: 28px;
+    color: #888;
+    font-weight: 300;
+    max-width: 580px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+/****************navbar******************/
+
+.navbar{
+	background-color:#fff;
+	border:none;
+	margin-bottom: 0px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-brand,
+.navbar-nav > li{
+    line-height: 80px;
+    height: 80px;
+    padding: 0px 20px;
+    font-size: 13px;
+}
+
+.navbar-default .navbar-nav>li>a{
+	display: inline-block;
+	padding: 0px;
+	color:#aaa;
+}
+
+.navbar-brand img{
+	height: 50px;
+	margin-top: 15px;
+}
+
+.navbar-right li:hover{
+	color: #000;
+}
+
+
+
+/****************************************/
+
+
+/*************jumbotron******************/
+
+.jumbotron{
+	background: #2a96c8;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2a96c8+0,9249bb+100 */
+background: rgb(42,150,200); /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMmE5NmM4IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzkyNDliYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+background: -moz-linear-gradient(-45deg,  rgba(42,150,200,1) 0%, rgba(146,73,187,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(42,150,200,1)), color-stop(100%,rgba(146,73,187,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg,  rgba(42,150,200,1) 0%,rgba(146,73,187,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg,  rgba(42,150,200,1) 0%,rgba(146,73,187,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg,  rgba(42,150,200,1) 0%,rgba(146,73,187,1) 100%); /* IE10+ */
+background: linear-gradient(135deg,  rgba(42,150,200,1) 0%,rgba(146,73,187,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a96c8', endColorstr='#9249bb',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+
+	padding: 100px 0px;
+	margin-top:80px; 
+	margin-bottom: 0px;
+}
+
+.jumbo-text{
+	color: #fff;
+	margin-bottom:30px; 
+}
+
+.followup{
+	font-size: 15px;
+	line-height: 28px;
+}
+
+.jumbotron .followup{
+	font-size: 15px;
+	color: #fff;
+}
+
+.jumbo-link{
+	font-size: 16px;
+	color: #fff;
+	margin-left: 25px;
+	text-decoration: underline;
+}
+
+.jumbo-link:hover{
+	color:#ddd;
+}
+
+
+.phone{
+	max-width: 80%
+}
+
+.middle{
+	position: absolute;
+    height: 250px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.img{
+	background: url(../img/phone.png) no-repeat right center;
+	height: 400px;
+	background-size: contain;
+}
+
+/***************************************/
+
+
+/******************how it works***********/
+
+
+.how-it-works .followup,.mobile .followup{
+	max-width: 767px;
+	text-align: center;
+	margin: 0 auto;
+	color: #777
+}
+
+.how-to{
+	margin-top: 75px;
+	text-align: center;
+}
+
+
+.how-to .followup{
+	font-size: 13px;
+	line-height: 20px;
+}
+
+.how-title{
+	margin: 30px 0px 10px 0px;
+}
+
+.how-to-icon{
+	font-size: 40px;
+}
+
+.how-to-icon span{
+	border: 3px solid #2a96c8;
+	padding: 25px;
+	border-radius: 50%;
+	color: #2a96c8;
+}
+
+/*****************************************/
+
+
+/**************mobile*************/
+
+.mobile{
+	background: #eaf1f4;
+}
+
+.app-store-link {
+    display: inline-block;
+    margin: .4em 1em 0 0;
+    padding: 0;
+    vertical-align: top;
+}
+
+.app-store-link img {
+    height: 54px;
+    margin: 0;
+}
+
+/********************************/
+
+
+/***********footer************/
+
+.footer.section{
+	padding: 35px 0px;
+}
+
+.social-link{
+	font-size: 15px;
+	width: 50px;
+	height: 50px;
+	border: 2px solid #000;
+	color: #000 !important;
+	display: inline-block;
+	text-align: center;
+	line-height: 48px;
+	border-radius: 25px;
+	opacity: 0.2
+}
+
+.social-link:hover{
+	opacity: 0.4;
+}
+
+.social-link:not(:first-child){
+	margin-left: 10px;
+}
+
+.stripe{
+	height: 50px;
+	line-height: 50px;
+}
+
+.stripe:hover img{
+	opacity: 0.4;
+}
+
+.stripe img{
+	max-height: 30px;
+	opacity: 0.2;
+}
+/****************************/
