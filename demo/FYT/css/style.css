@@ -93,6 +93,17 @@ p{
 	font-weight: 900;
 }
 
+.btn-nav{
+	padding: 5px 25px !important;
+	background: #fdb513;
+	color: #fff !important;
+	border: none;
+}
+
+.btn-nav:hover{
+	background: #e8a109 !important;
+}
+
 .text-danger{
 	color: #DA563E;
 }
@@ -114,6 +125,26 @@ p{
     max-width: 580px;
     margin: auto;
     margin-bottom: 40px;
+}
+
+.arrow{
+	width: 200px;
+	height: 50px;
+	background-size: contain !important;
+	display: block;
+	position: absolute;
+    opacity: 0.1;
+    top: 40px;
+}
+
+.arrow.one{
+	background: url(../img/arrow-1.png) no-repeat;
+	left: 240px;
+    
+}
+.arrow.two{
+	background: url(../img/arrow-2.png) no-repeat;
+	right: 240px;
 }
 
 /****************navbar******************/
@@ -169,9 +200,9 @@ background: -ms-linear-gradient(-45deg,  rgba(42,150,200,1) 0%,rgba(146,73,187,1
 background: linear-gradient(135deg,  rgba(42,150,200,1) 0%,rgba(146,73,187,1) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a96c8', endColorstr='#9249bb',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
 
-	padding: 100px 0px;
+	padding: 120px 0;
 	margin-top:80px; 
-	margin-bottom: 0px;
+	margin-bottom: 0;
 }
 
 .jumbo-text{
@@ -192,7 +223,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a96c8', end
 .jumbo-link{
 	font-size: 16px;
 	color: #fff;
-	margin-left: 25px;
 	text-decoration: underline;
 }
 
@@ -217,6 +247,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a96c8', end
 	background: url(../img/phone.png) no-repeat right center;
 	height: 400px;
 	background-size: contain;
+	margin-bottom: -170px;
+}
+
+.or{
+	font-size: 16px;
+    color: #fff;
+    padding: 0px 15px;
 }
 
 /***************************************/
@@ -257,6 +294,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a96c8', end
 	padding: 25px;
 	border-radius: 50%;
 	color: #2a96c8;
+	display: inline-block;
 }
 
 /*****************************************/
