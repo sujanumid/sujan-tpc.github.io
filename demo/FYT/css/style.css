@@ -248,6 +248,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a96c8', end
 	height: 400px;
 	background-size: contain;
 	margin-bottom: -170px;
+	position: relative;
+}
+
+.slider img{
+    width: 172px !important;
+    z-index: 1;
+}
+
+.slick-slider {
+    width: 172px;
+    top: 47px;
+    right: 11px;
+    position: absolute;
 }
 
 .or{
