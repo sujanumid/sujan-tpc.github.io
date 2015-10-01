@@ -179,7 +179,11 @@ p{
 	color: #000;
 }
 
-
+.navbar-toggle{
+	margin-top: 24px;
+	border: 0px;
+	background: none !important;
+}
 
 /****************************************/
 
@@ -408,10 +412,76 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 /********************************/
 
 
+/***************signup*************/
+
+.signup{
+	background: #fff;
+}
+
+.signup.section{
+	padding: 35px 0px;
+}
+
+.signup .followup{
+	font-size: 20px;
+    float: left;
+    display: block;
+    margin: 15px 0;
+    line-height: 50px;
+}
+
+.signup .signup-cta{
+	float: right;
+}
+
+@media(max-width: 991px){
+	.signup .followup{
+		font-size: 15px;
+	}
+
+	.how-to .followup{
+		margin-bottom: 50px;
+	}
+	.how-to .col-md-4:last-child .followup{
+		margin-bottom: 0pc;
+	}
+	.section{
+		padding: 35px 0px;
+	}
+
+	.middle{
+		position: static;
+		height: auto;
+	}
+	.jumbotron{
+		padding: 80px 0px;
+	}
+}
+
+@media(max-width: 767px){
+	.signup .followup{
+		line-height: 25px;
+	}
+	.signup .followup,.signup .signup-cta{
+		float: none;
+		text-align: center;
+	}
+	.grid-item{
+		width: 100%;
+	}
+	.jumbotron{
+		padding: 60px 0px;
+	}
+}
+
+/**********************************/
+
+
 /***********footer************/
 
 .footer.section{
 	padding: 35px 0px;
+	background: #fafafa;
 }
 
 .social-link{

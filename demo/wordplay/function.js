@@ -55,10 +55,17 @@ function chooseWord (category) {
 }
 
 
+// var radio = document.querySelectorAll('input[type=radio]'); //gets all the button elements on the HTML
+// for(i=0;i<button.length;i++){ //loops through all the existing buttons
+//     radio[i].addEventListener('click',function(e){ //adds event for each button
+//         //do something here
+//     });
+// }
+
 // this function will generate blanks based on the length of the chosen word
 function blanksFromAnswer ( answerWord ) {
     for(i=0;i<answerWord.length;i++){
-        result =result+"_"  
+        result =result+"_"
     }
     document.getElementById("blanks").innerHTML= result; 
 }
