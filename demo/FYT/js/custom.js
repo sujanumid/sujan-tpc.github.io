@@ -12,3 +12,8 @@ $(document).ready(function() {
 		arrows:false
 	});
 });
+
+$(document).on('click','.question-group a',function(e){
+	e.preventDefault();
+	$(this).siblings('.answer').slideToggle();
+});

@@ -6,6 +6,8 @@ var primary = "X",
     noOfx = noOfo = 0;
 var ctx = 9;
 
+winningPatterns = [[0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7], [2,5,8], [0,4,8], [6,4,2]];
+
 for(i=0;i<cellLength;i++){
     cell[i].addEventListener('click',function() {
         setVal = swapxo();
@@ -24,7 +26,7 @@ for(i=0;i<cellLength;i++){
             evaluate();
         }
         ctx--;
-        console.log(ctx)
+        console.log(document.querySelectorAll('type').value);
     });
     cell[i].setAttribute("id",i+1);
 }
