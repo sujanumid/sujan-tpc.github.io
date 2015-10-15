@@ -617,6 +617,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	background-color: #78B336;
 }
 
+.ico{
+	background-size: 60px;
+	display: block;
+	height: 60px;
+	width: 60px;
+	background-repeat: no-repeat;
+	margin: auto;
+}
+
+.ico-buddy{
+	background-image: url(../img/buddy-white.png);
+}
+
+.ico-trainer{
+	background-image: url(../img/trainer-white.png);
+}
+
 .wrap{
 	padding: 35px 15px;
 	text-align: center;
