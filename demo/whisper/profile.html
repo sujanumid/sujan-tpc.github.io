@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Whisper allows you to post your thoughts anonymously on the internet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Sujan Khadgi">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.2.3/css/simple-line-icons.css">
+	<link rel="stylesheet" type="text/css" href="GOT/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Whisper</title>
+</head>
+<body>
+	<nav>
+		<div class="container">
+			<div class="brand"><a href="home.html">Post Ninja</a></div>
+			<a href="profile.html" class="profile"><i class="icon-bubbles"></i> &nbsp; My Posts</a>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="post-new">
+			<form>
+				<div class="input-group">
+					
+					<textarea class="form-control" placeholder="Post a confession..."></textarea>
+					<span class="input-group-btn">
+						<button class="btn btn-default" type="button">POST</button>
+					</span>
+				</div><!-- /input-group -->
+			</form>
+		</div>
+		<div class="feed">
+			<div class="feed-type">
+				<a href="#hot" class="active">My Posts</a>
+			</div>
+			<hr>
+			<div class="feed-group">
+				<div class="feed-item">
+					<h3 class="feed-meta">I was maybe 30 minutes late to my unpaid internship this morning and my boss threatened to dock my pay....ok you do that buddy</h3>
+					<span class="timestamp"><i class="fa fa-clock-o"></i> 5 minutes ago</span>
+					<span class="vote"><a href="#voteup" class="voted"><i class="icon-arrow-up"></i></a><span class="vote-data">19</span><a href="#votedown"><i class="icon-arrow-down"></i></a></span>
+				</div>
+				<div class="feed-item">
+					<h3 class="feed-meta">Yoga pants are like a push up bra for butts.</h3>
+					<span class="timestamp"><i class="fa fa-clock-o"></i> 2 hours ago</span>
+					<span class="vote"><a href="#voteup" class="voted"><i class="icon-arrow-up"></i></a><span class="vote-data">0</span><a href="#votedown"><i class="icon-arrow-down"></i></a></span>
+				</div>
+				<!--/.feed-item-->
+				<div class="feed-item">
+					<h3 class="feed-meta">Everytime I get a salad I get mad because I start eating it and remember that I don't like salad.</h3>
+					<span class="timestamp"><i class="fa fa-clock-o"></i> 15 mins ago</span>
+					<span class="vote"><a href="#voteup"><i class="icon-arrow-up"></i></a><span class="vote-data">5</span><a href="#votedown"><i class="icon-arrow-down"></i></a></span>
+				</div>
+				<!--/.feed-item-->
+			</div>
+		</div>
+		<!--/.feed-->
+	</div>
+	<script src="function.js"></script>
+</body>
+</html>

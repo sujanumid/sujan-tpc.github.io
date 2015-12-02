@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Whisper allows you to post your thoughts anonymously on the internet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Sujan Khadgi">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.2.3/css/simple-line-icons.css">
+	<link rel="stylesheet" type="text/css" href="GOT/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Whisper</title>
+</head>
+<body>
+	<div class="banner">
+		<span class="ninja"></span>
+		<h1>Post Ninja</h1>
+		<div class="copy">Post Ninja allows you to anonymously share your thoughts and experiences to the masses.</div>
+		<div class="cta">
+			<a href="#signup" class="btn btn-signup">SIGN UP</a>
+			<a href="#login" class="login">or login to your account</a>
+		</div>
+	</div>
+	<!--/.banner-->
+	<div class="overlay" style="opacity: 0; z-index: -1;">
+		<div class="modal" id="signup">
+			<h4 class="title">Sign Up</h4>
+			<form class="signup">
+				<div class="form-group"><input class="form-control" type="email" placeholder="Email" required></div>
+				<div class="form-group"><input class="form-control" type="password" placeholder="Password" required></div>
+				<div class="form-group"><input class="form-control" type="password" placeholder="Confirm Password" required></div>
+				<div class="form-group"><button type="submit" class="btn">SIGN UP</button></div>
+			</form>
+		</div>
+		<!--/.modal-->
+		<div class="modal" id="login">
+			<h4 class="title">Log In</h4>
+			<form class="signup">
+				<div class="form-group"><input class="form-control" type="email" placeholder="Email" required></div>
+				<div class="form-group"><input class="form-control" type="password" placeholder="Password" required></div>
+				<div class="form-group"><button type="submit" class="btn">LOGIN</button></div>
+			</form>
+		</div>
+		<!--/.modal-->
+	</div>
+	<!--/.overlay-->
+	<script src="function.js"></script>
+</body>
+</html>
