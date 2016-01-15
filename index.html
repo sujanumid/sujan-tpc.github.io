@@ -82,13 +82,13 @@
 			{{#each projects}}
 				<div class="item col-md-3 col-sm-4 col-xs-6">
 					<a href="#" class="project-thumb" data-project-id="{{this.id}}">
-						{{#if this.covers.[404]}}
-						<img src="{{this.covers.[404]}}" alt="">
+						{{#if this.covers.[original]}}
+						<img src="{{this.covers.[original]}}" alt="">
 						{{else}}
-							{{#if this.covers.[230]}}
-							<img src="{{this.covers.[230]}}" alt="">
+							{{#if this.covers.[404]}}
+							<img src="{{this.covers.[404]}}" alt="">
 							{{else}}
-							<img src="{{this.covers.[202]}}" alt="">
+							<img src="{{this.covers.[230]}}" alt="">
 							{{/if}}
 						{{/if}}
 					<div class="details">
