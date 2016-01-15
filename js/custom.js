@@ -164,7 +164,7 @@ $(document).on('click','.project-thumb',function(e){
 			$('#project-modal .project-desc .creative-fields').html('');
 			$('#project-modal .modal-title').html(projectName);
 			for(i=0;i<dataSource.length;i++){
-				$('#project-modal .project-images').append('<img src="'+dataSource[i].src+'" alt="project">')
+				$('#project-modal .project-images').append(dataSource[i].caption).append('<img src="'+dataSource[i].src+'" alt="project">')
 			}
 			//assign project desc
 			$('#project-modal .project-desc .desc').html("<p>"+projectDesc+"</p>");
@@ -185,11 +185,8 @@ $(document).on('click','.project-thumb',function(e){
 		$.getJSON(beProjectContentAPI, function(projectContent) {
 			var src = [];
 			$.each(projectContent.project.modules, function(index, mod) {
-				/*if(mod.src != undefined) {
-					src.push({ src: mod.src });
-				}*/
 				if(mod.sizes.original != undefined){
-					src.push({src: mod.sizes.original})
+					src.push({src: mod.sizes.original,caption : mod.caption})
 				}
 			});
 			showProject(src);

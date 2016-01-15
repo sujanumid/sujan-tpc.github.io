@@ -510,6 +510,11 @@ hr.styled.white{
 	min-height:500px;
 }
 
+.project-images div{
+	font-size: 11px;
+	margin: 15px auto;
+}
+
 .project-images{
 	padding:0px;
 }
