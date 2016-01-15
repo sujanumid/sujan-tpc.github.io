@@ -7,43 +7,39 @@
 	<meta name="author" content="Sujan Khadgi">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.2.3/css/simple-line-icons.css">
-	<link rel="stylesheet" type="text/css" href="GOT/stylesheet.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Whisper</title>
+	<title>Post confessions anonymously!</title>
 </head>
 <body>
-	<div class="banner">
-		<span class="ninja"></span>
-		<h1>Post Ninja</h1>
-		<div class="copy">Post Ninja allows you to anonymously share your thoughts and experiences to the masses.</div>
-		<div class="cta">
-			<a href="#signup" class="btn btn-signup">SIGN UP</a>
-			<a href="#login" class="login">or login to your account</a>
+	<nav>
+		<div class="container">
+			<div class="brand"><a href="index.html">Whisper</a></div>
 		</div>
-	</div>
-	<!--/.banner-->
-	<div class="overlay" style="opacity: 0; z-index: -1;">
-		<div class="modal" id="signup">
-			<h4 class="title">Sign Up</h4>
-			<form class="signup">
-				<div class="form-group"><input class="form-control" type="email" placeholder="Email" required></div>
-				<div class="form-group"><input class="form-control" type="password" placeholder="Password" required></div>
-				<div class="form-group"><input class="form-control" type="password" placeholder="Confirm Password" required></div>
-				<div class="form-group"><button type="submit" class="btn">SIGN UP</button></div>
+	</nav>
+	<div class="container">
+		<div class="post-new">
+			<form>
+				<div class="input-group">
+					
+					<textarea id="post-field" class="form-control" placeholder="Post a confession..." required></textarea>
+					<span class="input-group-btn">
+						<button class="btn btn-default" type="button" id="newPost" onClick="createPost()">POST</button>
+					</span>
+				</div><!-- /input-group -->
 			</form>
 		</div>
-		<!--/.modal-->
-		<div class="modal" id="login">
-			<h4 class="title">Log In</h4>
-			<form class="signup">
-				<div class="form-group"><input class="form-control" type="email" placeholder="Email" required></div>
-				<div class="form-group"><input class="form-control" type="password" placeholder="Password" required></div>
-				<div class="form-group"><button type="submit" class="btn">LOGIN</button></div>
-			</form>
+		<div class="feed">
+			<!-- <div class="feed-type">
+				<a href="#hot" class="active">All</a> <a href="#latest">New</a>
+			</div> -->
+			<h3 class="title">Confessions</h3>
+			<hr>
+			<div class="feed-group" id="out">
+				<!--this is where the content goes-->
+			</div>
 		</div>
-		<!--/.modal-->
+		<!--/.feed-->
 	</div>
-	<!--/.overlay-->
 	<script src="function.js"></script>
 </body>
 </html>

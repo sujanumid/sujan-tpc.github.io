@@ -185,8 +185,11 @@ $(document).on('click','.project-thumb',function(e){
 		$.getJSON(beProjectContentAPI, function(projectContent) {
 			var src = [];
 			$.each(projectContent.project.modules, function(index, mod) {
-				if(mod.src != undefined) {
+				/*if(mod.src != undefined) {
 					src.push({ src: mod.src });
+				}*/
+				if(mod.sizes.original != undefined){
+					src.push({src: mod.sizes.original})
 				}
 			});
 			showProject(src);

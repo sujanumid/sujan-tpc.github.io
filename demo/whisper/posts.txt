@@ -1,0 +1,35 @@
+{"posts": [
+	{
+    	"id":6,
+	    "post":"Try creating a new post and refresh the page. It won't disappear cause it's being stored in the browser",
+	    "votes":"10",
+	    "timestamp":"2015-12-08 12:50:44"
+    },
+    {
+    	"id":5,
+	    "post":"Everytime I get a salad I get mad because I start eating it and remember that I don't like salad.",
+	    "votes":"20",
+	    "timestamp":"2015-12-07 12:50:44"
+    },{
+    	"id":4,
+	    "post":"Yoga pants are like a push up bra for butts.",
+	    "votes":"3",
+	    "timestamp":"2015-12-07 12:40:44"
+    },{
+    	"id":3,
+	    "post":"Spilled hot tea on my leg, call that T-Pain.",
+	    "votes":"-2",
+	    "timestamp":"2015-12-07 12:13:44"
+    },{
+    	"id":2,
+	    "post":"I show affection for my pets by holding them against me and whispering I love you repeatedly as they struggle to escape from my arm.",
+	    "votes":"10",
+	    "timestamp":"2015-12-07 11:13:14"
+    },
+    {
+    	"id":1,
+	    "post":"I was maybe 30 minutes late to my unpaid internship this morning and my boss threatened to dock my pay....ok you do that buddy",
+	    "votes":"5",
+	    "timestamp":"2014-12-06 10:23:44"
+    }
+]}
