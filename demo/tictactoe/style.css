@@ -22,19 +22,6 @@ body{
 	font-size: 45px;
 }
 
-.cell{
-	border: 1px dotted #ddd;
-	width: 100px;
-	height: 100px;
-	text-align: center;
-	font-size: 35px;
-	display: inline-block;
-	float: left;
-	line-height: 100px;
-}
-.cell:nth-child(3n+4){
-	clear: both;
-}
 
 .container{
 	text-align: center;
@@ -46,17 +33,14 @@ body{
 	font-family: 'Permanent Marker', cursive;
 	display: inline-block;
 	margin: 25px 0;
+	border-collapse: collapse;
+}
+
+.board td{
+	height: 100px;
+	width: 100px;
 	border: 1px dotted #ddd;
-}
-
-.board:before,.board:after{
-	line-height: 0;
-	display: table;
-	content: ""
-}
-
-.board:after{
-	clear: both;
+	border-collapse: collapse;
 }
 
 .btn{
