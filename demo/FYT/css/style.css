@@ -685,3 +685,140 @@ small{
 }
 
 /************************/
+
+
+
+
+
+/**********NEW CSS FOR BLOG************/
+/*************BLOG STYLING************/
+
+.post{
+	background: #f9f9f9;
+}
+
+.latest-blog{
+	height: 350px;
+	background-color: #ddd;
+	background-position: center center !important;
+	background-size: cover !important;
+	position: relative;
+	margin-bottom: 80px;
+}
+
+.small-blog{
+	height: 250px;
+	background-color: #ddd;
+	background-position: center center !important;
+	background-size: cover !important;
+	position: relative;
+	margin-bottom: 25px;
+}
+
+.blog-overlay{
+	padding:25px;
+	background: rgba(0,0,0,0.6);
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.post-title{
+	font-size: 32px;
+	color: #fff;
+}
+
+.post-title:hover{
+	color: #fff;
+}
+
+.blog-meta{
+	font-size: 14px;
+	font-style: italic;
+	margin-bottom: 15px;
+	color: #ddd;
+}
+
+.blog-meta a {
+	color: #fff;
+	border-bottom: 1px dotted #fff;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: 300;
+}
+
+.blog-meta a:hover{
+	color: #ddd;
+}
+
+.blog-meta.date{
+	color: #333;
+	font-weight: 300;
+}
+
+.sample-text{
+	line-height: 26px;
+	margin-bottom: 25px;
+	color: #fff;
+	font-weight: lighter;
+}
+
+.post-sample .btn{
+	border: none;
+	height: 50px;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 38px;
+}
+
+.blog-thumb:hover .post-title{
+	text-decoration: underline;
+}
+
+
+.blog-thumb .blog-meta{
+	position: absolute;
+	bottom: 10px;
+}
+
+
+.post-content{
+	font-size: 15px;
+	line-height: 30px;
+	font-weight: 300;
+	color: #777;
+}
+
+.post-content img{
+	max-width: 100%;
+}
+
+
+.share-post{
+	text-align: center;
+	margin-top: 50px;
+}
+
+.share-post p{
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.share-post a{
+	font-size: 15px;
+	line-height: 40px;
+	background: #555;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	color: #fff;
+}
+
+.share-post a:hover{
+	background: #111;
+}
+
