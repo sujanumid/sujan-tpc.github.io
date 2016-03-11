@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="../styles.css">
+  <script type="text/javascript" src="../tester/tester.js"></script>
+  <title>Arrays</title>
+</head>
+<body>
+<h1>Arrays:</h1>
+<ul id="tests">
+</ul>
+<script type="text/javascript">
+/*
+ * INSTRUCTIONS:
+ *   Edit each one of the tests' code to make it pass. Each one has been
+ *   set up for you, all you need to do is either *fix* the code or *write
+ *   new code* to make it work.
+ *
+ *   Please don't edit the returns, that is how the tests run (where it says
+ *   do not edit this line, I mean it). Those are the expected results though,
+ *   which should give you some clue on how to write the code to make the test
+ *   pass.
+ *
+ * Any questions, hit me up on my email.
+ *
+ */
+var tests =
+[
+  // You should be able to ADD items to an array
+  function AddingItems() {
+    var people = ['ben', 'alex', 'steve', 'alice'];
+    people.push("Jim");
+
+    // Do not edit this line.
+    return Tester.expected(people[4] === 'Jim', 'The 5th person in "people" should be Jim');
+  },
+
+  // You should be able to determine length of an array
+  function LengthOfItems () {
+    var people = ['ben', 'alex', 'steve', 'alice'];
+    people.push("Jim");
+
+    // Do not edit this line.
+    return Tester.expected(people.length == 5, 'The length of the array "people" should be 5');
+  },
+
+  // You should be able to determine an index of an array
+  function DetermineIndex () {
+    var people = ['ben', 'alex', 'steve', 'alice'];
+    var steve = people[2];
+
+    // Do not edit this line.
+    return Tester.expected(steve === 'steve', 'The var "steve" should be \'steve\'');
+  }
+]
+
+// Do not edit this line.
+Tester.run(document.getElementById('tests'), tests);
+
+</script>
+</body>
+</html>

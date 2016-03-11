@@ -1,0 +1,25 @@
+* {
+    font-size: 14pt;
+    font-family: 'Helvetica'
+}
+ul {
+    list-style: none;
+}
+.test-name {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.test-message {
+    margin-left: 20px;
+}
+.test-result {
+    margin-left: 20px;
+}
+.FAILED {
+    color:red;
+    margin-bottom: 30px;
+}
+.PASSED {
+    color: green;
+    margin-bottom: 30px;
+}
