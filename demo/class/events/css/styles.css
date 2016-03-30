@@ -32,7 +32,7 @@
     height: 50px;
     font-size: 12px;
     width: 160px;
-    margin: 50px auto;
+    margin: 50px auto 25px auto;
     display: block;
     outline:none;
 }
@@ -68,4 +68,31 @@ span.project-title {
     text-align: center;
     margin: auto;
     font-weight: bold;
+}
+
+#search{
+    max-width: 767px;
+    margin: auto;
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    font-weight: 100;
+    outline: none;
+}
+
+#search:focus{
+    border-color: #777;
+}
+
+.toggle{
+    text-align: center;
+    margin-bottom: 25px;
+    display: none;
+}
+
+.toggle .btn{
+    font-size: 12px;
+    font-weight: 100;
 }

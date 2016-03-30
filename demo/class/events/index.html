@@ -11,8 +11,20 @@
     <p class="bio">Hi! I'm Sujan Khadgi from Kathmandu, Nepal.<br>
       My skills include graphic design, UI/UX design and front end development.<br>
       I also have passion for traditional/digital art and illustrations.</p>
-      <button id="get-projects">View Projects</button>
-      <div class="projects"></div>
+      <button id="get-projects" class="btn btn-default">View Projects</button>
+      <div class="projects">
+        <div class="toggle">
+        <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-default active">
+            <input type="radio" name="show" id="showall" checked> Show All
+          </label>
+          <label class="btn btn-default">
+            <input type="radio" name="show" id="show3"> Show only 3
+          </label>
+        </div>
+      </div>
+      <!--toggle-->
+      </div>
     </div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.2/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
