@@ -1,0 +1,120 @@
+@import url(http://fonts.googleapis.com/css?family=Exo+2:100,300,500,700);
+
+* {
+    font-size: 14pt;
+    font-family: 'Exo 2', sans-serif;
+}
+
+body{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ece9e6+100 */
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(236,233,230,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(236,233,230,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(236,233,230,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ece9e6',GradientType=0 ); /* IE6-9 */
+
+}
+
+.logo{
+	text-align: center;
+	padding: 50px 0 100px 0;
+}
+
+.logo img{
+	max-width: 200px;
+}
+
+.soda-display{
+	padding-bottom: 50px;
+}
+
+.value{
+	background: #fff;
+	min-height: 100px;
+	padding: 15px;
+	border-radius: 5px;
+    box-shadow: 0px 6px 10px rgba(0,0,0,0.04);
+}
+
+.value .info{
+	font-weight: 100;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.balance,.pop-balance{
+	text-align: center;
+	font-weight: 100;
+	font-size: 70px;
+	margin: 50px auto;
+}
+
+.balance:before,.pop-balance:before{
+	content: "$"
+}
+
+.soda{
+	height: 400px;
+	width: auto !important;
+	margin: auto;
+}
+
+.popover{
+	border: none;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	top: 0 !important;
+	bottom: 0 !important;
+	margin: auto !important;
+}
+
+.popover-content{
+	top: 0;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 110px;
+}
+
+.popover-content .pop-balance{
+	font-size: 30px;
+	margin: 10px 0;
+}
+
+.popover-content button{
+	display: block;
+	margin: auto;
+}
+.popover .arrow{
+	display: none;
+}
+
+.owl-prev,.owl-next{
+	top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 60px;
+	position: absolute;
+    line-height: 30px;
+    color: #F40009;
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0px 6px 10px rgba(0,0,0,0.04);
+}
+
+.owl-nav .glyphicon{
+	font-size: 30px;
+	line-height: 30px;
+}
+
+.owl-prev{
+	left: 0;
+}
+
+.owl-next{
+	right: 0;
+}
