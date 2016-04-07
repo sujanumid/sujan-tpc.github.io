@@ -48,7 +48,6 @@ function buy(e){
     elem = e;
     price = parseFloat($(elem).attr('price'));
     getBalance = parseFloat($('.balance').text());
-    console.log(getBalance);
     if(getBalance >= price){
         new_balance = getBalance - price;
         $('.balance').text(parseFloat(new_balance).toFixed(2));
@@ -57,4 +56,13 @@ function buy(e){
         alert("Please add balance!")
     }
 }
+
+$('#change').on('click',function(e){
+    if($('.balance').text() > 0){
+        alert("Please collect your change!");
+        $('.balance').text('0.00');
+    }else{
+        alert("No balance remaining!")
+    }
+});
 
