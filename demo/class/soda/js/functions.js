@@ -17,7 +17,7 @@ $('.owl-carousel').owlCarousel({
 })
 
 var elem ='<h1 class="pop-balance">1.99</h1>'+
-    '<button id="close-popover" data-toggle="clickover" class="btn btn-small btn-danger" onclick="buy(this)" price="1.99">Buy!</button>';
+    '<button id="close-popover" data-toggle="clickover" class="btn btn-small btn-danger" onclick="buy(this)" data-price="1.99">Buy!</button>';
 
 
 
@@ -46,7 +46,7 @@ $('#add-value').on('click',function(e){
 
 function buy(e){
     elem = e;
-    price = parseFloat($(elem).attr('price'));
+    price = parseFloat($(elem).data('price'));
     getBalance = parseFloat($('.balance').text());
     if(getBalance >= price){
         new_balance = getBalance - price;
