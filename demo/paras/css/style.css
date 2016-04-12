@@ -432,8 +432,8 @@ p{
 
 /***********footer************/
 
-.footer{
-	margin-top: 25px;
+.home-footer{
+	margin-top: 80px;
 }
 
 .footer.section{
@@ -498,7 +498,7 @@ p{
 }
 
 @media(max-width: 767px){
-	.footer{
+	.footer{ 
 		text-align: center;
 	}
 
@@ -619,10 +619,11 @@ p{
 	}
 }
 
-@media(max-width: 580px){
+@media(max-width: 767px){
 	.bignav{
 		display: none;
 	}
+
 	.navbar-default{
 		margin-top: 0px !important;
 	}
@@ -727,7 +728,7 @@ p{
 /*******************************blog page******************************************/
 
 .blog-grid{
-	margin-bottom: -26px;
+	margin-bottom: -1px;
 }
 
 .blog-row{
@@ -942,17 +943,28 @@ p{
 
 /***************stat***************/
 
+.stat-bg{
+	background: url(../img/bg.jpg) no-repeat;
+	background-size: cover;
+}
+
+.stat-box{
+	background:rgba(0,0,0,0.6);
+	padding: 0 15px;
+}
+
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
 	border: none;
-	color: #00aeef;
+	color: #fff;
 	background: none;
 }
 
 .nav-tabs>li>a{
-	font-size: 20px;
+	font-size: 18px;
 	font-family: 'Kanit';
 	font-weight: 600;
 	color: #bbb;
+	text-transform: uppercase;
 }
 
 .nav-tabs>li>a:hover{
@@ -988,7 +1000,9 @@ p{
 }
 
 .stat-value{
-	color: #00aeef;
+	color: #fff;
+	margin-top: 0;
+	margin-bottom: 25px;
 }
 
 .bowler{

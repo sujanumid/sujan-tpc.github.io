@@ -93,7 +93,7 @@ $('.close').on('click',function(e){
 	$('body').removeClass('search-on');
 })
 
-$('.blog-wrapper').matchHeight();
+//$('.blog-wrapper').matchHeight();
 
 
 
