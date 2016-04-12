@@ -1,3 +1,4 @@
+statAnimate();
 $('#da-slider').cslider({
 	autoplay	: true,
 	bgincrement	: 1000
@@ -16,6 +17,7 @@ var waypoints = $('.menus').waypoint({
 })
 
 
+//about content change
 $('.about-link a').on('click', function(event) {
 	event.preventDefault();
 	linkText = $(this).text();
@@ -36,7 +38,36 @@ $('.about-link a').on('click', function(event) {
 });
 
 
+//stat content change
+$('.stat-link').on('click', function(event) {
+	event.preventDefault();
+	linkText = $(this).text();
+	console.log(linkText)
+	if(linkText == "As a batsman →"){
+		$(this).text('As a bowler →')
+	}else{
+		$(this).text('As a batsman →')
+	}
+	active = $('.stat-section.active');
+	notactive = $('.stat-section:not(.active)');
+		
+		active.fadeOut('slow', function() {
+			notactive.fadeIn('slow');
+			//stat animation when section change
+			statAnimate();
+			active.removeClass('active')
+			notactive.addClass('active')
+		});
+	
+});
+
+//stat animation when tab change
+$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+  statAnimate()
+})
+
 //number animation
+function statAnimate(){
 $('.stat-value').each(function () {
     $(this).prop('Counter',0).animate({
         Counter: $(this).text()
@@ -48,6 +79,8 @@ $('.stat-value').each(function () {
         }
     });
 });
+}
+
 
 $('.search').on('click',function(e){
 	e.preventDefault();

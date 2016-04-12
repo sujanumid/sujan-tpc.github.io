@@ -961,6 +961,24 @@ p{
 	border-color: transparent;
 }
 
+.stat-link{
+	background: #eee;
+	border-radius: 5px;
+	color: #999 !important;
+	padding: 15px;
+	font-weight: 700;
+	display: block;
+	margin-bottom: 50px;
+	max-width: 200px;
+	float: right;
+	text-decoration: none !important;
+}
+
+.stat-link:hover{
+	background: #ddd;
+	
+}
+
 .stat-img{
 	max-width: 100%;
 }
@@ -976,7 +994,9 @@ p{
 .bowler{
 	margin-bottom: 50px;
 }
-
+.stat-section:not(.active){
+	display: none;
+}
 
 
 /**********************************/
