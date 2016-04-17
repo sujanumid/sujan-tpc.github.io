@@ -1,0 +1,57 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/font-awesome-4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="js/jquery-1.10.2.js"></script>
+  <title>People</title>
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" src="logo.png">
+        </a>
+      </div>
+    </div>
+  </nav>
+  <div class="people-container">
+    <div class="container">
+      <div class="row people">
+      </div>
+    </div>
+  </div>
+  <!--people-container-->
+  <!-- Modal -->
+  <div class="modal fade" id="personModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-6 age"><strong>Age: </strong> <span></span></div>
+              <div class="col-sm-6 eye"><strong>Eye Color: </strong> <span></span></div>
+              <div class="col-sm-6 gender"><strong>Gender: </strong> <span></span></div>
+              <div class="col-sm-6 email"><strong>Email: </strong> <span></span></div>
+              <div class="col-sm-6 phone"><strong>Phone: </strong> <span></span></div>
+              <div class="col-sm-6 address"><strong>Address: </strong> <span></span></div>
+            </div>
+        </div>
+        <!--/.modal-body-->
+      </div>
+    </div>
+  </div>
+  <!--/.modal-->
+  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/jquery-easing.js"></script> 
+  <script src="assets/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+  <script src="js/jquery.matchHeight.js"></script>
+  <script src="js/functions.js"></script>
+</body>
+</html>
