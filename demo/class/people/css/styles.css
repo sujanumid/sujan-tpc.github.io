@@ -77,3 +77,11 @@ body{
 .modal-body{
 	line-height: 30px;
 }
+
+.friend-name{
+	font-size: 12px;
+	text-align: center;
+	border: 2px dashed #ddd;
+    padding: 15px 0;
+    border-radius: 5px;
+}
