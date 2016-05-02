@@ -1,0 +1,93 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/font-awesome-4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.steps.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="js/jquery-1.10.2.js"></script>
+  <title>Make your own superhero</title>
+</head>
+<body>
+  <div class="container-fluid">
+    <h1 class="title">All your heroes</h1>
+    <div class="row hero-grid">
+      <div class="col-xs-6"><a href="gender.html" class="create">Create</a></div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="heroModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Edit your hero</h4>
+      </div>
+      <div class="modal-body">
+        <div class="edit-hero form-horizontal">
+          <input type="hidden" id="heroID">
+          <div class="form-group">
+            <label for="alias" class="col-xs-2 control-label">Alias</label>
+            <div class="col-xs-10"><input type="text" class="form-control" id="alias" placeholder="Superhero Alias" value="Stretcho"></div>
+          </div>
+          <div class="form-group">
+            <label for="gender" class="col-xs-2 control-label">Status</label>
+            <div class="col-xs-10"><input type="text" class="form-control" disabled id="gender" placeholder="Status" value="Superhero"></div>
+          </div>
+          <div class="form-group">
+            <label for="ability" class="col-xs-2 control-label">Ability</label>
+            <div class="col-xs-10"><input type="text" class="form-control" disabled id="ability" placeholder="Ability" value="Elasticity"></div>
+          </div>
+          <div class="form-group">
+            <label for="bio" class="col-xs-2 control-label">Short Bio</label>
+            <div class="col-xs-10"><textarea class="form-control" id="bio" placeholder="Bio" rows="3">Born in a small family, Stretcho has always been flexible but it wasn't until a freak accident that turned him into the costumed superhero.</textarea></div>
+          </div>
+          <div class="form-group">
+            <label for="enemy" class="col-xs-2 control-label">Enemy</label>
+            <div class="col-xs-10"><input type="text" class="form-control" id="enemy" placeholder="enemy" value="Heatwave"></div>
+          </div>
+          <div class="form-group">
+            <label for="city" class="col-xs-2 control-label">Home City</label>
+            <div class="col-xs-10"><input type="text" class="form-control" id="city" placeholder="Home city" value="Metropolis"></div>
+          </div>
+          <p class="text-center"><a href="#" id="edit" class="btn btn-warning btn-custom">Save</a> <a href="#" id="delete" class="btn btn-danger btn-custom">Delete</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- successModal -->
+<div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h2 class="text-center libModal">Congratulations!!!<br>Your hero was updated successfully.</h2>
+        <p class="text-center"><a data-dismiss="modal" class="btn btn-warning btn-custom">Dismiss</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h2 class="text-center">Are you sure you want to delete?</h2>
+        <p class="text-center"><a data-dismiss="modal" class="btn btn-warning btn-custom btn-delete">Yes</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/jquery-1.10.2.js"></script>
+<script src="assets/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="js/jquery.steps.min.js"></script>
+<script src="js/functions.js"></script>
+</body>
+</html>

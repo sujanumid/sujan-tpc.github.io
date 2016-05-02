@@ -1,0 +1,257 @@
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+
+@media (min-width: 1200px) {
+	.container {
+		width: 1024px;
+	}
+}
+
+body{
+	font-family: 'Bangers', cursive;
+	background: url(../img/bg.png) repeat;
+}
+
+.logo{
+	text-align: center;
+}
+
+.logo img{
+	max-width: 100%;
+	margin-top: 100px;
+}
+
+.splash-text{
+	font-size: 20px;
+	text-align: center;
+	margin: 20px 0 50px 0;
+}
+
+.btn-custom{
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:10px;
+	border:2px solid #333;
+	border-bottom-width:4px; 
+	display:inline-block;
+	cursor:pointer;
+	color:#fff;
+	width: 200px;
+	font-size:32px;
+	text-decoration:none;
+	text-shadow:0px 2px 1px rgba(0,0,0,0.2);
+}
+
+.btn-custom.btn-warning {
+	-moz-box-shadow:3px 8px 0 rgba(0,0,0,0.1),inset 1px 2px 0px 0px #f9eca0;
+	-webkit-box-shadow:3px 8px 0 rgba(0,0,0,0.1),inset 1px 2px 0px 0px #f9eca0;
+	box-shadow:3px 8px 0 rgba(0,0,0,0.1),inset 1px 2px 0px 0px #f9eca0,inset 2px -6px 0px 0px rgba(0,0,0,0.07),inset 5px -10px 0px 0px rgba(0,0,0,0.05);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f0c911), color-stop(1, #f2ab1e));
+	background:-moz-linear-gradient(top, #f0c911 5%, #f2ab1e 100%);
+	background:-webkit-linear-gradient(top, #f0c911 5%, #f2ab1e 100%);
+	background:-o-linear-gradient(top, #f0c911 5%, #f2ab1e 100%);
+	background:-ms-linear-gradient(top, #f0c911 5%, #f2ab1e 100%);
+	background:linear-gradient(to bottom, #f0c911 5%, #f2ab1e 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0c911', endColorstr='#f2ab1e',GradientType=0);
+	background-color:#f0c911;	
+}
+
+
+.btn-custom.btn-warning:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f2ab1e), color-stop(1, #f0c911));
+	background:-moz-linear-gradient(top, #f2ab1e 5%, #f0c911 100%);
+	background:-webkit-linear-gradient(top, #f2ab1e 5%, #f0c911 100%);
+	background:-o-linear-gradient(top, #f2ab1e 5%, #f0c911 100%);
+	background:-ms-linear-gradient(top, #f2ab1e 5%, #f0c911 100%);
+	background:linear-gradient(to bottom, #f2ab1e 5%, #f0c911 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2ab1e', endColorstr='#f0c911',GradientType=0);
+	background-color:#f2ab1e;
+}
+.btn-custom:active {
+	position:relative;
+	top:1px;
+}
+
+
+.title{
+	font-size: 32px;
+	text-align: center;
+	margin: 50px 0;
+	color: #fff;
+	text-shadow:0px 2px 1px rgba(0,0,0,0.2);
+}
+
+.box{
+	position: relative;
+	width: 200px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0c911+0,f2ab1e+100 */
+	background: rgb(240,201,17); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(240,201,17,1) 0%, rgba(242,171,30,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(240,201,17,1) 0%,rgba(242,171,30,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(240,201,17,1) 0%,rgba(242,171,30,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0c911', endColorstr='#f2ab1e',GradientType=0 ); /* IE6-9 */
+	min-height: 200px;
+	border-radius:50%;
+	border:2px solid #333;
+	border-left-width: 5px; 
+	border-bottom-width: 5px;
+	border-right-width: 7px; 
+	display: block;
+	margin: auto;
+	margin-bottom: 25px;
+	-moz-box-shadow:3px 15px 0 rgba(0,0,0,0.1),inset 1px 3px 0px 0px #f9eca0, inset 10px -15px 0px 0px rgba(0,0,0,0.07), inset 12px -15px 0px 15px rgba(0,0,0,0.03);
+	-webkit-box-shadow:3px 15px 0 rgba(0,0,0,0.1),inset 1px 3px 0px 0px #f9eca0, inset 10px -15px 0px 0px rgba(0,0,0,0.07), inset 12px -15px 0px 15px rgba(0,0,0,0.03);
+	box-shadow:3px 15px 0 rgba(0,0,0,0.1),inset 1px 3px 0px 0px #f9eca0, inset 10px -15px 0px 0px rgba(0,0,0,0.07), inset 12px -15px 0px 15px rgba(0,0,0,0.03);
+}
+.male, .female{
+	height: 150px;
+	width:150px;
+	background: url(../img/hero.png) no-repeat;
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.box .male{
+	background-position: 0px;
+}
+
+.box .female{
+	background-position: -150px;
+}
+
+
+.form-control{
+	height: 80px;
+	font-size: 24px;
+	border-radius: 10px;
+	border:2px solid #333;
+	border-bottom-width:4px; 
+	border-right-width: 4px;
+	box-shadow: 2px 7px 0px rgba(0,0,0,0.1),1px 3px 0px rgba(0, 0, 0, 0.075) inset,1px -8px 0px rgba(0, 0, 0, 0.03) inset
+}
+
+.form-control:focus{
+	border-color: #f0c911;
+}
+
+input[type="text"]:disabled{
+	border-color: transparent;
+	background: transparent;
+	box-shadow: none;
+}
+
+.modal .form-control{
+	height: 60px;
+	font-size: 14px;
+}
+
+.form-horizontal .control-label{
+	padding-top: 21px;
+}
+
+.create{
+	width: 150px;
+	display: block;
+	height: 150px;
+	border-radius: 50%;
+	border: 3px dashed #fff;
+	line-height: 150px;
+	text-align: center;
+	box-shadow:3px 15px 0 rgba(0,0,0,0.1);
+	color: #fff;
+	font-size: 16px;
+	text-shadow:0px 2px 1px rgba(0,0,0,0.2);
+	margin: auto;
+	margin-bottom: 25px;
+}
+
+.hero{
+	width: 150px;
+	display: block;
+	height: 150px;
+	background: rgb(240,201,17); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(240,201,17,1) 0%, rgba(242,171,30,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(240,201,17,1) 0%,rgba(242,171,30,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(240,201,17,1) 0%,rgba(242,171,30,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0c911', endColorstr='#f2ab1e',GradientType=0 ); /* IE6-9 */
+	border-radius:50%;
+	border:2px solid #333;
+	border-left-width: 5px; 
+	border-bottom-width: 5px;
+	border-right-width: 7px; 
+	display: block;
+	margin: auto;
+	text-align: center;
+	line-height: 150px;
+	color: #fff;
+	font-size: 16px;
+	text-shadow:0px 2px 1px rgba(0,0,0,0.2);
+	margin-bottom: 25px;
+	-moz-box-shadow:3px 15px 0 rgba(0,0,0,0.1),inset 1px 3px 0px 0px #f9eca0, inset 10px -15px 0px 0px rgba(0,0,0,0.07), inset 12px -15px 0px 15px rgba(0,0,0,0.03);
+	-webkit-box-shadow:3px 15px 0 rgba(0,0,0,0.1),inset 1px 3px 0px 0px #f9eca0, inset 10px -15px 0px 0px rgba(0,0,0,0.07), inset 12px -15px 0px 15px rgba(0,0,0,0.03);
+	box-shadow:3px 15px 0 rgba(0,0,0,0.1),inset 1px 3px 0px 0px #f9eca0, inset 10px -15px 0px 0px rgba(0,0,0,0.07), inset 12px -15px 0px 15px rgba(0,0,0,0.03);
+}
+
+
+.modal-content{
+	border:4px solid #333;
+	border-left-width: 5px; 
+	border-bottom-width: 5px;
+	border-right-width: 7px; 
+}
+
+/*******************power*****************/
+
+.power-icon{
+	width:90px;
+	height: 90px;
+	display: block;
+	background: url(../img/powers-1.png) no-repeat;
+	margin: auto;
+}
+
+.powerbox p{
+	text-align: center;
+	color: #fff;
+	margin: 10px 0 35px 0;
+	text-shadow:0px 2px 1px rgba(0,0,0,0.2);
+}
+
+.flight{
+	background-position: -409px -9px;
+}
+.forcefield{
+	background-position: -209px -108px;
+}
+.gadgets{
+	background-position: -412px -108px;
+}
+.healing{
+	background-position: -406px -208px;
+}
+.ice{
+	background-position: -309px -208px;
+}
+.magic{
+	background-position: -509px -309px;
+}
+.elastic{
+	background-position: -11px -509px;
+}
+.telekinesis{
+	background-position: -108px -309px;
+}
+.telepathy{
+	background-position: -209px -309px;
+}
+.strength{
+	background-position: -9px -208px;
+}
+.invisibility{
+	background-position: -209px -509px;
+}
+
