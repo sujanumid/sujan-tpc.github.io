@@ -332,6 +332,10 @@ p{
 	
 }
 
+.team-ribbon{
+	max-width: 280px;
+}
+
 /********/
 
 /******ui base layout component*******/
@@ -508,7 +512,7 @@ p{
 	border:2px solid #bed9e7;
 	box-shadow: none;
 	height: 35px;
-	border-radius: 5px;
+	border-radius: 5px !important;
 }
 
 .form-control:focus{
@@ -522,6 +526,15 @@ p{
 
 .feedback-form [class^="col-"]:last-child{
 	padding-left: 7.5px;
+}
+
+.input-group-btn{
+	right: 30px;
+    z-index: 100;
+}
+
+.close{
+	outline: none;
 }
 
 textarea{
@@ -977,7 +990,7 @@ filter: drop-shadow(-5px -5px 4px rgba(0,0,0,0.2));
     padding: 20px 30px !important;
     margin-right: 10px;
     border-radius: 4px 4px 0 0;
-    border: 1px solid #a4ccd7; 
+    border: 1px solid #bed9e7; 
     transition: 0.3s ease;
 	-moz-transition: 0.3s ease;
 	-webkit-transition: 0.3s ease;

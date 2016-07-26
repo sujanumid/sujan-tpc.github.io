@@ -1,13 +1,3 @@
-
-$('.feedback-form').on('submit',function(e) {
-	e.preventDefault();
-	$('#feedback-modal').modal('show')
-});
-
-$('#feedback-modal').on('hide.bs.modal', function (e) {
-	$('.feedback-form')[0].reset()
-})
-
 $(document).ready(function(){
 	$(".main-slider").owlCarousel({
 		animateOut: 'bounceOutLeft',
@@ -23,6 +13,16 @@ $(document).ready(function(){
 		autoplay:true,
 		loop:true
 	});
+	var activeTab = getUrlParameter('tab');
+	tabEnable(activeTab);
+
+	equalWidth($('.ribbon'));
+
+	$('.inner-scroll').slimScroll({
+        height: '520px'
+    });
+    $('.matchHeight,.team-block').matchHeight();
+    $('.tabHeight').matchHeight({ property: 'min-height' });
 });
 
 $('#verticalTab').easyResponsiveTabs({
@@ -35,7 +35,7 @@ $('.grid').masonry({
   itemSelector: '.grid-item'
 });
 
-$('.event-popover').popover()
+$('.event-popover').popover({ html : true, container: 'body'})
 
 //gets url parameter
 var getUrlParameter = function getUrlParameter(sParam) {
@@ -53,41 +53,34 @@ var getUrlParameter = function getUrlParameter(sParam) {
     }
 };
 
-$(document).ready(function($) {
-	var activeTab = getUrlParameter('tab');
-	tabEnable(activeTab);
 
-	var oSpan;
+//equalises width of elements
+function equalWidth(selector){
 	var oWidest;
 	var nWidest = 0;
-
-	$('.team-ribbon').each(function(i) {
-	    oSpan = $(this);
-	    oWidth = oSpan.outerWidth();
+	selector.each(function(i) {
+	    oWidth = $(this).actual( 'outerWidth' )
 	    if( oWidth >= nWidest ) {
 	        nWidest = oWidth;
-	        oWidest = oSpan;
+	        oWidest = $(this);
 	    }
 	});
-	$('.team-ribbon').each(function(index, el) {
+	selector.each(function(index, el) {
 		$(this).css('width',nWidest)
 	});
-	$('.inner-scroll').slimScroll({
-        height: '520px'
-    });
-    $('.matchHeight,.team-block').matchHeight();
-    $('.tabHeight').matchHeight({ property: 'min-height' });
-});
+}
 
-
+//removes preload class from body which prevents css transition
 $(window).load(function() {
   $("body").removeClass("preload");
 });
 
+//triggers click event on tabs to enable them
 function tabEnable(tabName){
 	$("[data-tab='"+tabName+"']").trigger('click')
 }
 
+//search bar show and hide
 $('.search-btn').on('click',function(event) {
 	event.preventDefault();
 	if($(this).hasClass('search-now')){
@@ -101,9 +94,18 @@ $('.search-btn').on('click',function(event) {
 	}
 });
 
-$('.search-bar-wide :input').on('blur',function(e){
+$('.input-group-btn .close').on('click',function(e){
 	$('.search-bar-wide').fadeOut();
 	$('.search-btn').removeClass('search-now');
 })
 
 
+//modal show and hide for form
+$('.feedback-form').on('submit',function(e) {
+	e.preventDefault();
+	$('#feedback-modal').modal('show')
+});
+
+$('#feedback-modal').on('hide.bs.modal', function (e) {
+	$('.feedback-form')[0].reset()
+})
