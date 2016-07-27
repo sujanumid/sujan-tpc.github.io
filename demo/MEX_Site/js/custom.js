@@ -6,7 +6,7 @@ $(document).ready(function(){
 		autoplay:true,
 		loop:true
 	});
-	$(".ad-slider").owlCarousel({
+	$(".member-slider").owlCarousel({
 		animateOut: 'fadeOut',
     	animateIn: 'fadeIn',
 		items:1,
@@ -16,10 +16,11 @@ $(document).ready(function(){
 	var activeTab = getUrlParameter('tab');
 	tabEnable(activeTab);
 
-	equalWidth($('.ribbon'));
+	equalWidth($('.ribbon:not(.sidebar .ribbon)'));
 
 	$('.inner-scroll').slimScroll({
-        height: '520px'
+        height: '520px',
+        allowPageScroll : true
     });
     $('.matchHeight,.team-block').matchHeight();
     $('.tabHeight').matchHeight({ property: 'min-height' });
