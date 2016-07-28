@@ -70,7 +70,7 @@
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
 							<ul class="dropdown-menu small-drop">
 								<li><a href="mol.html">Maritime On-Line</a></li>
-								<li><a href="gov-affairs">Government Affairs</a></li>
+								<li><a href="gov-affairs.html">Government Affairs</a></li>
 								<li><a href="publications.html">Publications</a></li>
 								<li><a href="committee.html">Committees</a></li>
 							</ul>
@@ -148,43 +148,38 @@
 		<div class="container main-container">
 			<div class="row">
 				<div class="col-md-8">
-					<div class="row">
-						<div class="col-md-12">
-							<h4 class="title-text title-large">Contact the Exchange</h4>
-							<div class="content-area block">
-								<p>As the information hub of the Delaware River and Bay, the Maritime Exchange takes advantage of an enormous network of resources across the tri-state region and beyond. Through a strong membership of almost 300 businesses, a dedicated and active Board of Directors, and a knowledgeable and professional team of officers and staff, we are able to provide the services and information that helps make the Delaware River the premier port of call on the East Coast. Our team is a talented group of individuals who are dedicated to ensuring the success of our port region. We would be happy to answer any of your questions or concerns.</p>
-								<h4 class="title-text intro-titles">Mailing Address</h4>
-								<address>
-									Maritime Exchange for the Delaware River and Bay<br>
-									240 Cherry Street<br>
-									Philadelphia, PA 19106-1906
-								</address>
-							</div>
-							<!--/.intro content-->
-						</div>
+					<h4 class="title-text title-large">Contact the Exchange</h4>
+					<div class="content-area block">
+						<p>As the information hub of the Delaware River and Bay, the Maritime Exchange takes advantage of an enormous network of resources across the tri-state region and beyond. Through a strong membership of almost 300 businesses, a dedicated and active Board of Directors, and a knowledgeable and professional team of officers and staff, we are able to provide the services and information that helps make the Delaware River the premier port of call on the East Coast. Our team is a talented group of individuals who are dedicated to ensuring the success of our port region. We would be happy to answer any of your questions or concerns.</p>
+						<h4 class="title-text intro-titles">Mailing Address</h4>
+						<address>
+							Maritime Exchange for the Delaware River and Bay<br>
+							240 Cherry Street<br>
+							Philadelphia, PA 19106-1906
+						</address>
 					</div>
-					<!--/.intro text-->
+					<!--/.intro content-->
 				</div>
 				<!--/.end left col-->
 				<div class="col-md-4">
 					<div class="block sidebar">
 						<h4 class="title-text">Leave us a message</h4>
 						<p>We'll try to get back to you within the next 24 hours.</p>
-						<form class="feedback-form">
+						<form class="feedback-form" action="/feedback-form" method="post">
 							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
-										<input type="text" class="form-control" id="contactName" placeholder="Your name..." required>
+										<input type="text" class="form-control" id="contactName" placeholder="Your name..." required name="feedback_name">
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
-										<input type="email" class="form-control" id="contactEmail" placeholder="Your email..." required>
+										<input type="email" class="form-control" id="contactEmail" placeholder="Your email..." required name="feedback_email">
 									</div>
 								</div>
 							</div>
 							<div class="form-group">
-								<textarea class="form-control" id="contactMessage" placeholder="Your message..." rows="6" required></textarea>
+								<textarea class="form-control" id="contactMessage" placeholder="Your message..." rows="6" required name="feedback_msg"></textarea>
 							</div>
 							<button type="submit" class="btn btn-main" id="feedback-btn">Send Message</button>
 						</form>

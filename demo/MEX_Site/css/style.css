@@ -71,6 +71,14 @@ body {
 	top: 3px;
 }
 
+.btn-pager{
+	border: 2px solid #bed9e7 !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #4286aa;
+}
+
 /***********/
 
 
@@ -362,6 +370,23 @@ p{
 	display: block;
 }
 
+.jumbotron{
+	margin-top: 80px;
+	text-align: center;
+	padding:30px 15px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#346a7f+0,234964+100 */
+	background: #346a7f; /* Old browsers */
+	background: -moz-linear-gradient(top,  #346a7f 0%, #234964 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #346a7f 0%,#234964 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #346a7f 0%,#234964 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#346a7f', endColorstr='#234964',GradientType=0 ); /* IE6-9 */
+}
+
+.jumbotron .title-text{
+	line-height: 32px;
+	font-size: 18px;
+	color: #ffffff
+}
 
 .agency-container .block{
 	margin-bottom: 35px;
@@ -635,8 +660,15 @@ option{
 }
 
 .member-results{
-	margin-top: 30px;
+	margin-top: 15px;
 }
+
+.result-count{
+	margin: 15px 0;
+	font-style: italic;
+}
+
+
 /**************/
 
 /*****service details*******/
@@ -1055,7 +1087,7 @@ filter: drop-shadow(-5px -5px 4px rgba(0,0,0,0.2));
 }
 
 .agency-desc,.tab-desc{
-	margin: 25px 0;
+	margin: 15px 0;
 }
 
 .img-sq{
@@ -1130,11 +1162,38 @@ filter: drop-shadow(-5px -5px 4px rgba(0,0,0,0.2));
 	    border-right: 4px solid transparent;
 	    border-bottom: 8px solid #2f5870;
 	}
+	.resp-tab-content .title-text{
+		display: none;
+	}
 	.resp-arrow{
 		border: none;
 	    border-left: 4px solid transparent;
 	    border-right: 4px solid transparent;
 	    border-top: 8px solid #2f5870;
+	}
+	.main-container.home-container{
+		margin-top: 0;
+	}
+	.block{
+		margin-bottom: 30px;
+	}
+	.title-large{
+		font-size: 25px;
+	}
+
+	.main-container{
+		margin-top: 100px;
+	}
+
+	.footer .btn-footer{
+		width: 100%;
+	}
+	.navbar-nav > li > a{
+		line-height: 50px;
+		height: 50px;
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a{
+		padding: 10px auto;
 	}
 }
 
