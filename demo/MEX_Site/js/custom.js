@@ -24,17 +24,28 @@ $(document).ready(function(){
     });
     $('.matchHeight,.team-block').matchHeight();
     $('.tabHeight').matchHeight({ property: 'min-height' });
+
+   
+    var hiddenList;
+	//finds and hides accordion list on mobile that
+	$('li.hidden-xs.resp-tab-item').each(function(index, el) {
+		hiddenList = $(this).attr('aria-controls');
+		$('.resp-accordion[aria-controls="'+hiddenList+'"]').addClass('hidden-xs');
+	});
+
+	
 });
 
-$('#verticalTab').easyResponsiveTabs({
-	type: 'vertical'
-});
-$('.horizontalTab').easyResponsiveTabs();
+ //tabs
+    $('#verticalTab').easyResponsiveTabs({
+		type: 'vertical'
+	});
+	$('.horizontalTab').easyResponsiveTabs();
+ //masonry grid for gov affairs updates
+	$('.grid').masonry({
+	  itemSelector: '.grid-item'
+	});
 
-//masonry grid for gov affairs updates
-$('.grid').masonry({
-  itemSelector: '.grid-item'
-});
 
 $('.event-popover').popover({ html : true, container: 'body'})
 

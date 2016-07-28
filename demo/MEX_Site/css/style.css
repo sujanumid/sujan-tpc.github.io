@@ -776,9 +776,9 @@ option{
 	bottom: 0;
 	filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=-5, OffY=-5,
 		Color='#94aec1')";
-filter: url(#drop-shadow);
--webkit-filter: drop-shadow(-5px -5px 4px rgba(0,0,0,0.2));
-filter: drop-shadow(-5px -5px 4px rgba(0,0,0,0.2));
+	filter: url(#drop-shadow);
+	-webkit-filter: drop-shadow(-5px -5px 4px rgba(0,0,0,0.2));
+	filter: drop-shadow(-5px -5px 4px rgba(0,0,0,0.2));
 }
 
 .team, .beacon.beacon-small{
@@ -1096,6 +1096,7 @@ filter: drop-shadow(-5px -5px 4px rgba(0,0,0,0.2));
 
 .img-rt{
 	max-height: 100px;
+	max-width: 100%;
 }
 
 /*****************************/
@@ -1162,7 +1163,7 @@ filter: drop-shadow(-5px -5px 4px rgba(0,0,0,0.2));
 	    border-right: 4px solid transparent;
 	    border-bottom: 8px solid #2f5870;
 	}
-	.resp-tab-content .title-text{
+	.resp-tab-content .title-text:not(.category-title){
 		display: none;
 	}
 	.resp-arrow{
@@ -1194,6 +1195,16 @@ filter: drop-shadow(-5px -5px 4px rgba(0,0,0,0.2));
 	}
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a{
 		padding: 10px auto;
+	}
+
+	.member-search .col-md-4:first-child{
+		padding-right: 15px;
+	}
+
+	.beacon-scan{
+		background-size: cover;
+		width: 160px;
+		height: 100px;
 	}
 }
 
