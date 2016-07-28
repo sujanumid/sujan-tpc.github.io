@@ -22,7 +22,7 @@ $(document).ready(function(){
         height: '520px',
         allowPageScroll : true
     });
-    $('.matchHeight,.team-block').matchHeight();
+    $('.matchHeight,.team-block,.beacon-issue').matchHeight();
     $('.tabHeight').matchHeight({ property: 'min-height' });
 
    

@@ -230,6 +230,26 @@ p{
 	text-decoration: underline !important;
 }
 
+.link-beacon{
+	font-style: italic;
+}
+
+.link-beacon:first-child:before{
+	content: "(";
+	display: inline-block;
+}
+
+.link-beacon:first-child:after{
+	content: "\00a0 |";
+	display: inline-block;
+}
+
+.link-beacon:last-child:after{
+	content: ")";
+	display: inline-block;
+}
+
+
 .slider-text{
 	font-size: 26px;
     text-align: center;
