@@ -93,11 +93,10 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Maritime On-Line <span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="#">Action</a></li>
-								<li><a href="#">Another action</a></li>
-								<li><a href="#">Something else here</a></li>
-								<li role="separator" class="divider"></li>
-								<li><a href="#">Separated link</a></li>
+								<li><a href="mol.html?tab=ship-reporting">Ship Reporting</a></li>
+								<li><a href="mol.html?tab=tracs">TRACS</a></li>
+								<li><a href="mol.html?tab=noad">NOA/D On-Line</a></li>
+								<li><a href="mol.html?tab=ais">AIS</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
@@ -110,35 +109,43 @@
 								<li><a href="#">Separated link</a></li>
 							</ul>
 						</li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Committees <span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Action</a></li>
-								<li><a href="#">Another action</a></li>
-								<li><a href="#">Something else here</a></li>
-								<li role="separator" class="divider"></li>
-								<li><a href="#">Separated link</a></li>
-							</ul>
-						</li>
+						<li><a href="committee.html">Committees</a></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Publications <span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="#">Action</a></li>
-								<li><a href="#">Another action</a></li>
-								<li><a href="#">Something else here</a></li>
+								<li><a href="publications.html?tab=bulletins">Bulletins/Alerts</a></li>
+								<li><a href="publications.html?tab=beacon">The Beacon</a></li>
+								<li><a href="publications.html?tab=port-dir">Port Directory</a></li>
 								<li role="separator" class="divider"></li>
-								<li><a href="#">Separated link</a></li>
+								<li><a href="publications.html?tab=online-port-dir">Online Port Directory</a></li>
+								<li><a href="publications.html?tab=pres-report">President's Report</a></li>
+								<li><a href="publications.html?tab=fed-reg">Federal Register Highlights</a></li>
+								<li><a href="publications.html?tab=mol-logo">Maritime Exchange Logo</a></li>
+								<li><a href="publications.html?tab=calendar">Calendar</a></li>
+								<li><a href="publications.html?tab=jobs">Jobs</a></li>
 							</ul>
 						</li>
 						<li><a href="contact.html">Contact</a></li>
 						<li><a href="#" class="search-btn"><i class="glyphicon glyphicon-search"></i></a></li>
 						<form class="search search-bar-wide">
-							<div class="input-group">
+							<script>
+							(function() {
+								var cx = '006810400640475448580:fpirtolrwh8';
+								var gcse = document.createElement('script');
+								gcse.type = 'text/javascript';
+								gcse.async = true;
+								gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+								var s = document.getElementsByTagName('script')[0];
+								s.parentNode.insertBefore(gcse, s);
+							})();
+							</script>
+							<gcse:searchbox-only></gcse:searchbox-only>
+							<!-- <div class="input-group">
 								<input type="text" class="form-control" placeholder="Search website...">
 								<span class="input-group-btn">
 									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 								</span>
-							</div><!-- /search-input-->
+							</div> --><!-- /search-input-->
 						</form>
 					</ul>
 				</div><!-- /.navbar-collapse -->
