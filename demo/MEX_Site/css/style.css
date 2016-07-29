@@ -1263,7 +1263,28 @@ input.gsc-input,
     border-radius: 4px;
 }
 
+.gsc-results .gsc-cursor-box .gsc-cursor-page:hover{
+	background: #eeeeee !important;
+}
+
 .gsc-results .gsc-cursor-box .gsc-cursor-current-page {
     color: #23527c !important;
     background: #bed9e7 !important;
+}
+
+.gs-result .gs-title, .gs-result .gs-title *{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.gsc-control-cse div{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.gsc-table-result, .gsc-thumbnail-inside, .gsc-url-top{
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.gsc-webResult .gsc-result{
+	padding: 10px 8px !important;
 }
