@@ -1255,7 +1255,7 @@ input.gsc-input,
 }
 
 .gsc-results .gsc-cursor-box .gsc-cursor-page {
-    display: inline-block;
+    display: inline-block !important;
     width: 30px;
     height: 30px;
     text-align: center;
@@ -1264,6 +1264,6 @@ input.gsc-input,
 }
 
 .gsc-results .gsc-cursor-box .gsc-cursor-current-page {
-    color: #23527c;
-    background: #bed9e7;
+    color: #23527c !important;
+    background: #bed9e7 !important;
 }
