@@ -1250,6 +1250,6 @@ input.gsc-input,
     line-height: normal;
 }
 
-#adBlock{
+.gsc-adBlock{
 	display: none;
 }
