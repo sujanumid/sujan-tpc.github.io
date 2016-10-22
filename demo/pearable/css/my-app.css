@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|NTR|Work+Sans:500');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css');
+
+
+body{
+	font-family: 'NTR', sans-serif;
+	color: #555555;
+  letter-spacing: -0.2px;
+}
+
+.navbar{
+	background: url('../img/pattern.jpg');
+	background-size: 50%;
+}
+
+#logo{
+	font-family: 'Fredoka One', cursive;
+	color: #4a4a4a;
+}
+
+.pearable-card{
+	margin: 10px 0;
+	border-radius: 0;
+	font-size: 17px;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.1);
+}
+
+.pearable-card:last-child{
+  margin-bottom: 20px;
+}
+
+.pearable-card .card-header {
+  display: block;
+}
+.pearable-card .pearable-avatar {
+  float: left;
+  margin-right: 10px;
+}
+.pearable-card .pearable-avatar img{
+ border-radius: 20px;
+ width: 40px;
+ height: 40px;
+}
+
+.post-image{
+ width: 100%;
+ margin-top: 10px;
+}
+.pearable-card .pearable-name {
+  margin-left: 44px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Work Sans', sans-serif;
+}
+.pearable-card .pearable-timestamp {
+  margin-left: 44px;
+  font-size: 13px;
+  color: #8e8e93;
+}
+.pearable-card .card-footer a {
+  font-weight: 500;
+  width: 50%;
+  text-align: center;
+  display: block;
+}
+.pearable-card .card-content img {
+  display: block;
+}
+.pearable-card .card-content-inner {
+  padding: 5px 15px 0 15px;
+}  
+
+.pearable-card .card-footer a,.pearable-card .pearable-timestamp {
+ font-size: 14px;
+ color: #9f9f9f;
+}
+
+.pearable-more{
+  float: right;
+  font-size: 10px;
+  color: #bebebe;
+  height: 40px;
+  line-height: 40px;
+}
+
+.pearable-more .icon-arrow-down{
+  font-weight: 600;
+}
+
+.close{
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  color: #619E00;
+  font-weight: 600;
+}
+
+/***tab****/
+.tabbar-labels span.tabbar-label{
+	font-size: 12px;
+}
+
+.tabbar a{
+	color: #bbbbbb;
+	display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.tabbar a.active{
+ color: #9DE230;
+}
+
+.tabbar i.icon{
+  line-height: 30px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.icon .badge{
+  left: 15px;
+  right: 0;
+  top: 5px;
+  height: 8px;
+  width: 8px;
+  min-width: 0;
+  margin: auto;
+}
+
+.navbar:after{
+  background: #efefef;
+  height: 2px;
+}
+
+.subnavbar{
+  margin-top: 0;
+  background: #ffffff;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+  padding: 0 15px;
+}
+
+.subnavbar:after{
+  background: none;
+}
+
+.sub-avatar{
+  line-height: 0;
+}
+
+.sub-avatar img{
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+}
+
+.post-create{
+  color: #9f9f9f;
+    position: absolute;
+    left: 60px;
+}
+
+.navbar .icon .badge{
+  left: 10px;
+  top: 0;
+}
+
+.navbar .icon{
+  font-size: 18px;
+  color: #9DE230;
+  font-weight: 600;
+}
+
+.toolbar.tabbar.tabbar-labels {
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.08);
+  background-color: white;
+}
+
+.toolbar:before{
+  background: none;
+}
+
+.navbar-inner, .toolbar-inner{
+  padding: 0;
+}
+
+.alert-card{
+  line-height: 0;
+}
+.alert-card img{
+  max-width: 100%;
+}
+
+.navbar-through .page-content.home-page-content{
+  padding-top: 88px;
+}

@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>Pearable Demo</title>
+	<style>
+	body{
+		background: url('img/pattern.jpg');
+		background-size: 20%;
+		background-attachment: fixed;
+	}
+	#preview{
+		margin: auto;
+	}
+	</style>
+</head>
+<body>
+<div id="preview"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="assets/biomp/biomp.js"></script>
+<script>
+	bioMp(document.getElementById('preview'), {
+    url: 'http://localhost:8000/',
+    view: 'front',
+    image: 'assets/biomp/images/iphone6_front_gold.png',
+    scale: 0.7
+});
+</script>
+</body>
+</html>
