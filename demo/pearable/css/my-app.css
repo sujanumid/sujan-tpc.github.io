@@ -187,7 +187,7 @@ body{
   line-height: 0;
 }
 .alert-card img{
-  max-width: 100%;
+  width: 100%;
 }
 
 .navbar-through .page-content.home-page-content{
