@@ -17,213 +17,396 @@
   <div class="statusbar-overlay"></div>
   <!-- Views-->
   <!--/.navbar-->
-    <div class="views tabs toolbar-through">
-      <!-- Your main view, should have "view-main" class-->
-     
-      <div id="home" class="view view-tab tab active">
-        <!-- Top Navbar-->
-        <div class="navbar">
-          <div class="navbar-inner">
-            <div class="left">
-              <a href="#" class="link icon-only"><i class="icon icon-location-pin"></i></a>
-            </div>
-            <div class="center sliding" id="logo">pearable</div>
-            <div class="right">
-              <a href="notification.html" class="link icon-only"><i class="icon icon-bell"><span class="badge bg-red"></span></i></a>
-            </div>
-            <div class="subnavbar">
-              <div class="sub-avatar"><img src="img/users/hyori.jpg"></div>
-              <div class="post-create">Write a post...</div>
-            </div>
-          </div>
-        </div>
-        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
-        <div class="pages navbar-through toolbar-through">
-          <!-- Page, data-page contains page name-->
-          <div data-page="index" class="page">
-            <!-- Scrollable page content-->
-            <div class="page-content home-page-content">
-              <!--/.notification card-->
-              <div class="card pearable-card alert-card">
-                <img src="img/match-card.png">
-                <span class="close">&times;</span>
-              </div>
-              <!--/.end of notification card-->
-              <div class="card pearable-card">
-                <div class="card-header no-border">
-                  <div class="pearable-avatar"><img src="img/users/hyori.jpg"></div>
-                  <div class="pearable-more">
-                    <i class="icon-arrow-down"></i>
-                  </div>
-                  <div class="pearable-name">Lee Hyori</div>
-                  <div class="pearable-timestamp">1 hour ago</div>
-                </div>
-                <div class="card-content">
-                  <div class="card-content-inner">
-                    <p>Hello everyone! I'm looking for an apartment near Philadelphia University. Could someone suggest good places?</p>
-                  </div>
-                </div>
-                <div class="card-footer no-border">
-                  <a href="#" class="link">2 comments</a>
-                  <a href="#" class="link">Share</a>
-                </div>
-              </div>
-              <!--/.post with image-->
-              <div class="card pearable-card">
-                <div class="card-header no-border">
-                  <div class="pearable-avatar"><img src="img/users/brian.jpg"></div>
-                  <div class="pearable-more">
-                    <i class="icon-arrow-down"></i>
-                  </div>
-                  <div class="pearable-name">Brian Rogers</div>
-                  <div class="pearable-timestamp">2 hours ago</div>
-                </div>
-                <div class="card-content">
-                  <div class="card-content-inner">
-                    <p>Looking to sell my coffee table for $15. It’s in good condition and hoping to sell it within a week. I’ve got some other #furniture as well so contact me at 6104257899 for more details.</p>
-                  </div>
-                  <img src="img/sell.png" class="post-image">
-                </div>
-                <div class="card-footer no-border">
-                  <a href="#" class="link">2 comments</a>
-                  <a href="#" class="link">Share</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--/.end of home-->
-       <div id="message" class="view tab message-view">
-        <!-- Top Navbar-->
-        <div class="navbar">
-          <div class="navbar-inner">
-            <div class="center sliding">Message</div>
-          </div>
-        </div>
-        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
-        <div class="pages navbar-through toolbar-through">
-          <!-- Page, data-page contains page name-->
-          <div data-page="index-2" class="page white">
-            <!-- Scrollable page content-->
-            <div class="page-content">
-              <div class="list-block media-list pearable-list">
-                <ul>
-                  <li>
-                    <a href="message.html" class="item-link item-content message-preview unread" data-view=".message-view">
-                      <div class="item-media"><img src="img/users/mildred.jpg"></div>
-                      <div class="item-inner">
-                        <div class="item-title-row">
-                          <div class="item-title">Mildred Wallace</div>
-                          <div class="item-after badge">1</div>
-                        </div>
-                        <div class="item-text">Mildred sent a photo</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="item-link item-content message-preview">
-                      <div class="item-media"><img src="img/users/yoon.jpeg"></div>
-                      <div class="item-inner">
-                        <div class="item-title-row">
-                          <div class="item-title">Yoo Eun Hye</div>
-                        </div>
-                        <div class="item-text">정말? 그래서 당신은 저를 줄 수</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="item-link item-content message-preview">
-                      <div class="item-media"><img src="img/users/shruti.jpg"></div>
-                      <div class="item-inner">
-                        <div class="item-title-row">
-                          <div class="item-title">Shruti Hasaan</div>
-                        </div>
-                        <div class="item-text">Yeah I've looked at a few apartments nearby but this should be</div>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <!--/.end of pearable-list-->
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--/.end of message-->
-      <div id="search" class="view tab">
-        <!-- Top Navbar-->
-        <div class="navbar">
-          <div class="navbar-inner">
-            <textarea placeholder="Search for people or topics"></textarea><a href="#" class="link icon-only"><i class="icon icon-paper-search"></i></a>
-          </div>
-        </div> 
-        <div class="pages navbar-through toolbar-through">
-          <!-- Page, data-page contains page name-->
-          <div data-page="index-3" class="page white">
-            <!-- Scrollable page content-->
-            <div class="page-content">
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--/.end of search-->
-      <div id="profile" class="view tab">
-        <!-- Top Navbar-->
-        <div class="navbar">
-          <div class="navbar-inner">
-            <div class="center sliding">Lee</div>
-            <div class="right">
-              <a href="#" class="link icon-only"><i class="icon icon-settings"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="pages navbar-through toolbar-through">
-          <!-- Page, data-page contains page name-->
-          <div data-page="index-4" class="page white">
-            <!-- Scrollable page content-->
-            <div class="page-content">
-              <div class="profile-box">
-                <div class="user-status"><p>Looking for a roommate<span class="bubble"></span></p></div>
-                <div class="profile-picture"><img src="img/users/hyori.jpg"><span class="profile-action link icon-only"><i class="icon icon-pencil"></i></span></div>
-                <div class="info">
-                  <h4 class="username">Lee Hyori</h4>
-                  <p class="country box-info"><span class="gray">From</span> South Korea</p>
-                  <p class="major box-info"><span class="gray">Studying</span> Global Fashion Enterprise <span class="gray">at</span> Philadelphia University</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--/.end of profile-->
+  <div class="views tabs toolbar-through">
+    <!-- Your main view, should have "view-main" class-->
 
-      <!-- Bottom Toolbar-->
-      <div class="toolbar tabbar tabbar-labels">
-        <div class="toolbar-inner">
-          <a href="#home" class="tab-link active">
-            <i class="icon icon-home"></i>
-            <span class="tabbar-label">Home</span>
-          </a>
-          <a href="#message" class="tab-link">
-            <i class="icon icon-speech">
-              <span class="badge bg-red"></span>
-            </i>
-            <span class="tabbar-label">Message</span>
-          </a>
-          <a href="#search" class="tab-link">
-            <i class="icon icon-magnifier"></i>
-            <span class="tabbar-label">Search</span>
-          </a>
-          <a href="#profile" class="tab-link">
-            <i class="icon icon-user"></i>
-            <span class="tabbar-label">Profile</span>
-          </a>
+    <div id="home" class="view view-tab tab active">
+      <!-- Top Navbar-->
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="left">
+            <a href="#" class="link icon-only"><i class="icon icon-location-pin"></i></a>
+          </div>
+          <div class="center sliding" id="logo">pearable</div>
+          <div class="right">
+            <a href="notification.html" class="link icon-only"><i class="icon icon-bell"><span class="badge bg-red"></span></i></a>
+          </div>
+          <div class="subnavbar">
+            <div class="sub-avatar"><img src="img/users/hyori.jpg"></div>
+            <div class="post-create">Write a post...</div>
+          </div>
         </div>
       </div>
-      <!--/.end of tabbar-->
+      <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+      <div class="pages navbar-through toolbar-through">
+        <!-- Page, data-page contains page name-->
+        <div data-page="index" class="page">
+          <!-- Scrollable page content-->
+          <div class="page-content home-page-content">
+            <!--/.notification card-->
+            <div class="card pearable-card alert-card">
+              <img src="img/match-card.png">
+              <span class="close">&times;</span>
+            </div>
+            <!--/.end of notification card-->
+            <div class="card pearable-card">
+              <div class="card-header no-border">
+                <div class="pearable-avatar"><img src="img/users/hyori.jpg"></div>
+                <div class="pearable-more">
+                  <i class="icon-arrow-down"></i>
+                </div>
+                <div class="pearable-name">Lee Hyori</div>
+                <div class="pearable-timestamp">1 hour ago</div>
+              </div>
+              <div class="card-content">
+                <div class="card-content-inner">
+                  <p>Hello everyone! I'm looking for an apartment near Philadelphia University. Could someone suggest good places?</p>
+                </div>
+              </div>
+              <div class="card-footer no-border">
+                <a href="#" class="link">2 comments</a>
+                <a href="#" class="link">Share</a>
+              </div>
+            </div>
+            <!--/.post with image-->
+            <div class="card pearable-card">
+              <div class="card-header no-border">
+                <div class="pearable-avatar"><img src="img/users/brian.jpg"></div>
+                <div class="pearable-more">
+                  <i class="icon-arrow-down"></i>
+                </div>
+                <div class="pearable-name">Brian Rogers</div>
+                <div class="pearable-timestamp">2 hours ago</div>
+              </div>
+              <div class="card-content">
+                <div class="card-content-inner">
+                  <p>Looking to sell my coffee table for $15. It’s in good condition and hoping to sell it within a week. I’ve got some other #furniture as well so contact me at 6104257899 for more details.</p>
+                </div>
+                <img src="img/sell.png" class="post-image">
+              </div>
+              <div class="card-footer no-border">
+                <a href="#" class="link">2 comments</a>
+                <a href="#" class="link">Share</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!--/.end of views-->
+    <!--/.end of home-->
+    <div id="message" class="view tab message-view">
+      <!-- Top Navbar-->
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="center sliding">Message</div>
+        </div>
+      </div>
+      <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+      <div class="pages navbar-through toolbar-through">
+        <!-- Page, data-page contains page name-->
+        <div data-page="index-2" class="page white">
+          <!-- Scrollable page content-->
+          <div class="page-content">
+            <div class="list-block media-list pearable-list">
+              <ul>
+                <li>
+                  <a href="message.html" class="item-link item-content message-preview unread" data-view=".message-view">
+                    <div class="item-media"><img src="img/users/mildred.jpg"></div>
+                    <div class="item-inner">
+                      <div class="item-title-row">
+                        <div class="item-title">Mildred Wallace</div>
+                        <div class="item-after badge">1</div>
+                      </div>
+                      <div class="item-text">Mildred sent a photo</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="item-link item-content message-preview">
+                    <div class="item-media"><img src="img/users/yoon.jpeg"></div>
+                    <div class="item-inner">
+                      <div class="item-title-row">
+                        <div class="item-title">Yoo Eun Hye</div>
+                      </div>
+                      <div class="item-text">정말? 그래서 당신은 저를 줄 수</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="item-link item-content message-preview">
+                    <div class="item-media"><img src="img/users/shruti.jpg"></div>
+                    <div class="item-inner">
+                      <div class="item-title-row">
+                        <div class="item-title">Shruti Hasaan</div>
+                      </div>
+                      <div class="item-text">Yeah I've looked at a few apartments nearby but this should be</div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!--/.end of pearable-list-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/.end of message-->
+    <div id="search" class="view tab">
+      <!-- Top Navbar-->
+      <div class="navbar">
+        <div class="navbar-inner">
+          <textarea placeholder="Search for people or topics"></textarea><a href="#" class="link icon-only"><i class="icon icon-paper-search"></i></a>
+        </div>
+      </div> 
+      <div class="pages navbar-through toolbar-through">
+        <!-- Page, data-page contains page name-->
+        <div data-page="index-3" class="page white">
+          <!-- Scrollable page content-->
+          <div class="page-content">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/.end of search-->
+    <div id="profile" class="view tab">
+      <!-- Top Navbar-->
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="center sliding">Lee</div>
+          <div class="right">
+            <a href="#" class="link icon-only"><i class="icon icon-settings"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="pages navbar-through toolbar-through">
+        <!-- Page, data-page contains page name-->
+        <div data-page="index-4" class="page white">
+          <!-- Scrollable page content-->
+          <div class="page-content">
+            <div class="profile-box">
+              <div class="user-status"><p>Looking for a roommate<span class="bubble"></span></p></div>
+              <div class="profile-picture"><img src="img/users/hyori.jpg"><span class="profile-action link icon-only"><i class="icon icon-pencil"></i></span></div>
+              <div class="info">
+                <h4 class="username">Lee Hyori</h4>
+                <p class="country box-info"><span class="gray">From</span> South Korea</p>
+                <p class="major box-info"><span class="gray">Studying</span> Global Fashion Enterprise <span class="gray">at</span> Philadelphia University</p>
+              </div>
+            </div>
+            <!--/.profile box-->
+            <div class="buttons-row profile-tabs">
+              <!-- Link to 1st tab, active -->
+              <a href="#posts" class="tab-link active button">Posts</a>
+              <!-- Link to 2nd tab -->
+              <a href="#about" class="tab-link button">About</a>
+              <!-- Link to 3rd tab -->
+              <a href="#favorites" class="tab-link button">Favorites</a>
+            </div>
+            <div class="profile-tab-content">
+              <!-- profile tab start -->
+              <div class="tabs">
+                <!-- Tab 1, active by default -->
+                <div id="posts" class="tab active">
+                  <div class="content-block">
+                    <div class="card pearable-card">
+                      <div class="card-header no-border">
+                        <div class="pearable-avatar"><img src="img/users/hyori.jpg"></div>
+                        <div class="pearable-more">
+                          <i class="icon-arrow-down"></i>
+                        </div>
+                        <div class="pearable-name">Lee Hyori</div>
+                        <div class="pearable-timestamp">1 hour ago</div>
+                      </div>
+                      <div class="card-content">
+                        <div class="card-content-inner">
+                          <p>Hello everyone! I'm looking for an apartment near Philadelphia University. Could someone suggest good places?</p>
+                        </div>
+                      </div>
+                      <div class="card-footer no-border">
+                        <a href="#" class="link">2 comments</a>
+                        <a href="#" class="link">Share</a>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                <!-- Tab 2 -->
+                <div id="about" class="tab">
+                  <div class="content-block">
+                    <h4 class="section-title"><span>About Lee</span></h4>
+                    <div class="list-block about-list">
+                      <ul>
+                        <li class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title">Languages</div>
+                            <div class="item-after">Korean & English</div>
+                          </div>
+                        </li>
+                        <li class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title">Gender</div>
+                            <div class="item-after">Female</div>
+                          </div>
+                        </li>
+                        <li class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title">Diet</div>
+                            <div class="item-after">Vegetarian</div>
+                          </div>
+                        </li>
+                        <li class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title">Smoker</div>
+                            <div class="item-after">No</div>
+                          </div>
+                        </li>
+                        <li class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title">Drinking</div>
+                            <div class="item-after">Occasionally</div>
+                          </div>
+                        </li>
+                        <li class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title">Pet Owner</div>
+                            <div class="item-after">No</div>
+                          </div>
+                        </li>
+                        <li class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title">Cleanliness</div>
+                            <div class="item-after">Very Clean</div>
+                          </div>
+                        </li>
+                        <li class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title">Religious Views</div>
+                            <div class="item-after">Christian</div>
+                          </div>
+                        </li>
+                      </ul>
+                      <!--/.about-list-->
+                    </div>
+                    <!--/.basic-->
+                    <h4 class="section-title"><span>Roommate Preferences</span></h4>
+                    <div class="swiper-container preference-swiper">
+                      <div class="swiper-pagination"></div>
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/profile-icons/female.png"><p>Female</p></div>
+                        <div class="swiper-slide"><img src="img/profile-icons/vegetarian.png"><p>Vegetarian</p></div>
+                        <div class="swiper-slide"><img src="img/profile-icons/clean.png"><p>Clean</p></div>
+                        <div class="swiper-slide"><img src="img/profile-icons/drinking.png"><p>Drinks</p></div>
+                        <div class="swiper-slide"><img src="img/profile-icons/christian.png"><p>Christian</p></div>
+                      </div>
+                    </div>
+                    <!--/.roommate preference-->
+                    <h4 class="section-title"><span>Interests</span></h4>
+                    <div class="interests"><span class="badge pearable-badge">Singing</span><span class="badge pearable-badge">Training</span><span class="badge pearable-badge">Drawing</span><span class="badge pearable-badge">Hiking</span><span class="badge pearable-badge">Exploring the city</span><span class="badge pearable-badge">4 more</span></div>
+                    <!--/.interests-->
+                    <h4 class="section-title"><span>Contact Information</span></h4>
+                    <div class="list-block about-list">
+                      <ul>
+                        <li class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title">Phone</div>
+                            <div class="item-after">+1 123-456-7890</div>
+                          </div>
+                        </li>
+                        <li class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title">Email</div>
+                            <div class="item-after">hyori8723@students.philau.edu</div>
+                          </div>
+                        </li>
+                        <li class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title">Other Email</div>
+                            <div class="item-after">hello.hyori@gmail.com</div>
+                          </div>
+                        </li>
+                        <li class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title">Facebook</div>
+                            <div class="item-after">facebook.com/hello.hyori</div>
+                          </div>
+                        </li>
+                        <li class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title">Twitter</div>
+                            <div class="item-after">@hello.hyori</div>
+                          </div>
+                        </li>
+                      </ul>
+                      <!--/.about-list contact-info-->
+                    </div>
+                  </div>
+                </div>
+                <!-- Tab 3 -->
+                <div id="favorites" class="tab">
+                  <div class="content-block">
+                    <div class="list-block media-list favorite-list">
+                      <ul>
+                        <li>
+                          <a href="#" class="item-link item-content favorite-preview" data-view=".favorite-view">
+                            <div class="item-media"><img src="img/users/shruti.jpg"></div>
+                            <div class="item-inner">
+                              <div class="item-text">I got accepted to PhilaU for Spring 2017 and I'm looking for a roommate with...</div>
+                              <div class="item-title-row">
+                                <div class="item-title">By Shruti Hasaan</div>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="item-link item-content favorite-preview">
+                            <div class="item-media"><img src="img/users/yoon.jpeg"></div>
+                            <div class="item-inner">
+                              <div class="item-text">I live around UPenn and I'm looking for a new roommate. Anyone interested..</div>
+                              <div class="item-title-row">
+                                <div class="item-title">By Yoon Eun Hye</div>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!--/.end of favorite-list-->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/.profile tab-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/.end of profile-->
+
+    <!-- Bottom Toolbar-->
+    <div class="toolbar tabbar tabbar-labels">
+      <div class="toolbar-inner">
+        <a href="#home" class="tab-link active">
+          <i class="icon icon-home"></i>
+          <span class="tabbar-label">Home</span>
+        </a>
+        <a href="#message" class="tab-link">
+          <i class="icon icon-speech">
+            <span class="badge bg-red"></span>
+          </i>
+          <span class="tabbar-label">Message</span>
+        </a>
+        <a href="#search" class="tab-link">
+          <i class="icon icon-magnifier"></i>
+          <span class="tabbar-label">Search</span>
+        </a>
+        <a href="#profile" class="tab-link">
+          <i class="icon icon-user"></i>
+          <span class="tabbar-label">Profile</span>
+        </a>
+      </div>
+    </div>
+    <!--/.end of tabbar-->
+  </div>
+  <!--/.end of views-->
   <!-- Path to Framework7 Library JS-->
   <script type="text/javascript" src="js/framework7.min.js"></script>
   <!-- Path to your app js-->

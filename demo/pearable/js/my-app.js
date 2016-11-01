@@ -51,3 +51,13 @@ $$('.messagebar .link').on('click', function () {
   // Update conversation flag
   conversationStarted = true;
 });              
+
+
+$$('#profile').on('show', function(){
+  $$(this).find('.swiper-container')[0].swiper.update()
+});
+
+var mySwiper3 = myApp.swiper('.preference-swiper', {
+  spaceBetween: 15,
+  slidesPerView: 4.5
+});
