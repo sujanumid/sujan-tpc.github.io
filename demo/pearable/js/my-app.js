@@ -54,7 +54,11 @@ $$('.messagebar .link').on('click', function () {
 
 
 $$('#profile').on('show', function(){
-  $$(this).find('.swiper-container')[0].swiper.update()
+  $$(this).find('.swiper-container')[0].swiper.update();
+  var usedHeight = $$('.profile-box').outerHeight() + $$('.profile-tabs').outerHeight() + $$('#profile .navbar').outerHeight() + $$('.tabbar-labels').outerHeight();
+  var pageHeight = $$('#profile .page-content').outerHeight();
+  var newHeight = pageHeight-usedHeight;
+  $$('.profile-tab-content .tab').css('min-height',newHeight+'px');
 });
 
 var mySwiper3 = myApp.swiper('.preference-swiper', {
