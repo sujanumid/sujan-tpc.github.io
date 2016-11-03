@@ -287,13 +287,7 @@ body{
   margin: 5px 15px;
 }
 
-.message .message-text{
-  padding: 10px 15px !important;
-}
 
-.message-pic .message-text{
-  padding: 0px !important;
-}
 
 .message.message-pic img{
   border-radius: 5px;
@@ -328,6 +322,10 @@ body{
 }
 
 
+.message-last{
+  margin-bottom: 25px;
+}
+
 /**disables scrolling of entire screen*/
 .views{
   overflow: hidden;
@@ -342,8 +340,12 @@ body{
 }*/
 
 .message .message-text{
-  border-radius: 5px;
+  padding: 10px 15px !important;
+  border-radius: 5px !important;
   -webkit-mask-box-image:none !important;
+}
+.message-pic .message-text{
+  padding: 0px !important;
 }
 
 .message:first-child {
@@ -689,4 +691,25 @@ i.icon.icon-camera{
 
 #posts .pearable-card:last-child{
   margin-bottom: 10px;
+}
+
+
+/*****new post****/
+
+.newPost{
+  padding: 15px;
+}
+
+.newPost .item-title{
+  font-family: 'Work Sans', sans-serif;
+}
+
+.newPost textarea{
+  width: 100%;
+  font-size: 20px;
+  color: #555555;
+  font-family: 'NTR', sans-serif;
+  border:0;
+  resize:none;
+  line-height: 24px;
 }

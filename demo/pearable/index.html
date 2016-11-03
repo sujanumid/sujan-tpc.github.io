@@ -5,12 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <title>My App</title>
+  <title>Pearable</title>
   <!-- Path to Framework7 Library CSS-->
   <link rel="stylesheet" href="css/framework7.ios.min.css">
   <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
   <!-- Path to your custom app styles-->
   <link rel="stylesheet" href="css/my-app.css">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
 </head>
 <body>
   <!-- Status bar overlay for fullscreen mode-->
@@ -20,7 +29,7 @@
   <div class="views tabs toolbar-through">
     <!-- Your main view, should have "view-main" class-->
 
-    <div id="home" class="view view-tab tab active">
+    <div id="homeView" class="view view-main tab active">
       <!-- Top Navbar-->
       <div class="navbar">
         <div class="navbar-inner">
@@ -31,16 +40,16 @@
           <div class="right">
             <a href="notification.html" class="link icon-only"><i class="icon icon-bell"><span class="badge bg-red"></span></i></a>
           </div>
-          <div class="subnavbar">
-            <div class="sub-avatar"><img src="img/users/hyori.jpg"></div>
-            <div class="post-create">Write a post...</div>
-          </div>
+          <a href="newpost.html" class="subnavbar">
+              <div class="sub-avatar"><img src="img/users/hyori.jpg"></div>
+              <div class="post-create">Write a post...</div>
+          </a>
         </div>
       </div>
       <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
       <div class="pages navbar-through toolbar-through">
         <!-- Page, data-page contains page name-->
-        <div data-page="index" class="page">
+        <div data-page="homeView" class="page">
           <!-- Scrollable page content-->
           <div class="page-content home-page-content">
             <!--/.notification card-->
@@ -94,7 +103,7 @@
       </div>
     </div>
     <!--/.end of home-->
-    <div id="message" class="view tab message-view">
+    <div id="messageView" class="view tab message-view">
       <!-- Top Navbar-->
       <div class="navbar">
         <div class="navbar-inner">
@@ -104,7 +113,7 @@
       <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
       <div class="pages navbar-through toolbar-through">
         <!-- Page, data-page contains page name-->
-        <div data-page="index-2" class="page white">
+        <div data-page="messageView" class="page white">
           <!-- Scrollable page content-->
           <div class="page-content">
             <div class="list-block media-list pearable-list">
@@ -151,7 +160,7 @@
       </div>
     </div>
     <!--/.end of message-->
-    <div id="search" class="view tab">
+    <div id="searchView" class="view tab">
       <!-- Top Navbar-->
       <div class="navbar">
         <div class="navbar-inner">
@@ -160,7 +169,7 @@
       </div> 
       <div class="pages navbar-through toolbar-through">
         <!-- Page, data-page contains page name-->
-        <div data-page="index-3" class="page white">
+        <div data-page="searchView" class="page white">
           <!-- Scrollable page content-->
           <div class="page-content">
           </div>
@@ -168,7 +177,7 @@
       </div>
     </div>
     <!--/.end of search-->
-    <div id="profile" class="view tab">
+    <div id="profileView" class="view tab">
       <!-- Top Navbar-->
       <div class="navbar">
         <div class="navbar-inner">
@@ -180,7 +189,7 @@
       </div>
       <div class="pages navbar-through toolbar-through">
         <!-- Page, data-page contains page name-->
-        <div data-page="index-4" class="page white">
+        <div data-page="profileView" class="page white">
           <!-- Scrollable page content-->
           <div class="page-content">
             <div class="profile-box">
@@ -384,21 +393,21 @@
     <!-- Bottom Toolbar-->
     <div class="toolbar tabbar tabbar-labels">
       <div class="toolbar-inner">
-        <a href="#home" class="tab-link active">
+        <a href="#homeView" class="tab-link active">
           <i class="icon icon-home"></i>
           <span class="tabbar-label">Home</span>
         </a>
-        <a href="#message" class="tab-link">
+        <a href="#messageView" class="tab-link">
           <i class="icon icon-speech">
             <span class="badge bg-red"></span>
           </i>
           <span class="tabbar-label">Message</span>
         </a>
-        <a href="#search" class="tab-link">
+        <a href="#searchView" class="tab-link">
           <i class="icon icon-magnifier"></i>
           <span class="tabbar-label">Search</span>
         </a>
-        <a href="#profile" class="tab-link">
+        <a href="#profileView" class="tab-link">
           <i class="icon icon-user"></i>
           <span class="tabbar-label">Profile</span>
         </a>

@@ -10,17 +10,37 @@ var mainView = myApp.addView('.view', {
     dynamicNavbar: true
 });
 
-// Callbacks to run specific code for specific pages, for example for About page:
-myApp.onPageInit('about', function (page) {
+var messageView = myApp.addView('#messageView', {
+    // Because we use fixed-through navbar we can enable dynamic navbar
+    dynamicNavbar: true
+});
+   
+
+$$('#profile').on('show', function(){
+  $$(this).find('.swiper-container')[0].swiper.update();
+  var usedHeight = $$('.profile-box').outerHeight() + $$('.profile-tabs').outerHeight() + $$('#profile .navbar').outerHeight() + $$('.tabbar-labels').outerHeight();
+  var pageHeight = $$('#profile .page-content').outerHeight();
+  var newHeight = pageHeight-usedHeight;
+  $$('.profile-tab-content .tab').css('min-height',newHeight+'px');
 });
 
-// Conversation flag
+$$('#about').on('show',function(){
+  var preferenceSwiper = myApp.swiper('.preference-swiper', {
+    spaceBetween: 15,
+    slidesPerView: 4.5
+  });
+})
+
+//initialises chat
+
+myApp.onPageInit('message', function (page) {
+  // Conversation flag
 var conversationStarted = false;
- 
-// Init Messages
+  // Init Messages
 var myMessages = myApp.messages('.messages', {
   autoLayout:true
 });
+
  
 // Init Messagebar
 var myMessagebar = myApp.messagebar('.messagebar');
@@ -40,9 +60,6 @@ $$('.messagebar .link').on('click', function () {
     text: messageText,
     // Random message type
     type: 'sent',
-    // Avatar and name:
-    avatar: avatar,
-    name: name,
     // Day
     day: !conversationStarted ? 'Today' : false,
     time: !conversationStarted ? (new Date()).getHours() + ':' + (new Date()).getMinutes() : false
@@ -50,18 +67,6 @@ $$('.messagebar .link').on('click', function () {
  
   // Update conversation flag
   conversationStarted = true;
-});              
-
-
-$$('#profile').on('show', function(){
-  $$(this).find('.swiper-container')[0].swiper.update();
-  var usedHeight = $$('.profile-box').outerHeight() + $$('.profile-tabs').outerHeight() + $$('#profile .navbar').outerHeight() + $$('.tabbar-labels').outerHeight();
-  var pageHeight = $$('#profile .page-content').outerHeight();
-  var newHeight = pageHeight-usedHeight;
-  $$('.profile-tab-content .tab').css('min-height',newHeight+'px');
+});     
 });
 
-var mySwiper3 = myApp.swiper('.preference-swiper', {
-  spaceBetween: 15,
-  slidesPerView: 4.5
-});
