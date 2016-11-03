@@ -9,12 +9,15 @@ body{
 }
 
 html.with-statusbar-overlay .statusbar-overlay {
-  background: transparent !important;   /* your colour, f.e. here green*/
+  background: url('../img/pattern.jpg') !important;
+  background-size: 50% !important;
+  background-position: bottom !important;
 }
 
 .navbar{
 	background: url('../img/pattern.jpg');
 	background-size: 50%;
+  background-position: top;
 }
 
 #logo{
