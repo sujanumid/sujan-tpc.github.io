@@ -8,6 +8,10 @@ body{
   letter-spacing: -0.2px;
 }
 
+html.with-statusbar-overlay .statusbar-overlay {
+  background: transparent !important;   /* your colour, f.e. here green*/
+}
+
 .navbar{
 	background: url('../img/pattern.jpg');
 	background-size: 50%;
