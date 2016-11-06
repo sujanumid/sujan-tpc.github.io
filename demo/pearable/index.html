@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/framework7.ios.min.css">
   <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
   <!-- Path to your custom app styles-->
+  <link rel="stylesheet" href="css/owl.carousel.css">
   <link rel="stylesheet" href="css/my-app.css">
   <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
@@ -53,8 +54,8 @@
           <!-- Scrollable page content-->
           <div class="page-content home-page-content">
             <!--/.notification card-->
-            <div class="card pearable-card alert-card">
-              <img src="img/match-card.png">
+            <div class="card pearable-card alert-card swipeout">
+              <a href="match.html" class="swipeout-content"><img src="img/match-card.png"></a>
               <span class="close">&times;</span>
             </div>
             <!--/.end of notification card-->
@@ -89,7 +90,7 @@
               </div>
               <div class="card-content">
                 <div class="card-content-inner">
-                  <p>Looking to sell my coffee table for $15. It’s in good condition and hoping to sell it within a week. I’ve got some other #furniture as well so contact me at 6104257899 for more details.</p>
+                  <p>Looking to sell my coffee table for $15. It’s in good condition and hoping to sell it within a week. I’ve got some other <a href="#" class="hashtag">#furniture</a> as well so contact me at 6104257899 for more details.</p>
                 </div>
                 <img src="img/sell.png" class="post-image">
               </div>
@@ -132,7 +133,7 @@
                 </li>
                 <li>
                   <a href="#" class="item-link item-content message-preview">
-                    <div class="item-media"><img src="img/users/yoon.jpeg"></div>
+                    <div class="item-media"><img src="img/users/yoon.jpg"></div>
                     <div class="item-inner">
                       <div class="item-title-row">
                         <div class="item-title">Yoo Eun Hye</div>
@@ -162,9 +163,11 @@
     <!--/.end of message-->
     <div id="searchView" class="view tab">
       <!-- Top Navbar-->
-      <div class="navbar">
+      <div class="navbar searchBar">
         <div class="navbar-inner">
-          <textarea placeholder="Search for people or topics"></textarea><a href="#" class="link icon-only"><i class="icon icon-paper-search"></i></a>
+          <input type="search" placeholder="Search for people and topics" class="search-pearable">
+          <div class="right"><a href="#" class="link icon-only"><i class="icon icon-magnifier"></i></a>
+          </div>
         </div>
       </div> 
       <div class="pages navbar-through toolbar-through">
@@ -172,6 +175,48 @@
         <div data-page="searchView" class="page white">
           <!-- Scrollable page content-->
           <div class="page-content">
+            <h4 class="section-title"><span>Popular topics near you</span></h4>
+            <div class="topics"><span class="badge pearable-badge">Apartment</span><span class="badge pearable-badge">Furniture</span><span class="badge pearable-badge">Old books</span><span class="badge pearable-badge">Visa</span><span class="badge pearable-badge">On campus Jobs</span></div>
+            <!--/.topics-->
+            <h4 class="section-title"><span>People from Korea near you</span></h4>
+            <div class="list-block media-list pearable-list">
+              <ul>
+                <li>
+                  <a href="#" class="item-link item-content message-preview search-preview">
+                    <div class="item-media"><img src="img/users/yoon.jpg"></div>
+                    <div class="item-inner">
+                      <div class="item-title-row">
+                        <div class="item-title">Yoo Eun Hye</div>
+                      </div>
+                      <div class="item-text">Goes to University of Pennsylvania</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="item-link item-content message-preview search-preview">
+                    <div class="item-media"><img src="img/users/hyung.jpg"></div>
+                    <div class="item-inner">
+                      <div class="item-title-row">
+                        <div class="item-title">Park Hyung Sik</div>
+                      </div>
+                      <div class="item-text">Went to Philadelphia University</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="item-link item-content message-preview search-preview">
+                    <div class="item-media"><img src="img/users/seo.jpg"></div>
+                    <div class="item-inner">
+                      <div class="item-title-row">
+                        <div class="item-title">Park Seo Joon</div>
+                      </div>
+                      <div class="item-text">Goes to Drexel University</div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!--/.end of pearable-list-->
           </div>
         </div>
       </div>
@@ -367,7 +412,7 @@
                         </li>
                         <li>
                           <a href="#" class="item-link item-content favorite-preview">
-                            <div class="item-media"><img src="img/users/yoon.jpeg"></div>
+                            <div class="item-media"><img src="img/users/yoon.jpg"></div>
                             <div class="item-inner">
                               <div class="item-text">I live around UPenn and I'm looking for a new roommate. Anyone interested..</div>
                               <div class="item-title-row">
@@ -419,6 +464,8 @@
   <!-- Path to Framework7 Library JS-->
   <script type="text/javascript" src="js/framework7.min.js"></script>
   <!-- Path to your app js-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script type="text/javascript" src="js/my-app.js"></script>
+  <script type="text/javascript" src="js/owl.carousel.min.js"></script>
 </body>
 </html>

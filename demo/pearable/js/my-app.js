@@ -16,13 +16,14 @@ var messageView = myApp.addView('#messageView', {
 });
    
 
-$$('#profile').on('show', function(){
-  $$(this).find('.swiper-container')[0].swiper.update();
-  var usedHeight = $$('.profile-box').outerHeight() + $$('.profile-tabs').outerHeight() + $$('#profile .navbar').outerHeight() + $$('.tabbar-labels').outerHeight();
-  var pageHeight = $$('#profile .page-content').outerHeight();
+$$('#profileView').on('show', function(){
+  var usedHeight = $$('.profile-box').outerHeight() + $$('.profile-tabs').outerHeight() + $$('#profileView .navbar').outerHeight() + $$('.tabbar-labels').outerHeight();
+  var pageHeight = $$('#profileView .page-content').outerHeight();
   var newHeight = pageHeight-usedHeight;
+  console.log(usedHeight);
   $$('.profile-tab-content .tab').css('min-height',newHeight+'px');
 });
+
 
 $$('#about').on('show',function(){
   var preferenceSwiper = myApp.swiper('.preference-swiper', {
@@ -30,6 +31,22 @@ $$('#about').on('show',function(){
     slidesPerView: 4.5
   });
 })
+
+myApp.onPageInit('match', function (page) {
+  // var matchSwiper = myApp.swiper('.match-swiper', {
+  //   spaceBetween: 0,
+  //   slidesPerView: 1.25
+  // });
+$('.match-swiper').owlCarousel({
+    center: true,
+    items:1.25,
+    loop:false,
+    margin:10,
+});
+  $$('.match-card .card-header').each(function(index, el) {
+    $$(this).css('height',$$(this).width()*0.7+'px');
+  });
+});
 
 //initialises chat
 
@@ -68,5 +85,11 @@ $$('.messagebar .link').on('click', function () {
   // Update conversation flag
   conversationStarted = true;
 });     
+});
+
+
+$('.close').on('click', function(event) {
+  event.preventDefault();
+  $(this).parent().slideUp();
 });
 
