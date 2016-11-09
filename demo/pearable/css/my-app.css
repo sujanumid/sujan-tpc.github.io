@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Fredoka+One|NTR|Work+Sans:500');
+@import url('fontello.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css');
 
 
@@ -763,16 +764,24 @@ html.with-statusbar-overlay .statusbar-overlay {
   /****rommie matches****/
 
   .match-card{
-    max-width: 275px;
-    margin: 25px auto 15px auto;
+    margin: 25px auto 25px auto;
     box-shadow: 0 5px 20px rgb(222, 222, 222);
     border-radius: 5px;
+    overflow: hidden;
+    position: relative;
   }
 
   .match-card .card-header{
     background-size: cover;
     background-position: center;
     position: relative;
+    transition:0.3s ease;
+    -ms-transition:0.3s ease;
+    -webkit-transition:0.3s ease;
+  }
+
+  @media(max-width: 320px){
+
   }
 
   .card-header .overlay{
@@ -789,18 +798,41 @@ html.with-statusbar-overlay .statusbar-overlay {
     margin: auto;
   }
 
-  .match-card .info{
-    text-align: center;
-  }
+  
 
   .match-card .profile-box{
     padding: 0;
-    text-align: center;
     background: none;
   }
 
   .match-card .username{
     margin-top: 5px;
+    float: left;
+    margin-bottom: 5px;
+  }
+
+  .match-card .icon{
+    font-size: 16px;
+    color: #9DE230;
+    font-weight: 900;
+  }
+
+  .match-card .country .gray{
+    vertical-align: middle;
+  }
+
+  .match-card .country{
+    float: right;
+    margin-top: 5px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    line-height: 24px;
+    margin-bottom: 0;
+  }
+
+  .match-card .school{
+    clear: both;
   }
 
   .match-card .title{
@@ -838,4 +870,104 @@ html.with-statusbar-overlay .statusbar-overlay {
     border: 0;
     box-shadow: 0 3px 10px rgba(0,0,0,0.05);
     margin: 0 15px;
+  }
+
+
+  .match-card .card-content{
+    position: absolute;
+    bottom: -115px;
+    background: #ffffff;
+    transition:0.3s ease;
+    -ms-transition:0.3s ease;
+    -webkit-transition:0.3s ease;
+  }
+
+  .match-card.active .card-content{
+    bottom: 0;
+  }
+
+  .owl-item .match-card{
+    -ms-transform: scale(0.9, 0.9);
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+    transition:0.3s ease;
+    -ms-transition:0.3s ease;
+    -webkit-transition:0.3s ease;
+  }
+  .owl-item.active.center .match-card {
+    -ms-transform: scale(1,1);
+    -webkit-transform: scale(1,1);
+    transform: scale(1,1);
+  }
+
+
+  /****popover*****/
+
+  .modal-overlay{
+    background: rgba(0,0,0,0.2);
+  }
+
+  .popover {
+    min-width: 170px;
+    width: auto;
+    box-shadow: 0 0 8px rgba(0,0,0,0.19);
+    border-radius: 5px;
+    background: #ffffff;
+    top: 13px !important;
+    left: 15px !important;
+  }
+
+  .popover .list-block .item-link.list-button:after{
+    background: #f1f1f1;
+  }
+
+  .popover .list-block .item-link.list-button {
+    padding: 0 15px;
+    text-align: left;
+    color: #555555;
+    font-size: 15px;
+    display: block;
+    line-height: 40px;
+    border-radius: 5px !important;
+  }
+
+  .popover .list-block .icon{
+    margin-right: 5px;
+    font-weight: 900;
+  }
+
+  .popover .list-block .icon-location-pin{
+    color: #9DE230;
+  }
+
+  .popover-angle{
+    display: none;
+  }
+
+  .popover .icon-mfg-add{
+    margin-left: -3px;
+  }
+
+  .popover .item-link.active:before{
+    content: '\e800';
+    font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  float: right;
+    color: #9DE230;
+  }
+
+  .navbar-inner.addlocation{
+    background: #ffffff;
+  }
+  .navbar-inner.addlocation .search-pearable{
+    padding: 0 !important;
+  }
+
+  .navbar-inner.addlocation .left{
+    margin-right: 0 !important;
   }

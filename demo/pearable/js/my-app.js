@@ -8,13 +8,13 @@ var $$ = Dom7;
 var mainView = myApp.addView('.view', {
     // Because we use fixed-through navbar we can enable dynamic navbar
     dynamicNavbar: true
-});
+  });
 
 var messageView = myApp.addView('#messageView', {
     // Because we use fixed-through navbar we can enable dynamic navbar
     dynamicNavbar: true
-});
-   
+  });
+
 
 $$('#profileView').on('show', function(){
   var usedHeight = $$('.profile-box').outerHeight() + $$('.profile-tabs').outerHeight() + $$('#profileView .navbar').outerHeight() + $$('.tabbar-labels').outerHeight();
@@ -33,18 +33,31 @@ $$('#about').on('show',function(){
 })
 
 myApp.onPageInit('match', function (page) {
-  // var matchSwiper = myApp.swiper('.match-swiper', {
-  //   spaceBetween: 0,
-  //   slidesPerView: 1.25
-  // });
-$('.match-swiper').owlCarousel({
+  $('.match-swiper').owlCarousel({
     center: true,
     items:1.25,
     loop:false,
     margin:10,
-});
+  });
+
+  var availableHeight;
+
   $$('.match-card .card-header').each(function(index, el) {
-    $$(this).css('height',$$(this).width()*0.7+'px');
+    availableHeight = $$('.page-content').height()-186; //186 is the height of the navbar, match buttons including the margin of 25px and the margin of the card itself
+    $$(this).css('height',availableHeight+'px');
+    $$(this).parent().css('height',availableHeight+'px');
+  });
+
+  $('.match-card').on('click', function(event) {
+    event.preventDefault();
+    $(this).toggleClass('active');
+    
+    if($(this).find('.card-header').outerHeight() == availableHeight){
+      $(this).find('.card-header').animate({ height: 360 }, 3 );
+    }
+    else{
+      $(this).find('.card-header').animate({ height: availableHeight }, 3 );
+    }
   });
 });
 
@@ -52,23 +65,23 @@ $('.match-swiper').owlCarousel({
 
 myApp.onPageInit('message', function (page) {
   // Conversation flag
-var conversationStarted = false;
+  var conversationStarted = false;
   // Init Messages
-var myMessages = myApp.messages('.messages', {
-  autoLayout:true
-});
+  var myMessages = myApp.messages('.messages', {
+    autoLayout:true
+  });
 
- 
+
 // Init Messagebar
 var myMessagebar = myApp.messagebar('.messagebar');
- 
+
 // Handle message
 $$('.messagebar .link').on('click', function () {
   // Message text
   var messageText = myMessagebar.value().trim();
   // Exit if empy message
   if (messageText.length === 0) return;
- 
+
   // Empty messagebar
   myMessagebar.clear()
   // Add message
@@ -81,7 +94,7 @@ $$('.messagebar .link').on('click', function () {
     day: !conversationStarted ? 'Today' : false,
     time: !conversationStarted ? (new Date()).getHours() + ':' + (new Date()).getMinutes() : false
   })
- 
+
   // Update conversation flag
   conversationStarted = true;
 });     
@@ -91,5 +104,10 @@ $$('.messagebar .link').on('click', function () {
 $('.close').on('click', function(event) {
   event.preventDefault();
   $(this).parent().slideUp();
+});
+
+$('.popover a').on('click', function(event) {
+  event.preventDefault();
+  myApp.closeModal()
 });
 
