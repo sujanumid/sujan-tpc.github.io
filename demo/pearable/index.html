@@ -13,28 +13,52 @@
   <link rel="stylesheet" href="css/owl.carousel.css">
   <link rel="stylesheet" href="css/my-app.css">
   <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
-<link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
-<link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
-<link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
-<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2fNF-NikIucZCeC6N54JCVvlRyJ_-Tmo"></script>
 </head>
 <body>
   <!--/.popover-->
-      <div class="popover popover-location">
-        <div class="popover-inner">
-          <div class="list-block">
-            <ul>
-              <li><a href="#" class="list-button item-link active"><i class="icon icon-location-pin"></i> Near me</a></li>
-              <li><a href="addlocation.html" class="list-button item-link add-new"><i class="icon icon-mfg-add"></i> Add new location</a></li>
-            </ul>
-          </div>
-        </div>
+  <div class="popover popover-location">
+    <div class="popover-inner">
+      <div class="list-block">
+        <ul>
+          <li><a href="#" class="list-button item-link active"><i class="icon icon-location-pin"></i> Near me</a></li>
+          <li><a href="addlocation.html" class="list-button item-link add-new"><i class="icon icon-mfg-add"></i> Add new location</a></li>
+        </ul>
       </div>
-      <!--/.popover ends-->
+    </div>
+  </div>
+  <!--/.card-popover-->
+  <div class="popover popover-card">
+    <div class="popover-inner">
+      <div class="list-block">
+        <ul>
+          <li><a href="#" class="list-button item-link">Mark as Favorite</a></li>
+          <li><a href="#" class="list-button item-link">Report this post</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--/.share-popover-->
+  <div class="popover popover-share">
+    <div class="popover-inner">
+      <div class="list-block">
+        <ul>
+          <li><a href="#" class="list-button item-link">Send as a message</a></li>
+          <li><a href="#" class="list-button item-link">Share via SMS</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--/.popover ends-->
   <!-- Status bar overlay for fullscreen mode-->
   <div class="statusbar-overlay"></div>
   <!-- Views-->
@@ -54,8 +78,8 @@
             <a href="notification.html" class="link icon-only"><i class="icon icon-bell"><span class="badge bg-red"></span></i></a>
           </div>
           <a href="newpost.html" class="subnavbar">
-              <div class="sub-avatar"><img src="img/users/hyori.jpg"></div>
-              <div class="post-create">Write a post...</div>
+            <div class="sub-avatar"><img src="img/users/hyori.jpg"></div>
+            <div class="post-create">Write a post...</div>
           </a>
         </div>
       </div>
@@ -75,7 +99,7 @@
               <div class="card-header no-border">
                 <div class="pearable-avatar"><img src="img/users/hyori.jpg"></div>
                 <div class="pearable-more">
-                  <i class="icon-arrow-down"></i>
+                  <a href="#" class="open-card link"><i class="icon-arrow-down"></i></a>
                 </div>
                 <div class="pearable-name">Lee Hyori</div>
                 <div class="pearable-timestamp">1 hour ago</div>
@@ -87,7 +111,7 @@
               </div>
               <div class="card-footer no-border">
                 <a href="#" class="link">2 comments</a>
-                <a href="#" class="link">Share</a>
+                <a href="#" class="open-share link">Share</a>
               </div>
             </div>
             <!--/.post with image-->
@@ -95,7 +119,7 @@
               <div class="card-header no-border">
                 <div class="pearable-avatar"><img src="img/users/brian.jpg"></div>
                 <div class="pearable-more">
-                  <i class="icon-arrow-down"></i>
+                  <a href="#" class="open-card link"><i class="icon-arrow-down"></i></a>
                 </div>
                 <div class="pearable-name">Brian Rogers</div>
                 <div class="pearable-timestamp">2 hours ago</div>
@@ -108,7 +132,7 @@
               </div>
               <div class="card-footer no-border">
                 <a href="#" class="link">2 comments</a>
-                <a href="#" class="link">Share</a>
+                <a href="#" class="open-share link">Share</a>
               </div>
             </div>
           </div>
@@ -476,8 +500,13 @@
   <!-- Path to Framework7 Library JS-->
   <script type="text/javascript" src="js/framework7.min.js"></script>
   <!-- Path to your app js-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script type="text/javascript" src="js/my-app.js"></script>
   <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="js/gmaps.js"></script>
+  <script type="text/javascript" src="js/my-app.js"></script>
+  <script>
+  var messageView = myApp.addView('#messageView', {
+  dynamicNavbar: true
+});
+  </script>
 </body>
 </html>

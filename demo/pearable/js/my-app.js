@@ -6,14 +6,8 @@ var $$ = Dom7;
 
 // Add view
 var mainView = myApp.addView('.view', {
-    // Because we use fixed-through navbar we can enable dynamic navbar
-    dynamicNavbar: true
-  });
-
-var messageView = myApp.addView('#messageView', {
-    // Because we use fixed-through navbar we can enable dynamic navbar
-    dynamicNavbar: true
-  });
+  dynamicNavbar: true
+});
 
 
 $$('#profileView').on('show', function(){
@@ -30,7 +24,7 @@ $$('#about').on('show',function(){
     spaceBetween: 15,
     slidesPerView: 4.5
   });
-})
+});
 
 myApp.onPageInit('match', function (page) {
   $('.match-swiper').owlCarousel({
@@ -70,7 +64,37 @@ myApp.onPageInit('message', function (page) {
   var myMessages = myApp.messages('.messages', {
     autoLayout:true
   });
+});
 
+myApp.onPageInit('addlocation',function (page){
+  new GMaps({
+    div: '#map',
+    lat: -12.043333,
+    lng: -77.028333,
+    content: '<div class="overlay map-pin"><i class="icon icon-location-pin"></i><span>Save this location</span></div>',
+    disableDefaultUI: true
+  });
+})
+  
+myApp.onPageInit('onboard',function (page){
+  var mySwiper = myApp.swiper('.onboard-container', {
+    pagination: '.onboard-pagination',
+    paginationHide: false,
+    paginationClickable: true,
+    nextButton: '.swiper-next'
+  }); 
+  mySwiper.on('onSlideChangeStart', function(){
+    if(mySwiper.isEnd == true){
+      $('.swiper-skip').hide();
+      $('.swiper-next').text('GOT IT');
+      $('.swiper-next').attr('href','signup-form.html')
+    }else{
+      $('.swiper-skip').show();
+      $('.swiper-next').text('NEXT');
+      $('.swiper-next').attr('href','#')
+    }
+  })
+})
 
 // Init Messagebar
 var myMessagebar = myApp.messagebar('.messagebar');
@@ -93,12 +117,10 @@ $$('.messagebar .link').on('click', function () {
     // Day
     day: !conversationStarted ? 'Today' : false,
     time: !conversationStarted ? (new Date()).getHours() + ':' + (new Date()).getMinutes() : false
-  })
-
+  });
   // Update conversation flag
   conversationStarted = true;
-});     
-});
+}); 
 
 
 $('.close').on('click', function(event) {
@@ -110,4 +132,23 @@ $('.popover a').on('click', function(event) {
   event.preventDefault();
   myApp.closeModal()
 });
+
+$('#homeView .pearable-card .card-content').on('click', function(event) {
+  event.preventDefault();
+  mainView.router.loadPage('comment.html');
+});
+
+$(document).on('click','.open-card,.open-share',function(event) {
+  event.preventDefault();
+  var clickedLink = this;
+  elementTop = $(this).offset().top;
+  if($(this).hasClass('open-card')){
+    myApp.popover('.popover-card', clickedLink);
+    $('.popover-card').css('top',elementTop+7+'px');
+  }else{
+    myApp.popover('.popover-share', clickedLink);
+    $('.popover-share').css('top',elementTop-43+'px');
+  }
+});
+
 
