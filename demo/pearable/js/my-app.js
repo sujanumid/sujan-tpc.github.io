@@ -14,7 +14,6 @@ $$('#profileView').on('show', function(){
   var usedHeight = $$('.profile-box').outerHeight() + $$('.profile-tabs').outerHeight() + $$('#profileView .navbar').outerHeight() + $$('.tabbar-labels').outerHeight();
   var pageHeight = $$('#profileView .page-content').outerHeight();
   var newHeight = pageHeight-usedHeight;
-  console.log(usedHeight);
   $$('.profile-tab-content .tab').css('min-height',newHeight+'px');
 });
 
@@ -55,24 +54,19 @@ myApp.onPageInit('match', function (page) {
   });
 });
 
-//initialises chat
 
-myApp.onPageInit('message', function (page) {
-  // Conversation flag
-  var conversationStarted = false;
-  // Init Messages
-  var myMessages = myApp.messages('.messages', {
-    autoLayout:true
-  });
-});
 
 myApp.onPageInit('addlocation',function (page){
-  new GMaps({
+  map = new GMaps({
     div: '#map',
     lat: -12.043333,
     lng: -77.028333,
-    content: '<div class="overlay map-pin"><i class="icon icon-location-pin"></i><span>Save this location</span></div>',
     disableDefaultUI: true
+  });
+  map.drawOverlay({
+    lat: -12.043333,
+    lng: -77.028333,
+    content: '<div class="overlay map-pin"><i class="icon icon-location-pin"></i><span>Save this location</span></div>',
   });
 })
   
@@ -87,7 +81,7 @@ myApp.onPageInit('onboard',function (page){
     if(mySwiper.isEnd == true){
       $('.swiper-skip').hide();
       $('.swiper-next').text('GOT IT');
-      $('.swiper-next').attr('href','signup-form.html')
+      $('.swiper-next').attr('href','register.html')
     }else{
       $('.swiper-skip').show();
       $('.swiper-next').text('NEXT');
@@ -96,31 +90,41 @@ myApp.onPageInit('onboard',function (page){
   })
 })
 
-// Init Messagebar
-var myMessagebar = myApp.messagebar('.messagebar');
-
-// Handle message
-$$('.messagebar .link').on('click', function () {
-  // Message text
-  var messageText = myMessagebar.value().trim();
-  // Exit if empy message
-  if (messageText.length === 0) return;
-
-  // Empty messagebar
-  myMessagebar.clear()
-  // Add message
-  myMessages.addMessage({
-    // Message text
-    text: messageText,
-    // Random message type
-    type: 'sent',
-    // Day
-    day: !conversationStarted ? 'Today' : false,
-    time: !conversationStarted ? (new Date()).getHours() + ':' + (new Date()).getMinutes() : false
+//initialises chat
+myApp.onPageInit('message', function (page) {
+  // Conversation flag
+  var conversationStarted = false;
+  // Init Messages
+  var myMessages = myApp.messages('.messages', {
+    autoLayout:true
   });
-  // Update conversation flag
-  conversationStarted = true;
-}); 
+
+  // Init Messagebar
+  var myMessagebar = myApp.messagebar('.messagebar');
+
+  // Handle message
+  $$('.messagebar .send-link').on('click', function () {
+    // Message text
+    var messageText = myMessagebar.value().trim();
+    // Exit if empy message
+    if (messageText.length === 0) return;
+
+    // Empty messagebar
+    myMessagebar.clear()
+    // Add message
+    myMessages.addMessage({
+      // Message text
+      text: messageText,
+      // Random message type
+      type: 'sent',
+      // Day
+      day: !conversationStarted ? 'Today' : false,
+      time: !conversationStarted ? (new Date()).getHours() + ':' + (new Date()).getMinutes() : false
+    });
+    // Update conversation flag
+    conversationStarted = true;
+  }); 
+});
 
 
 $('.close').on('click', function(event) {
@@ -152,3 +156,38 @@ $(document).on('click','.open-card,.open-share',function(event) {
 });
 
 
+myApp.onPageInit('register',function (page){
+  $('.has-helper').on('focus', function(event) {
+    event.preventDefault();
+    $(this).siblings('.helper').slideDown('fast');
+  });
+  $('.has-helper').on('blur', function(event) {
+    event.preventDefault();
+    $(this).siblings('.helper').slideUp('fast');
+  });
+});
+
+
+myApp.onPageInit('setup',function (page){
+  $$('.setup-action').on('click', function () {
+    
+    var buttons = [
+      {
+        text: 'Take a photo',
+      },
+      {
+        text: 'Choose existing photo'
+      },
+      {
+        text: 'Cancel',
+      },
+    ];
+    myApp.actions(buttons);
+    $$('.login-now').hide();
+  });
+  
+})
+$(document).on('close', '.actions-modal', function(event){
+  event.preventDefault();
+  $('.login-now').show();
+})
