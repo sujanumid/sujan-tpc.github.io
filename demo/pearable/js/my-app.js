@@ -57,19 +57,62 @@ myApp.onPageInit('match', function (page) {
 
 
 myApp.onPageInit('addlocation',function (page){
+  ulat= -12.043333,
+  ulng= -77.028333
   map = new GMaps({
     div: '#map',
-    lat: -12.043333,
-    lng: -77.028333,
+    lat: ulat,
+    lng: ulng,
     disableDefaultUI: true
   });
-  map.drawOverlay({
-    lat: -12.043333,
-    lng: -77.028333,
-    content: '<div class="overlay map-pin"><i class="icon icon-location-pin"></i><span>Save this location</span></div>',
+  $(document).on('click','.modal-overlay,.close',function(e){
+    myApp.closeModal('.modal') 
   });
+  $('.get-location').on('click',function(e){
+    e.preventDefault();
+    if($('.search-pearable').val() != ""){
+      searchInput = $('.search-pearable').val()
+      if(searchInput == 'Philadelphia University'){
+        ulat = 40.023208;
+        ulng = -75.194264;
+      }else if(searchInput == 'Stanford University'){
+        ulat = 37.427526;
+        ulng = -122.170062
+      }
+      map.setCenter(ulat, ulng);
+      drawOverlay(ulat,ulng);
+    }
+  })
 })
-  
+
+function drawOverlay(ulat, ulng){
+  map.removeOverlays();
+  map.drawOverlay({
+    lat: ulat,
+    lng: ulng,
+    content: '<div class="overlay map-pin"><i class="icon icon-location-pin"></i><span>Save this location</span></div>',
+    click: function(e) {
+      myApp.modal({
+        title:  '',
+        text: '<span class="close">&times;</span><img src="img/radar.png" class="modal-img"><p>Save this feed. You can switch from your local feed to saved feed(s) to see what people are sharing in other locations.</p><div class="input-field"><input type="text" class="modal-text-input" placeholder="Enter Feed Name"></div>',
+        verticalButtons: true,
+        buttons: [
+        {
+          text: 'Save Feed',
+          onClick: function() {
+            mainView.router.back();
+          }
+        },
+        ]
+      })
+    }
+  });
+}
+
+myApp.onPageInit('newPost',function (page){
+  $('textarea').focus();
+});
+
 myApp.onPageInit('onboard',function (page){
   var mySwiper = myApp.swiper('.onboard-container', {
     pagination: '.onboard-pagination',
@@ -170,17 +213,17 @@ myApp.onPageInit('register',function (page){
 
 myApp.onPageInit('setup',function (page){
   $$('.setup-action').on('click', function () {
-    
+
     var buttons = [
-      {
-        text: 'Take a photo',
-      },
-      {
-        text: 'Choose existing photo'
-      },
-      {
-        text: 'Cancel',
-      },
+    {
+      text: 'Take a photo',
+    },
+    {
+      text: 'Choose existing photo'
+    },
+    {
+      text: 'Cancel',
+    },
     ];
     myApp.actions(buttons);
     $$('.login-now').hide();
