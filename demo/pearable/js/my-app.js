@@ -17,6 +17,10 @@ $$('#profileView').on('show', function(){
   $$('.profile-tab-content .tab').css('min-height',newHeight+'px');
 });
 
+$$('#searchView').on('show',function(){
+  console.log($$('#searchView').outerHeight());
+  $$('.search-posts').css('height',$$('#searchView').outerHeight()-136+'px');
+})
 
 $$('#about').on('show',function(){
   var preferenceSwiper = myApp.swiper('.preference-swiper', {
@@ -233,4 +237,18 @@ myApp.onPageInit('setup',function (page){
 $(document).on('close', '.actions-modal', function(event){
   event.preventDefault();
   $('.login-now').show();
+})
+
+/***search***/
+
+$('.btn-main-search').on('click',function(e){
+  e.preventDefault();
+  if($('.search-pearable').val() != ""){
+    myApp.showIndicator();
+    setTimeout(function () {
+      $('.post-search').show();
+      myApp.hideIndicator();
+      $('.default-search').fadeOut('fast');
+    }, 1000);
+  }
 })

@@ -331,6 +331,10 @@ a{
   color: #619E00;
 }
 
+.bg-gray{
+  background: #eeeeee;
+}
+
 /***message****/
 
 .pearable-list,.notification-list{
@@ -891,7 +895,18 @@ i.icon.icon-camera{
   margin: 0;
 }
 
+.popular-people-list.favorite-list li:first-child{
+  margin-top: -15px;
+}
 
+
+.search-tabs{
+  border-top: 0 !important;
+}
+
+.post-search{
+  display: none;
+}
 
 /****rommie matches****/
 

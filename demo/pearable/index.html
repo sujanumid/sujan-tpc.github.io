@@ -202,7 +202,7 @@
       <div class="navbar searchBar">
         <div class="navbar-inner">
           <input type="search" placeholder="Search for people and topics" class="search-pearable">
-          <div class="right"><a href="#" class="link icon-only"><i class="icon icon-magnifier"></i></a>
+          <div class="right"><a href="#" class="link icon-only btn-main-search"><i class="icon icon-magnifier"></i></a>
           </div>
         </div>
       </div> 
@@ -210,7 +210,7 @@
         <!-- Page, data-page contains page name-->
         <div data-page="searchView" class="page white">
           <!-- Scrollable page content-->
-          <div class="page-content">
+          <div class="page-content default-search">
             <h4 class="section-title"><span>Popular topics near you</span></h4>
             <div class="topics"><span class="badge pearable-badge">Apartment</span><span class="badge pearable-badge">Furniture</span><span class="badge pearable-badge">Old books</span><span class="badge pearable-badge">Visa</span><span class="badge pearable-badge">On campus Jobs</span></div>
             <!--/.topics-->
@@ -253,6 +253,153 @@
               </ul>
             </div>
             <!--/.end of pearable-list-->
+          </div>
+          <!--/.default page-content-->
+          <div class="page-content post-search">
+
+            <div class="buttons-row profile-tabs search-tabs">
+              <!-- Link to 1st tab, active -->
+              <a href="#popular" class="tab-link active button">Popular</a>
+              <!-- Link to 2nd tab -->
+              <a href="#posts" class="tab-link button">Posts</a>
+              <!-- Link to 3rd tab -->
+              <a href="#people" class="tab-link button">People</a>
+            </div>
+            <div class="profile-tab-content">
+              <!-- profile tab start -->
+              <div class="tabs">
+                <!-- Tab 1, active by default -->
+                <div id="popular" class="tab active">
+                  <div class="content-block">
+                    <h4 class="section-title"><span>People</span></h4>
+                    <div class="list-block media-list pearable-list">
+                      <ul>
+                        <li>
+                          <a href="#" class="item-link item-content message-preview search-preview">
+                            <div class="item-media"><img src="img/users/shruti.jpg"></div>
+                            <div class="item-inner">
+                              <div class="item-title-row">
+                                <div class="item-title">Shruti Hasaan</div>
+                              </div>
+                              <div class="item-text">Goes to Philadelphia University</div>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="item-link item-content message-preview search-preview">
+                            <div class="item-media"><img src="img/users/hyung.jpg"></div>
+                            <div class="item-inner">
+                              <div class="item-title-row">
+                                <div class="item-title">Park Hyung Sik</div>
+                              </div>
+                              <div class="item-text">Went to Philadelphia University</div>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="item-link item-content message-preview search-preview">
+                            <div class="item-media"><img src="img/users/byul.jpg"></div>
+                            <div class="item-inner">
+                              <div class="item-title-row">
+                                <div class="item-title">Park Han Byul</div>
+                              </div>
+                              <div class="item-text">Goes to Philadelphia University</div>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!--/.end of pearable-list-->
+                    <h4 class="section-title"><span>Posts from people</span></h4>
+                    <div class="list-block media-list favorite-list popular-people-list">
+                      <ul>
+                        <li>
+                          <a href="#" class="item-link item-content favorite-preview" data-view=".favorite-view">
+                            <div class="item-media"><img src="img/users/shruti.jpg"></div>
+                            <div class="item-inner">
+                              <div class="item-text">I got accepted to PhilaU for Spring 2017 and I'm looking for a roommate with...</div>
+                              <div class="item-title-row">
+                                <div class="item-title">By Shruti Hasaan</div>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!--/.end of posts-list-->
+                  </div>
+                </div>
+                
+                <!-- Tab 2 -->
+                <div id="posts" class="tab search-posts">
+                  <div class="content-block">
+                    <div class="card pearable-card">
+                      <div class="card-header no-border">
+                        <div class="pearable-avatar"><img src="img/users/hyori.jpg"></div>
+                        <div class="pearable-more">
+                          <i class="icon-arrow-down"></i>
+                        </div>
+                        <div class="pearable-name">Lee Hyori</div>
+                        <div class="pearable-timestamp">1 hour ago</div>
+                      </div>
+                      <div class="card-content">
+                        <div class="card-content-inner">
+                          <p>Hello everyone! I'm looking for an apartment near Philadelphia University. Could someone suggest good places?</p>
+                        </div>
+                      </div>
+                      <div class="card-footer no-border">
+                        <a href="#" class="link">2 comments</a>
+                        <a href="#" class="link">Share</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Tab 3 -->
+                <div id="people" class="tab">
+                  <div class="content-block">
+                    <div class="list-block media-list pearable-list">
+                      <ul>
+                        <li>
+                          <a href="#" class="item-link item-content message-preview search-preview">
+                            <div class="item-media"><img src="img/users/shruti.jpg"></div>
+                            <div class="item-inner">
+                              <div class="item-title-row">
+                                <div class="item-title">Shruti Hasaan</div>
+                              </div>
+                              <div class="item-text">Goes to Philadelphia University</div>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="item-link item-content message-preview search-preview">
+                            <div class="item-media"><img src="img/users/hyung.jpg"></div>
+                            <div class="item-inner">
+                              <div class="item-title-row">
+                                <div class="item-title">Park Hyung Sik</div>
+                              </div>
+                              <div class="item-text">Went to Philadelphia University</div>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="item-link item-content message-preview search-preview">
+                            <div class="item-media"><img src="img/users/byul.jpg"></div>
+                            <div class="item-inner">
+                              <div class="item-title-row">
+                                <div class="item-title">Park Han Byul</div>
+                              </div>
+                              <div class="item-text">Goes to Philadelphia University</div>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!--/.end of pearable-list-->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/.tab-->
           </div>
         </div>
       </div>
@@ -504,9 +651,9 @@
   <script type="text/javascript" src="js/gmaps.js"></script>
   <script type="text/javascript" src="js/my-app.js"></script>
   <script>
-    var messageView = myApp.addView('#messageView', {
-      dynamicNavbar: true
-    });
+  var messageView = myApp.addView('#messageView', {
+    dynamicNavbar: true
+  });
   </script>
 </body>
 </html>
