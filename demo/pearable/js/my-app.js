@@ -89,6 +89,8 @@ myApp.onPageInit('addlocation',function (page){
   })
 })
 
+feed=""
+
 function drawOverlay(ulat, ulng){
   map.removeOverlays();
   map.drawOverlay({
@@ -104,7 +106,11 @@ function drawOverlay(ulat, ulng){
         {
           text: 'Save Feed',
           onClick: function() {
+            feed = $('.modal-text-input').val();
+            console.log(feed);
             mainView.router.back();
+            $('.popover-location ul li a.active').removeClass('active')
+            $('.popover-location ul li:last-child').prepend('<li><a href="#" class="list-button item-link active"><i class="icon icon-location-pin"></i> '+feed+'</a></li>')
           }
         },
         ]
@@ -252,3 +258,7 @@ $('.btn-main-search').on('click',function(e){
     }, 1000);
   }
 })
+
+$('.user-profile-link').on('click',function(e){
+  myApp.showTab('#profileView');
+});
