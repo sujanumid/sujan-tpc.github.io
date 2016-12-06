@@ -380,7 +380,7 @@ a{
 .message-preview .item-text{
   /*font-size: 16px;*/
   font-size: 13px;
-  line-height: 18px;
+  line-height: 13px;
   -webkit-line-clamp:1;
   height: 13px;
   width: calc(100% - 52.5px);
@@ -667,6 +667,10 @@ i.icon.icon-camera{
 .profile-tab-content #posts-search{
   background: #EEEEEE;
   padding-top: 1px;
+}
+
+.profile-tab-content #posts{
+  background: #eeeeee;
 }
 
 #favorites .content-block{
