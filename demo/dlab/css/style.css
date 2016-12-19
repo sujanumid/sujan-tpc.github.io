@@ -1,0 +1,574 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700|Exo+2:700|Varela+Round|Merriweather:700i';
+@import url(normalize.css);
+@import url(animate.css);
+
+body {
+	position: relative;
+	overflow-x: hidden;
+	font-family: 'Varela Round', sans-serif;
+	color: #333333;
+}
+
+
+.row {
+	position: relative;
+}
+
+.margin-reset {
+	margin: 0px !important;
+}
+
+.padding-reset {
+	padding: 0px !important;
+}
+
+/******button styling*******/
+
+.btn, a {
+	outline: 0 !important;
+	text-decoration: none !important;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+.btn{
+	height: 50px;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 15px;
+	padding: 10px 40px;
+	min-width: 120px;
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	line-height: 30px;
+	border: 0;
+	border-radius: 25px;
+}
+
+
+
+/***********/
+
+
+/*****typography*******/
+
+h1, h2, h3, h4, h5, h6, .title-text {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+.title-text,.outreach-text{
+	text-shadow: 0 2px 6px rgba(0,0,0,0.1);
+	-webkit-text-shadow: 0 2px 6px rgba(0,0,0,0.1);
+	-moz-text-shadow: 0 2px 6px rgba(0,0,0,0.1);
+	text-transform: uppercase;
+}
+
+.block-title{
+	font-family: Montserrat;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0;
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
+
+p{
+	font-size: 14px;
+	line-height: 22px;
+	white-space: pre-line;
+}
+
+.text-italic{
+	font-style: italic;
+}
+
+.text-bold{
+	font-weight: 700;
+}
+
+.tag{
+	padding: 5px 25px;
+	position: absolute;
+	font-family: 'Exo 2', sans-serif;
+	text-transform: uppercase;
+	background: #ffffff;
+	display: inline-block;
+	top: 15px;
+	font-size: 12px;
+	color: #555555;
+}
+
+.block-detail{
+    font-size: 13px;
+}
+
+/***********/
+
+/******ui base layout component*******/
+
+.main-container{
+	margin: 130px auto 50px auto;
+}
+
+
+.jumbotron{
+	text-align: center;
+	padding:120px 15px;
+	border-radius: 0 !important;
+	background-image: url('https://unsplash.it/1200/600/?image=1076');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.jumbotron .title-text{
+	line-height: 48px;
+	font-size: 48px;
+	color: #ffffff;
+}
+
+
+.outreach-block{
+	padding: 120px 15px;
+	text-align: center;
+	background-image: url('https://unsplash.it/1200/600/?image=898');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.outreach-block .outreach-text{
+	line-height: 36px;
+	font-size: 36px;
+	color: #ffffff;
+}
+
+/**********/
+
+
+
+
+/*****************slider**************/
+
+.owl-item{
+	border: 5px solid #ffffff;
+}
+
+.owl-slide{
+	width: 100%;
+	height: 400px;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	background-position: center center !important;
+}
+
+.overlay{
+	background: rgba(35,73,100,0.4);
+	display: table;
+	width: 100%;
+	padding: 0 30px;
+	height: inherit;
+}
+
+/********************/
+
+
+
+/****navbar****/
+
+.nav{
+	position: relative;
+}
+
+.navbar{
+	background-color: #ffffff;
+	border-radius: 0;
+	border: 0;
+	text-transform: uppercase;
+	z-index: 1080;
+}
+
+.navbar-brand,
+.navbar-nav > li > a{
+	font-family: 'Montserrat', sans-serif;
+	line-height: 80px;
+	height: 80px;
+	padding: 0px 20px;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #555555;
+}
+
+.navbar li.active a{
+	background: none !important;
+	color: #111111 !important;
+}
+
+.navbar-brand img{
+	display: inline-block;
+	margin-right: 15px;
+	max-height: 40px;
+}
+
+
+.navbar-toggle{
+	margin-top: 22px;
+	border-width: 2px;
+}
+
+.static{
+	position: static !important;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+	color: #486e86;
+	background-color: #d9e5eb;
+}
+
+/************/
+
+
+/****box***/
+
+.block-grid{
+	margin-top: 60px;
+}
+
+.block{
+	position: relative;
+	height: 300px;
+	margin-bottom: 50px;
+	display: block;
+	overflow: hidden;
+}
+
+.block-child{
+	height: inherit;
+	background-size: 100% !important;
+	background-position: center !important;
+	transition:0.3s ease;
+}
+
+.block:hover .block-child{
+	transform: scale(1.2);
+}
+
+.gradient-overlay{
+	background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 100%);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: absolute;
+}
+
+.detail-block{
+	margin-bottom: 50px;
+}
+
+.detail-block .block{
+	margin-bottom: 15px;
+}
+
+/*********/
+
+/*****page-common***/
+
+.page-banner{
+	padding: 60px 0;
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 50px;
+}
+
+.page-banner .title-text{
+	text-align: center;
+	color: #ffffff;
+	font-size: 36px;
+}
+
+.block-text{
+	font-size: 13px;
+	line-height: 24px;
+}
+
+.block-img{
+	max-width: 100%;
+}
+
+blockquote{
+	margin-top: 70px;
+	border-left-color:#333333;
+	padding: 10px 20px 10px 30px; 
+}
+
+blockquote p{
+	font-family: 'Merriweather', serif;
+	font-size: 24px;
+	font-weight: bold;
+	font-style: italic;
+	line-height: 42px;
+	color: #333333;
+}
+
+.about-img{
+	margin:70px auto;
+}
+
+.faculty-group{
+	margin: 25px auto;
+}
+
+.faculty-group img{
+	width: 100%;
+}
+
+.faculty-name{
+	text-transform: uppercase;
+}
+
+/*******************/
+
+
+/*****course*****/
+
+.related-link {
+    padding: 0 0 0 15px;
+    margin-top: 50px;
+}
+
+.related-link li {
+    padding-left: 0px;
+    font-size: 13px;
+    line-height: 25px;
+}
+
+.related-link .title {
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-left: -15px;
+    margin-bottom: 15px;
+}
+
+.related-link a {
+    color: #333333;
+    text-decoration: underline !important;
+}
+
+.related-link a:hover{
+	color: #777777;
+}
+
+.info-box{
+	border: 1px solid #dddddd;
+	padding: 25px;
+	list-style: none;
+}
+
+.info-box .title{
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+.info-box li:not(:last-child){
+	margin-bottom: 30px;
+}
+
+.info-box li p{
+	font-size: 13px;
+}
+.info-box a{
+	color: #333333;
+}
+
+.info-box a:hover{
+	text-decoration: underline !important;
+}
+
+.info-box .faculty-name{
+	text-transform: none;
+}
+
+.info-box .faculty-email{
+	text-decoration: underline;
+	float: right
+}
+
+/****************/
+
+
+/******publications*******/
+
+.publication-item img{
+	max-width: 250px
+}
+
+.publication-item:after{
+	border-bottom: 1px solid #EEEEEE;
+	content: "";
+	display: block;
+    padding-top: 30px;
+    margin: 0 15px;
+    margin-bottom: 30px;
+    clear: both;
+}
+
+.publication-list .row:last-child .publication-item:after{
+	border: 0;
+}
+
+.media-heading.title-text{
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 24px;
+	color: #555555;
+	text-shadow: none;
+	margin-top: 30px;
+}
+
+.publication-item p{
+	font-size: 13px;
+	line-height: 24px;
+	margin-bottom: 0;
+}
+
+.publication-item .media-left{
+	padding-right: 30px;
+}
+
+/************************/
+
+/********footer******/
+
+
+.footer{
+	background: #fafafa;
+	padding: 50px 0;
+}
+
+.footer-logo{
+	background: url('../img/logo-lg.png');
+	background-repeat: no-repeat;
+	background-size: 200px;
+	background-position: center;
+	display: inline-block;
+	height: 90px;
+	width: 200px;
+}
+
+.copyright{
+	margin-top: 20px;
+	clear: both;
+}
+
+.copyright p{
+	font-family: 'Montserrat', sans-serif;
+	color: #555555;
+	text-transform: uppercase;
+	font-size: 10px;
+	line-height: 20px;
+}
+
+.social{
+	list-style:none;
+	padding: 29px 0;
+	margin: 0;
+}
+
+.social li{
+	display: inline-block;
+}
+
+.social li a{
+	width: 32px;
+	height: 32px;
+	background: #555555;
+	border-radius: 50%;
+	line-height: 32px;
+	text-align: center;
+	margin-right: 5px;
+}
+
+.social li a{
+	display: inline-block;
+	color: #ffffff;
+}
+
+.social li a:hover{
+	background: #333333;
+}
+
+.social li:last-child a{
+	margin-right: 0;
+}
+/*******************/
+
+
+/*****media queries****/
+
+@media(max-width: 767px){
+	.block{
+		margin-bottom: 15px;
+		height: 150px;
+	}
+	.block-title{
+		font-size: 15px;
+	}
+	.outreach-block{
+		margin-top: 35px;
+		padding: 60px 15px;
+	}
+	.outreach-block .outreach-text{
+		font-size: 28px;
+		line-height: 32px;
+	}
+
+	.jumbotron{
+		padding: 60px 15px;
+	}
+	.jumbotron .title-text{
+		font-size: 32px;
+		line-height: 36px;
+	}
+
+	blockquote p{
+		font-size: 18px;
+		line-height: 32px;
+	}
+
+	.page-banner .title-text{
+		font-size: 28px;
+	}
+}
+
+@media(max-width: 480px){
+	.footer-logo{
+		display: none;
+	}
+	.social{
+		padding: 0;
+		float: none !important;
+		display: block;
+		text-align: center;
+	}
+	.copyright{
+		text-align: center;
+	}
+	.faculty-name{
+		font-size: 9px;
+	}
+
+	.faculty-group{
+		margin-bottom: 0;
+	}
+	.publication-item img{
+		max-width: 100%
+	}
+}
